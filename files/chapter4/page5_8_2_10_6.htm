@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>5.8.2.10. Активные фильтры</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+<!--
+.style2 {
+	color: #000066;
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong> <strong> </strong> <strong>        <strong>5.8.2.10. Активные фильтры </strong>  </strong> </strong></p>
+      </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <p class="text">Требования к миниатюризации электронной аппаратуры и фильтрации сигналов на низких частотах (скажем, с частотой среза 10 Гц) привели к разработке активных фильтров, которые не содержат индуктивных элементов и могут быть реализованы в виде интегральных микросхем. </p>
+        <p>Активные <em>RC</em>-фильтры ( <em>ARC</em>-фильтры) состоят из постоянных резисторов <em>R </em> и конденсаторов <em>C </em> ( <em>RC</em>-звеньев) и активных элементов (операционных усилителей, транзисторов), работающих в линейном режиме. Передаточная функция <em>ARC</em>-фильтра по напряжению <em>H</em><span class="indexsmall"><em>u</em></span>(<em>p</em>) = <em class="index">U</em><span class="indexsmaldigit">2</span>(<em>p</em>)/<em class="index">U</em><span class="indexsmaldigit">1</span>(<em>p</em>) представляет собой отношение двух операторных полиномов, т. е. </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="57%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10/page5_8_2_10_clip_image002.gif" width="331" height="50" align="absmiddle"> </td>
+            <td width="43%" class="head2"> <div align="right">(5.28) </div></td>
+          </tr>
+        </table>
+        <br class="text"><a href="page5_8_2_10_1.htm">- 
+
+ 
+        Реализация <em>ARC</em>-фильтров<strong>.</strong></a>
+        <br class="text"><a href="page5_8_2_10_2.htm">-          Коэффициенты передачи звеньев <em>ARC</em>-фильтра.</a> 
+        <br class="text"> <a href="page5_8_2_10_3.htm">- Проектирование <em>ARC</em>-фильтров. </a>
+        <br class="text">        <a href="page5_8_2_10_4.htm">-   Алгоритм расчёта АЧХ и ФЧХ АRС-фильтров на ЭВМ.   </a>        <br>
+		   <br class="text">          <span class="style2">-        Алгоритмы расчёта временных характеристик ARC-фильтров. </span>    
+		
+        <p class="text"> При анализе <em>ARC</em>-фильтров наряду с частотными характеристиками рассчитывают и строят временные характеристики: <strong class="head2">переходную </strong><em>h</em>(<em>t</em>) (реакцию фильтра на входное воздействие в виде единичного скачка 1(<em>t</em>)) и <strong class="head2">импульсную </strong><em>g</em>(<em>t</em>) (его реакцию на входное воздействие в виде дельтфункции <em>d</em>(<em>t</em>)). Поскольку <em>d</em>(<em>t</em>) = <em>d </em>[1(<em>t</em>)]/<em>dt </em>, <em></em>то <em>g</em>(<em>t</em>) = <em>d </em>[<em>h</em>(<em>t</em>)]/ <em>dt </em>. Как и частотные характеристики, переходная и импульсная характеристики в полной мере определяют динамические свойства фильтра. </p>
+        <p class="text"> Расчёт и построение функций <em>h</em>(<em>t</em>) и <em>g</em>(<em>t</em>) фильтра на входные сигналы 1(<em>t</em>)) и <em>d</em>(<em>t</em>) обычно выполняют с помощью частотных характеристик <em>H<span class="indexsmall">k</span></em>(<em>j<span class="symbol">w</span></em>) звеньев. Иногда используют функции <em>h</em><em class="indexsmall">k</em>(<em>t</em>) и <em>g<span class="indexsmall">k</span></em>(<em>t</em>) звеньев, определяя реакцию последующих звеньев вплоть до последнего на функции <em>h</em><em class="indexsmall">k</em>(<em>t</em>) и <em>g<span class="indexsmall">k</span></em>(<em>t</em>) предыдущих звеньев. </p>
+        <p class="text"> Наиболее распространённый метод определения на ЭВМ функций <em>h</em>(<em>t</em>) и <em>g</em>(<em>t</em>) линейных <strong></strong>схем (каковыми являются <em>ARC</em>-фильтры) - это <strong class="head2"><em>метод преобразования Фурье</em></strong>. При этом используют его синус- или косинус- преобразование при переходе от вещественной <em>V</em>(<em class="symbol">w</em>) или мнимой <em>Q</em>(<em class="symbol">w</em>) части комплексного коэффициента передачи <br> 
+
+ 
+        <img src="page5_8_2_10_6/page5_8_2_10_6_clip_image002.gif" width="227" height="27" align="absmiddle"> временным функциям <em>h</em>(<em>t</em>) и <em>g</em>(<em>t</em>) фильтра. </p>
+        <p class="text"> При выполнении условий устойчивости фильтра (Re(<em>p<span class="indexsmall">k</span></em>) &lt; 0 и <em>H </em>(0) <img src="page5_8_2_10_6/1.jpg" width="30" height="10" align="absmiddle">) имеем: </p>
+        <p class="text"> для <strong class="head2"><em>переходной функции </em></strong></p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <th width="77%" scope="row">           <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <img width="387" height="56" src="page5_8_2_10_6/page5_8_2_10_6_clip_image002_0002.gif"> </div></th>
+            <td width="23%"> <div align="right" class="head2">(5.39) </div></td>
+          </tr>
+        </table>
+        <p> для <strong class="head2"><em>импульсной функции </em></strong></p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <th width="77%" scope="row">    <div align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="348" height="55" src="page5_8_2_10_6/page5_8_2_10_6_clip_image002_0004.gif"> </div></th>
+           
+		    <td width="23%"> <div align="right" class="head2">(5.40) </div></td>
+          </tr>
+        </table>
+        <p> При расчёте функций <em>h</em>(<em>t</em>) и <em>g</em>(<em>t</em>) чаще используют вещественную функцию <em>V</em>(<em class="symbol">w</em>). При численных расчетах верхний предел интегрирования должен иметь конечное значение <span class="symbol"><em>w</em></span><em class="indexsmall">в </em>, которое выбирают из условия 
+
+ 
+        <img src="page5_8_2_10_6/page5_8_2_10_6_clip_image002_0005.gif" width="149" height="22" align="absmiddle"> где <img src="page5_8_2_10_6/2.jpg" width="19" height="16" align="absmiddle"> - интеграл, вычисленный при верхнем пределе <span class="symbol">w</span> <img src="page5_8_2_10_6/3.jpg" width="65" height="19" align="absmiddle"> - интеграл при <em class="symbol">w </em>= <span class="symbol"><em>w</em></span><span class="indexsmall"><em>в</em></span></p>
+        <p> Так как одним из исходных параметров при расчёте <em>ARC</em>-фильтров является частота среза <span class="symbol"><em>w</em></span><em>с </em> = 2<span class="symbol"><em>p</em></span><em>fс </em> (ФНЧ, ФВЧ) или центральная частота <em class="symbol">w</em><span class="indexsmalldigit">0</span> (ППФ, РФ) полосы пропускания (задерживания), примем верхнюю границу частоты <span class="symbol"><em>w</em></span><em class="indexsmall">в </em>= 5<span class="symbol"><em>w</em></span><em class="indexsmall">с</em>, а верхний предел функций <em>h</em>(<em>t</em>) и <em>g</em>(<em>t</em>), <em>t</em><span class="indexsmall"><em>в</em></span> <span class="symbol">»</span> 6<em class="symbol">t </em><span class="symbol">» </span>3/<span class="symbol"><em>w</em></span><em class="indexsmall">с </em>; число отсчётов по частоте <em>К </em> = 1000, а число отсчётов по времени <em>N </em> = 2,5 <em>K. </em> Тогда шаг по частоте <span class="symbol"><em>D</em></span><em><span class="symbol">w</span> </em>= <span class="symbol"><em>w</em></span><em class="indexsmall">в </em>/<em>К </em> = 5<span class="symbol"><em>w</em></span><em class="indexsmall">с</em>/<em>К </em>, а шаг по времени.<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="symbol"><em>D</em><em></em></span><em>t </em> = <em>t<span class="indexsmall">в</span></em>/<em>N </em>= 3/(2,5<em>K<span class="symbol">w</span><span class="indexsmall">с</span> </em>) = 1,2/<em>К</em><span class="symbol"><em>w</em></span><em class="indexsmall">с </em>. 
+        <br> 
+        Подставив полученные соотношения в уравнения <em>h</em>(<em>t</em>) и <em>g</em>(<em>t</em>), получим:
+        <br> 
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <img width="289" height="47" src="page5_8_2_10_6/page5_8_2_10_6_clip_image002_0006.gif"><br>
+        <img src="page5_8_2_10_6/page5_8_2_10_6_clip_image002_0008.gif" width="501" height="46" align="absmiddle">
+		
+		<br>
+(учтено, что при <em>k<span class="symbol">Dw</span> </em>= 0 подинтегральная функция равна <em>V</em>(0) <em>N<span class="symbol">D</span>t </em>, а при <em>n<span class="symbol">D</span>t </em> = 0 значение <em> h</em>(0) = <img src="page5_8_2_10_6/4.jpg" width="72" height="19" align="absmiddle">. Конечное значение
+
+
+ 
+<em>h </em>(<img src="page5_8_2_10_6/5.jpg" width="16" height="11" align="absmiddle">) = <em> V</em>(0) = <em></em><em>H</em>0);  
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10_6/page5_8_2_10_6_clip_image002_0009.gif" width="280" height="48" align="absmiddle">  <br>
+<img width="543" height="47" src="page5_8_2_10_6/page5_8_2_10_6_clip_image002_0010.gif">
+<br>
+Полученные выражения использованы при написании подпрограмм для расчёта на ЭВМ и построения переходной <em>h</em>(<em>t</em>) и импульсной <em>g</em>(<em>t</em>) функций как отдельных звеньев, так и трёхкаскадного <em>ARC</em>-фильтра.
+        <p class="text">&nbsp; </p>
+      </div>
+		
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_8_2_9.htm"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_9.htm"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

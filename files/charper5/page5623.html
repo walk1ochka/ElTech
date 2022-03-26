@@ -1,0 +1,303 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.6.2.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.6.2.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:01pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:0pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:0pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight:normal;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing:0px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="../charper1/style11.js" type="text/javascript"></SCRIPT>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+        <span style='font-size:14pt;font-family:Arial;color:darkblue;'><b> 5.6.2.3. Поляризованное реле</strong></b><br></span>
+         <div align='left'><span style='position:relative;top:3pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15pt;color:#d00093;'><b>К электромагнитным реле с поворотным якорем относится также <i>поляризованное</i> реле (рис. 5.50), состоящее из постоянного магнита <em>1</em>, якоря <em>2</em>, катушек <em>3</em> и <em>3'</em>, неподвижных контактов <em>4</em> и <em>4'</em> и магнитопровода <em>5</em>. Это реле отличается от обычного ЭМР постоянного тока тем, что вместо ярма здесь установлен постоянный магнит  <i>N&#8722;S</i>, наличие которого повышает чувствительность реле и, кроме того, заставляет реагировать реле на полярность приложенного к его катушкам напряжения.</b><br></span>
+       <div align='left'><span style='position:relative;top:4pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15pt;color:black;color:blue;'><b>Магнитный поток Ф<span class="indexsmalldigit">0</span> постоянного магнита <em> N&#8722;S</em>, проходя по якорю <em>2</em>, делится на два потока Ф<span class="indexsmalldigit"><b>1</b></span> и Ф<span class="indexsmalldigit"><b>2</b></span>. Проходя через плечи ярма, один из этих потоков складывается с основным магнитным потоком Ф<span class="indexsmalldigit"><b>3</b></span>, создаваемым в ярме намагничивающим током катушек, другой направлен ему навстречу. В том плече ярма, где потоки складываются, сила притяжения, действующая на якорь, больше, и якорь притягивается к этому плечу. При изменении полярности приложенного к катушкам напряжения якорь притягивается к другому плечу ярма. </b><br></span>
+     <div align='left'><span style='position:relative;top:4pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15pt'><img src="images/image550.gif" width="297" height="273"  align='left'><b>Если напряжение на катушках равно нулю, то якорь идеализированного реле займёт нейтральное (среднее) положение, т. к. магнитные потоки Ф<span class="indexsmalldigit"><b>1</b></span> и <em>Ф</em><span class="indexsmalldigit"><b>2</b></span> равны между собой и направлены встречно. Однако практически якорь всегда притянут к одной из сторон ярма, так как всегда имеется небольшое смещение якоря. Магнитодвижущая сила, обеспечивающая срабатывание реле, определяется по формуле</b><br></span>
+         <div align='left'><span style='position:relative;top:0pt;margin-left:43pt;font-size:12pt;font-family:Arial;line-height:15pt'><img src="images/page6623_clip_image002_0000.gif" width="140" height="46" align="absmiddle"> </b><br></span>
+        <div align='left'><span style='position:relative;top:0pt;margin-left:0pt";font-size:12pt;font-family:Arial;line-height:15pt'><b>т.е. МДС срабатывания пропорциональна магнитному потоку Ф<span class="indexsmalldigit"><b>0</b></span> постоянного магнита и смещению якоря <em>х</em>, когда он притянут к ярму. </b><br></span>
+        <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b>Номинальный ток, длительно пропускаемый через контакты поляризованных реле РП-4, РП-5 и РП-7, выпускаемых отечественной промышленностью, 0,2 А, время срабатывания 2,5…13 мс. </b><br></span>
+        <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:#d00093;'><b>Электромагнитное реле переменного тока состоит из таких же деталей, что и реле постоянного тока. Для устранения вибрации якоря, связанной с изменением силы притяжения, реле изготавливают либо с двумя катушками, либо с дополнительной короткозамкнутой обмоткой, насаженной на одну из половин раздвоенного полюса.</b><br></span></span>
+        
+    <tr> 
+      <td height="20"><a href="../charper5/page5622.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> </td>
+      <td>
+      <div align="right"><a href="../charper5/page5631.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>      </td>
+    </tr>
+
+</body>
+</html>

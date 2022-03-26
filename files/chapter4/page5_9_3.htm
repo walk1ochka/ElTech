@@ -1,0 +1,80 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter5/5.9.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter5/5.9.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>5.9.3. Дифференцирующая цепь на основе RC-звена</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+.style1 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; font-size: 12px;}
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong>5.9.3. Дифференцирующая цепь на основе <em>RC</em>-звена </strong>  </p>
+      </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="center" class="text">
+        <div align="left">
+        <p class="text">Иногда требуется преобразовать входной импульс <em>u</em><span class="indexsmaldigit">1 </span>в сигнал, изменяющийся по закону  </p>   
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="54%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="89" height="21" src="page5_9_3/page5_9_3_clip_image002.gif"> </td>
+            <td width="46%"> <div align="right" class="head2">(5.44) </div></td>
+          </tr>
+        </table>
+        <p class="text"> где <em>k </em> - коэффициент пропорциональности.         
+        <p class="text"><img src="page5_9_3/1.gif" width="141" height="101" align="left">
+	    
+Такое преобразование формы импульсов называется <strong class="head2">дифференцированием </strong> импульсов; оно осуществляется посредством линейного четырёхполюсника (рис. 5.54), называемого дифференцирующей цепью.
+        <p> Конденсатор (без утечки) является идеальным элементом для преобразования приложенного к нему напряжения <em> u</em><span class="indexsmaldigit">1</span> в ток <em>i</em>, изменяющийся пропорционально производной <img src="page5_9_3/page5_9_3_clip_image002_0000.gif" width="46" height="21" align="absmiddle">Однако нам надо получить выходное напряжение <em>u</em><span class="indexsmaldigit">2</span>, изменяющееся по закону (5.44). Если подключить последовательно с конденсатором резистор <em>R </em> с настолько малым сопротивлением, что закон изменения тока останется почти неизменным, то создаваемое им падение напряжение <em>u</em><span class="indexsmaldigit">2</span> = <em>Ri<span class="indexsmall"></span> </em>будет изменяться по закону, близкому к выражаемому формулой (5.44). </p>
+        <p class="text"> Так как напряжение <em>u<span class="indexsmall">C</span> = u</em><span class="indexsmaldigit">1</span> - <em>u</em><span class="indexsmaldigit">2</span>, то приближённое равенство </p>
+        <p><img src="page5_9_3/2.gif" width="430" height="24">
+            <br>
+            справедливо лишь при условии 
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="52%" class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_9_3/3.gif" width="133" height="25"></td>
+            <td width="48%"> <div align="right" class="head2">(5.45) </div></td>
+          </tr>
+        </table>
+        <p>т. е. скорость нарастания фронта (среза) импульса <em>u</em><span class="indexsmaldigit">1</span> должна быть значительно больше фронта нарастания выходного сигнала <em>u</em><span class="indexsmaldigit">2</span>.
+          <p class="text">Из физических соображений ясно, что в начальный момент времени воздействие на цепь любого импульса <em class="index">u</em><span class="indexsmaldigit">1</span> неравенство (5.45) не может выполняться, т. к. в момент <em>t </em> = 0 всё напряжение импульса падает на сопротивлении <em>R</em>. Наибольшее искажение выходного сигнала при дифференцировании импульса <em>u</em><span class="indexsmaldigit">1</span>  должно получиться в течение фронтовой части (или при срезе) этого импульса, а наилучший результат - в течение той части импульса, где скорость нарастания <em>du</em><span class="indexsmaldigit">1</span>/<em>dt </em><span class="symbol">@</span> <em>const </em>.
+        <p class="text">На практике <em class="symbol">t</em> выбирают, по крайней мере, в 10…100 раз меньше длительности фронта входного сигнала, а тем более существенно меньше и длительности входного сигнала. Но при этом будет уменьшаться и величина выходного сигнала, которая также пропорциональна постоянной <em class="symbol">t</em>.                        
+        <p>        </div>
+      </div></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_9_2.htm"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_12.htm"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

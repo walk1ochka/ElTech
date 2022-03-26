@@ -1,0 +1,255 @@
+<html>
+<html>
+<head>
+<title>2.1.7.1. Сложение и вычитание комплексных чисел</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter2/3.7.2.11.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter2/3.7.2.11.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>Упражнение 2.6</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+               
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align='center'><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>2.5.2.5. Энергетические процессы при резонансе напряжений</b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:5pt;margin-left:23pt'><b>Для режима резонанса напряжений (<i>u</i> = <i>U</i><span class="indexsmall"><b>m</b></span>sin&#969;<i>t</i>, <i>i</i> = <i>I</i><span class="indexsmall"><b>m</b></span>sin&#969;<i>t</i>, &#966; = 0), напряжение на ёмкостном элементе контура</b><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:2pt;margin-left:43pt'><b><i>u</i><span class="indexsmall"><b>C</b></span> =<i> X</i><span class="indexsmall"><b>C</b></span><i>I</i><span class="indexsmall"><b>m</b></span>sin(&#969;<i>t</i> &#8722; &#960;/2) = &#8722;<i>X</i><span class="indexsmall"><b>C</b></span><i>I</i><span class="indexsmall"><b>m</b></span>cos&#969;<i>t</i>,</b><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:2pt;margin-left:0pt'><b>а энергия <i>W</i><span class="indexsmall"><b>L</b></span>, запасаемая в магнитном поле
+индуктивной катушки, и энергия <i>W</i><span class="indexsmall"><b>C</b></span>, запасаемая в электрическом поле конденсатора:</b><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:2pt;margin-left:43pt'><span style='position:relative;top:4pt;margin-left:0pt'><img width=178 height=40 src="page2525.files/image001.gif" style="opacity:0.5;filter:alpha(opacity=50)"> </span> <span style='position:relative;top:-8pt;'><b>и</b></span> <span style='position:relative;top:2pt;margin-left:0pt'><img width=195 height=41 src="page2525.files/image002.gif"  style="opacity:0.5;filter:alpha(opacity=50)"></span>.</b><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:2pt;margin-left:23pt'><b>После подстановки ёмкостного сопротивления <span style='position:relative;top:8pt;margin-left:0pt'><img width=126 height=30 src="page2525.files/image003.gif" style="opacity:0.6;filter:alpha(opacity=60)"></span> в выражение энергии </b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:43pt'><sub><img width=261 height=43 src="page2525.files/image004.gif" style="opacity:0.5; filter:alpha(opacity=50)"></sub></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:-2pt;margin-left:0pt'><b>замечаем, что амплитуда колебаний электрической энергии в электрическом поле конденсатора равна амплитуде колебаний магнитной энергии в магнитном поле катушки, т.е. <span style='position:relative;top:8pt;margin-left:0pt'><img width=121 height=39 src="page2525.files/image005.gif" style="opacity:0.5; filter:alpha(opacity=50)"></span>, <span style='color:red;'>а сумма магнитной и электрической энергии в контуре постоянна и равна</b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:2pt;margin-left:43pt'><sub><img width=370 height=37 src="page2525.files/image006.gif" style="opacity:0.6;filter:alpha(opacity=60)"></sub></span>.<br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:12pt;margin-left:43pt'><img width='217' height='134' vspace='16' src="page2525.files/image007.gif" align='left'  style="opacity:1;filter:alpha(opacity=100)"><br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:-26pt;margin-left:23pt;color:blue;'><b>Итак, при резонансе напряжений общая накопленная энергия в контуре остаётся неизменной, при этом магнитная энергия <i>W</i><span class="indexsmall"><b>L</b></span> изменяется во времени по закону квадрата синуса, а электрическая энергия <i>W</i><span class="indexsmall"><b>C</b></span> &#8722; по закону квадрата косинуса (рис. 2.65). Это означает, что в контуре происходит обмен энергией между элементами <i>L</i> и <i>C</i> без затрат энергии источника энергии <i>е</i>(<i>t</i>) при <i>R</i> --> 0.</b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:-20pt;margin-left:23pt;color:#9400de;'><b>В реальном контуре <i>R</i> &#8800; 0, процесс обмена энергией между элементами <i>L</i> и <i>C</i> сопровождается потреблением энергии <i>W</i><span class="indexsmall"><b>R</b></span> = <i>Ri</i><span  class='indexbigdigit'><b>2</b></span><i>t</i> источника, которая идёт на поддержание указанного обмена (без энергии извне он затухает) и необратимо преобразуется в тепловую энергию в резисторе <i>R</i>. В идеальном контуре (<i>R</i> = 0) колебательный процесс идёт без потребления энергии извне и имеет незатухающий характер. </b></span><br><br>
+<tr>
+      <td height="20"><a href="../charper2/zad2.13.html"><img src="../images/back.gif" width="60" height="20" border="0" align="left"></a> </td>
+      <td>
+<div align="right"><a href="../charper2/page2526-1.html"><img src="../images/forward.gif" width="70" height="22" border="0" align="right"></a></div>
+</td>    </tr>
+</body></html>

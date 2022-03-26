@@ -1,0 +1,60 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+
+var pos=100;
+var speed=65;            
+var msg="<span style='position:relative;top:40pt;font-size:14pt; font-family:Arial; color:darkblue;line-height:15pt;'><b>&#160;&#160;&#160;&#160;&#160;&#160;Эта тема посвящена анализу и расчёту линейных цепей синусоидального тока с использованием векторных диаграмм и комплексных амплитуд. Рассмотрены резонансные цепи, даны основы теории четырёхполюсников, в качесве которых обычно представляют усилители, фильтры, трансформаторы, лирии связи и  другие устройства. <br><span style='color:#d60093;'>&#160;&#160;&#160;&#160;Отмечены особенности расчёта индуктивно связанных и трёхфазных цепей. Дано понятие трёхфазной системы электроснабжения потребителей.<br><span style='color:blue;'>&#160;&#160;&#160;&#160;&#160;&#160; Тема изобилует интерактивными упражнениями, заданиями и виртуальными лабораторными работами.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Verdana;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+<div valign="bottom">
+<body class="fon" onLoad="Type()">
+
+<div align='center'><span style="position:relative;top:12pt;font-size:14pt;font-family:Arial;color:darkblue"><b>Тема 2 </b></span></div><br>
+<div align='center'><span style="position:relative;top:26pt;font-size:18pt;font-family:Arial;"><font style="color:#994433;"><b>ЛИНЕЙНЫЕ ЭЛЕКТРИЧЕСКИЕ ЦЕПИ</b><br>
+<div align='center'><font style="color:#994433;"> <b>СИНУСОИДАЛЬНОГО ТОКА</b></div></span>
+<table width="95%" height="80%" border="0pt"><tr><td valign="top">
+<div id="layerA" class=text align="absmiddle"></b>
+</table></td></tr>
+<span style='position:relative;top:95pt;align:center;font-size:16pt;font-family:Arial'>
+<a href="page21.html" align=""><b>НАЧАТЬ</b></a></table></span></td><tr></body></html>

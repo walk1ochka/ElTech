@@ -1,0 +1,233 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter3/3.5.3.4.wma LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter3/3.5.3.4.wma AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<title>4.5.4.4. Идеальное интегрирующее звено</title>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align="center">
+        <span style='font-size:14pt; font-family:Arial;color:darkblue;'><b>3.5.3.4. Идеальное интегрирующее звено</b><br></span>
+        
+  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:9pt;margin-left:23pt;color:d0009f;"><b> В идеальном интегрирующем звене операция интегрирования в операторной форме пропорциональна выражению 1/<em>p</em>. Поэтому передаточная функция звена </b><br></span>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:13pt;margin-left:43pt"><b><em>H</em><span class="indexsmall"><b>u</b></span>(<em>p</em>) = <em>U</em><span class="indexsmalldigit"><b>2</b></span>(<em class="index">p</em>)<em>/<span class="index">U</span></em><span class="indexsmalldigit">1</span>(<em>p</em>) = 1/<em>p</em>.</b><br> 
+               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:7pt;margin-left:43pt"><img src="gifs/image021.gif" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="605" height="161"></embed>
+                    </object><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>Заменив <em>p</em> = <em>j</em>&#969;, получим комплексную передаточную функцию </b><br>
+               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><img src="gifs/f_25.gif" align="absmiddle" height="49">,<br> 
+               
+               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:0pt"><b>где <em>H</em><span class="indexsmall"><b>u</b></span>(&#969;) = 1/&#969;  &#160; &#8211;&#160;  АЧХ и &#936;(&#969;) = &#8211;&#960;/2  &#160; &#8722;&#160;  ФЧХ звена (рис. 3.46<em>а </em> и рис. 3.46<em>б</em>). </b><br>
+       <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>Графики АФЧХ <em>H</em><span class="indexsmall"><b>u</b></span>(<em>j</em>&#969;) и ЛАЧХ &#945;(&#969;) = &#8211;20lg&#969; приведены на рис. 3.46<em>в </em>и рис. 3.46<em>г</em>.</b> <br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt;color:blue;"><b>П р и м е ч а н и е . На выбранной масштабной сетке для построения графика удобно аппроксимировать ЛАЧХ цепи прямыми линиями. Приближенная логарифмическая АЧХ цепи, в которую входит, например, четыре последовательно соединенных интегрирующих звена, будет состоять из четырех прямолинейных участков с наклонами соответственно -20, -40, -60 и -80 дб на декаду. Частоты &#969;<span class="indexsmall"><b>k</b> </span>= 1/&#964;<span class="indexsmall"><b>k</b></span> точек излома ЛАЧХ соответствуют постоянным времени звеньев.</b><br> <br><br><br></span>
+ 
+  <tr>
+    <td height="20"><a href="3_5_3_3.htm"><img src="../../../images/back.gif" width="60" height="20" border="0" align="left"></a> </td>
+    <td>
+      <div align="right"><a href="../Chapter_5/3_5_4.htm"><img src="../../../images/forward.gif" width="70" height="22" border="0" align="right"></a></div></td>
+  </tr>
+</body></html>

@@ -1,0 +1,313 @@
+<html>
+<head>
+<title>8.2.2.1. Реакция якоря при активной нагрузке</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter10/10.2.2.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter10/10.2.2.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:22pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:30.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:24.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 14px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 14px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 16px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 14px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing: .1px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexbigEST {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align:25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        <div align="left"> <p align="center"><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>8.2.2.1. Реакция якоря при активной нагрузке</b><br></span>
+ 
+<div align="left"><span style='position:relative;top:3pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:#5a2be2;'><span style='color:red;'> <b>При активной нагрузке <i>R</i> (рис.&nbsp;8.3)</span> сдвиг фаз (угол &#966;) между током и питающим её напряжением  равен нулю. Пренебрегая падением напряжения в обмотке якоря, т.е. полагая, что напряжение генератора равно его ЭДС (<i>U</i>  &#8776; <i>E</i><span class="indexsmalldigit"><b>я</b></span>), рассмотрим взаимодействие магнитных потоков ротора Ф<span class="indexsmalldigit"><b>в</b></span> и якоря Ф<span class="indexsmalldigit"><b>я</b></span>. В момент времени <i>t</i><span class="indexsmalldigit"><b>0</b></span>,  когда ток нагрузки имеет максимальное значение <i>I</i><span class="indexsmall"><b>m</b></span>, ЭДС обмотки якоря также будет иметь максимальное значение (угол&nbsp;&#966; = 0). Ось магнитного потока Ф<span class="indexsmalldigit"><b>в</b></span> ротора совпадает с плоскостью обмотки рассматриваемой фазы <i>А</i>, а ось магнитного потока якоря Ф<span class="indexsmalldigit"><b>я</b></span> совпадает с осью обмотки, т.е. совпадает с горизонтальной осью.</b></span>
+              <div align="left"><span style='position:relative;top:-4pt;margin-left:43pt;font-size:12pt;font-family:Arial'> <img src="page8_2_2_1.files/image001.gif" vspace="8"></span> 
+            <div align="left"><span style='position:relative;top:-12pt;margin-left:23pt;font-size:12pt;font-family:Arial'> <b>Очевидно, что над правой стороной северного <i>N</i> и левой стороной южного <i>S</i> полюсов ротора результирующий магнитный поток Ф<span class="indexsmalldigit"><b>р</b></span> от воздействия потока Ф<span class="indexsmalldigit"><b>я</b></span> возрастает, а над противоположными сторонами полюсов &#8211; уменьшается. Возникает так называемая поперечная составляющая реакции якоря. Ось результирующего магнитного потока Ф<span class="indexsmalldigit"><b>р</b></span> синхронного генератора поворачивается на угол &#920; в сторону, противоположную направлению вращения ротора. Чем больше нагрузка (ток <i>I</i>), тем больше угол &#920;.</b></span>
+
+ <div align="left"><span style='position:relative;top:-11pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:#5a2de2;'> <b>Увеличение тока нагрузки (угла &#920;) сопровождается увеличением нагрузочного момента на валу первичного двигателя (турбины), т.к. магнитные полюсы потоков Ф<span class="indexsmalldigit"><b>в</b></span> и Ф<span class="indexsmalldigit"><b>я</b></span> взаимно притягиваются (в генераторе полюсы ротора являются ведущими,  "тянущими" за собой полюсы результирующего магнитного поля). Следовательно, активная нагрузка приводит к искажению магнитного потока машины и появлению момента сопротивления на валу ротора.</b</span>
+            
+    <tr>
+      
+<td height="20"><a href="page8_2_2.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> 
+
+      <td>
+        
+<div align="right"><a href="page8_2_2_2.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

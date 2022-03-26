@@ -1,0 +1,93 @@
+<html>
+	<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter2/2.12.3.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter2/2.12.3.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+		<title>1.1.4. Состав электрической цепи </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+		<link href="../mainpage.css" rel="stylesheet" type="text/css">
+			<SCRIPT language="JavaScript1.2" src="../styles/main.js" type="text/javascript"></SCRIPT>
+	</head>
+	<body>
+		<DIV id="TipLayer" style="Z-INDEX:1000;VISIBILITY:hidden;POSITION:absolute;TOP:-100px"></DIV>
+		<SCRIPT language="JavaScript1.2" src="style114.js" type="text/javascript"></SCRIPT>
+		<table width="100%" height="100%" border="0" cellspacing="0">
+			<tr align="center" valign="top">
+			  <td height="233" colspan="2" class="text"><p class="head1">2.12.3.2. Метод 
+						фиксированных моментов времени</p>
+					
+					<div align="justify"> Решение системы функциональных уравнений (в предположении, что параметры 
+					резистивных элементов не зависят от времени) ищут для ряда фиксированных 
+					моментов времени <em>t</em> = <em>t</em><span class="indexsmall">к</span>, при 
+						которых напряжения и токи ветвей цепи будут также фиксированными, что 
+						равносильно замене источников переменного тока источниками постоянного тока, 
+						напряжения и токи которых равны ординатам переменных напряжений и токов 
+						соответ-ствующих источников при <em>t</em> = <em>t</em><span class="indexsmall">к</span>. 
+						Таким образом, для фиксированного момента времени <em>t</em> = <em>t</em><span class="indexsmall">к</span>
+					будем иметь резистивную цепь постоянного тока и время не войдет в систему 
+					уравнений, имеющую вид:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="2.12/2.12.3/2.12.3.2/1__.gif" width="233" height="77"><br>
+					При невысоком порядке системы уравнений, используя метод 
+					исключения переменных Гаусса или формулы Крамера, можно найти ее корни для 
+			  всех переменных.                    
+			        </div>
+				  
+					<div align="justify">В общем случае решение системы уравнений, соответствующих каждому дискретному 
+					времени, возможно только с помощью численных методов на ЭВМ.<br>
+				    </div>
+			      <div align="justify"> В
+					  <span class="head2">частном случае</span>
+					  нелинейной резистивной цепи (рис 2.80), содержащей несколько линейных и один 
+						нелинейный резистивный элемент<em> R</em><span class="indexsmalldigit">3</span>, 
+							источники постоянного напряжения и тока и один источник<em> u</em><span class="indexsmalldigit">1</span>(<em>t</em>) 
+							переменного сигнала), в принципе можно экспериментально получить напряжение 
+							или ток в <em>k</em>-й ветви и построить входную <em>u</em><span class="indexsmalldigit">1</span>(<em>i</em><span class="indexsmalldigit">1</span>) 
+							или выходную<em> u</em><span class="indexsmalldigit">6</span>(<em>i</em><span class="indexsmalldigit">6</span>) 
+							характеристики цепи.					  
+                            <table width="100%"  border="0" cellpadding="2">
+                        <tr>
+                          <td><div align="center"><img src="2.12/2.12.3/2.12.3.2/2_12_3_2_2&#1085;.jpg" width="309" height="173"></div></td>
+                        </tr>
+                    </table>
+		        </div>			      
+				    <div align="justify">
+				      <p>Для этой цели подключают к полюсам источника <em>u</em><span class="indexsmalldigit">1</span>(<em>t</em>) 
+							переменного сигнала регулируемый источник постоянного напряжения и измеряют 
+							токи (напряжения), например, на входе и выходе цепи при разных уровнях 
+							напряжения <em>U</em><span class="indexsmalldigit">1</span>.	                  </p>
+				     
+				    </div></td>
+			</tr>
+			<tr align="center">
+				<td colspan="2" valign="top"><table width="100%" border="0">
+						<tr>
+							<td colspan="2">
+								<p><span class="text">
+										<a href="page21231.html"><img src="../images/back.gif" width="60" height="32" border="0"></a><br>
+									</span>
+								</p>
+							</td>
+							<td width="50%"><div align="right"><a href="page21233.html"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

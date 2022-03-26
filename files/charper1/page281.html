@@ -1,0 +1,139 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter2/2.8.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter2/2.8.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>2.8.2. Метод двух узлов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></script>
+<style type="text/css">
+<!--
+.style3 {font-size: 10px}
+-->
+</style>
+</head>
+<body>
+<div id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></div>
+  <script language="JavaScript1.2" src="style114.js" type="text/javascript"></script>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">        <div align="center">          
+        <p><strong>2.8.1. Общие положения </strong></p>
+          </div></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>
+            
+            <td width="70%" colspan="2"><div align="justify"><span class="text">Метод узловых напряжений (МУН) базируется на 1ЗК и обобщенном законе Ома. В методе узловых напряжений за вспомогательные расчетные величины принимают т. н. узловые напряжения    <em>U</em></span><span class="indexsmall"><em>k</em></span><span class="indexsmalldigit">0</span><span class="text"> - напряжения между каждым из узлов схемы и выбранным базисным узлом (его будем обозначать цифрой &quot;0&quot;), потенциал которого принимают равным нулю. Число уравнений для расчета схемы по МУН: </span> </div>              <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text">N</span><span class="indexsmall">МУН</span> </em> <span class="text">=</span> <span class="text"><em>У </em> - 1.</span>
+              <table width="100%"  border="0" cellpadding="2">
+                <tr>
+                  <td class="text"><div align="justify">Для каждого узла, кроме базисного, составляют уравнение по 1ЗК. В полученных уравнениях токи ветвей, присоединенных к базисному узлу, выражают через узловые напряжения и проводимости посредством обобщенного закона Ома: </div></td>
+                </tr>
+              </table>                            <table width="100%"  border="0" cellpadding="2">
+      <tr>
+        <td width="81%" class="text"> <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I<span class="indexsmall">k</span> </em>=
+          (<em>E</em><span class="indexsmall"><em>k</em></span><em> </em>- <em>U</em><em class="indexsmall">k</em><span class="indexsmalldigit">0</span>)/<em>R<span class="indexsmall">k</span> </em> =
+          (<em>E</em><em class="indexsmall">k </em> - <em>U</em><em class="indexsmall">k</em><span class="indexsmalldigit">0</span>)<em>G</em><span class="indexsmall"><em>k</em></span>, </td>
+        <td width="19%" class="head2"><div align="right">(2.16)</div></td>
+      </tr>
+    </table>  
+              <span class="text">где <em>G</em></span><span class="indexsmall"><em>k</em></span><span class="text">  = 1 / <em>R</em></span><span class="indexsmall"><em>k</em></span><span class="text"> - проводимость <em>k</em>-й ветви.</span>              <table width="100%"  border="0" cellpadding="2">
+      <tr>
+        <td width="81%" class="text"> <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I<span class="indexsmall">kj</span> </em>=
+          (<em>E</em><span class="indexsmall"><em>kj</em></span><em> </em>- <em>U</em><em></em><span class="indexsmall"><em>kj</em></span><em></em>)/<em>R</em><em></em><span class="indexsmall"><em>kj</em></span><em></em> =
+          (<em>E</em><span class="indexsmall"><em>kj</em></span><em> </em>- <em>U</em><em class="indexsmall">k</em><span class="indexsmalldigit">0</span> + <em>U<span class="indexsmall">j</span></em><span class="indexsmalldigit">0</span> )<em>G<em></em><span class="indexsmall"><em>kj</em></span><em></em></em>, </td>
+        <td width="19%" class="head2"><div align="right">(2.17)</div></td>
+      </tr>
+    </table>    
+              <div align="justify"><span class="text">где</span> <span class="text"><em>U</em></span><span class="indexsmall"><em>kj</em></span><span class="text">  = <em>U</em></span><span class="indexsmall"><em>k</em></span><span class="indexsmalldigit">0</span><span class="text"> - <em>U</em></span><span class="indexsmall"><em>j</em></span><span class="indexsmalldigit">0</span><span class="text"> (правило
+                  индексов, т. к. <em>U</em></span><span class="indexsmall"><em>jk</em></span><span class="text"> = <em>U<span class="indexsmall"><em>j</em></span><span class="indexsmalldigit">0</span></em> - <em>U<span class="indexsmall"><em>k</em></span><span class="indexsmalldigit">0</span></em>); <em>G</em></span><span class="indexsmall"><em>kj</em></span><span class="text"><em> = </em>1<em>/R</em></span><span class="indexsmall"><em>kj</em></span><span class="text">  -
+                  межузловая проводимость. После группирования членов при соответствующих
+                  узловых напряжениях и переноса <em>E</em></span><span class="indexsmall"><em>k</em></span><span class="text"><em>G</em></span><span class="indexsmall"><em>k</em></span><span class="text">  и
+                  токов <em>J</em></span><span class="indexsmall"><em>k</em></span><span class="text">  источников
+                  тока в правую часть, образуется система уравнений относительно
+                  неизвестных узловых напряжений. </span>              <span class="text">Структура
+                  каждого уравнения одинаковая, например, уравнение относительно
+                  узла <em>1</em>:
+              </span> </div>              
+              <table width="100%"  border="0" cellpadding="2">
+      <tr>
+        <td width="81%" class="text"> <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G</em><span class="indexsmalldigit">11</span><em>U</em><span class="indexsmalldigit">10</span> <em>- G</em><span class="indexsmalldigit">12</span><em>U</em><span class="indexsmalldigit">20</span> <em>- ... - G</em><span class="indexsmalldigit">1</span><span class="indexsmall"><em>n</em></span><em>U<span class="indexsmall">n</span></em><span class="indexsmalldigit">0</span> = <img src="p_281/1.gif" width="55" height="36" align="absmiddle"> + <img src="p_281/2.gif" width="40" height="36" align="absmiddle"></td>
+        <td width="19%" class="head2"><div align="right">(2.18)</div></td>
+      </tr>
+    </table>  
+              <table width="100%"  border="0" cellpadding="2">
+                <tr>
+                  <td class="text"><div align="justify">где <em>G</em><span class="indexsmalldigit">11</span> = <em>G</em><span class="indexsmalldigit">1</span> + <em>G</em><span class="indexsmalldigit">2</span> +
+                      ... + <em>G<span class="indexsmall">n</span> </em> - <span class="head2">собственная
+                      проводимость узла <em>1</em></span>, равная сумме проводимостей
+                      ветвей, присоединенных к узлу <em>1 </em> (проводимости
+                      ветвей с ИТ не учитываются, т. к. <em>G</em><span class="indexsmall style3"><em>j</em></span><span class="style3"><em> </em></span> =
+                      1/<em>R</em><span class="indexsmall style3"><em>j</em></span><span class="style3"><em> </em></span>=
+                      0 (<em>R</em><span class="indexsmall style3"><em>j</em></span> = <img src="p_281/3.gif" width="15" height="12" align="absmiddle">));</div></td>
+                </tr>
+                <tr>
+                  <td><div align="justify"><span class="text"><em>G</em><span class="indexsmalldigit">12</span> , ... , <em>G</em><span class="indexsmalldigit">1</span><em class="indexsmall">n </em>– </span><span class="head2">межузловые проводимости</span><span class="text">; </span></div></td>
+                </tr>
+                <tr>
+                  <td><div align="justify"><img src="p_281/4.gif" width="56" height="36" align="absmiddle"> <span class="text">-
+                        алгебраическая сумма произведений ЭДС ветвей, присоединенных
+                        к узлу <em>1</em>, на проводимости этих ветвей; причем
+                        со знаком плюс (минус) записываются произведения, если
+                        ЭДС направлена к узлу <em>1 </em> (от узла <em>1</em>);</span></div></td>
+                </tr>
+                <tr>
+                  <td><div align="justify"><img src="p_281/5.gif" width="30" height="36" align="absmiddle"> <span class="text">-
+                        алгебраическая сумма токов источников тока ветвей, подключенных
+                        к узлу <em>1</em>; причем токи <em>J</em></span><span class="indexsmall"><em>k</em></span><span class="text"> записываются
+                        со знаком плюс (минус), если они направлены к узлу <em>1 </em> (от
+                        узла <em>1</em>);</span></div></td>
+                </tr>
+                <tr>
+                  <td><div align="justify"><img src="p_281/6.gif" width="55" height="36" align="absmiddle"> + <img src="p_281/7.gif" width="39" height="36" align="absmiddle"> - <span class="head2">узловой ток </span><span class="text"> узла <em>1</em>.</span> </div></td>
+                </tr>
+                <tr>
+                  <td><table width="100%"  border="0" cellpadding="2">
+                    <tr>
+                      <td><div align="justify"><span class="text">Решив систему уравнений относительно узловых напряжений, определяют межузловые напряжения и токи ветвей, посредством соотношений, приведенных выше. </span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="justify"><span class="text"><strong class="head2">Ограничения. </strong> Метод узловых напряжений не применим (без предварительного преобразования) к схемам с индуктивно связанными элементами и к схемам, содержащим несколько ветвей только с идеальными источниками напряжения (без пассивных элементов), не соединенных с базисным узлом. </span></div></td>
+                    </tr>
+                    <tr>
+                      <td><div align="justify"><span class="text">Для расчета по МУН схем, содержащих ветви только с идеальными источниками напряжения, необходимо выбрать в качестве базисного узла один из полюсов идеального ИН. Тогда напряжение узла, к которому присоединен второй полюс этого ИН, равно его ЭДС. Остальные идеальные ИН, не присоединенные к базисному узлу, нужно перенести в ветви с пассивными элементами. При этом число необходимых уравнений для расчета цепей по МУН уменьшится на число <em>n </em> ветвей только с идеальными ИН, т. е.</span></div></td>
+                    </tr>
+                  </table>                    <em>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text">&nbsp;N</span><span class="indexsmall">МУН</span> </em><span class="text">= <em>У - </em>1 <em>- n.</em></span></td>
+                </tr>
+              </table>              </td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="zadanie215.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr213.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

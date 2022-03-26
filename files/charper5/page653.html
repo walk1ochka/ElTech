@@ -1,0 +1,47 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.5.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.5.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+        <p align="center"><strong> 6.5.3. Феррорезонансные стабилизаторы напряжения </strong><strong></strong></p>
+        <p align="justify" class="text">Феррорезонансные стабилизаторы напряжения служат для поддержания уровня синусоидального напряжения на зажимах приёмника при изменении напряжения питающей сети. Основная часть всех стабилизаторов состоит из линейного конденсатора и нелинейной катушки с ферромагнитным сердечником, соединенных между собой последовательно или параллельно.</p>
+        <p align="justify" class="text">При последовательном соединении конденсатора <em class="index">С</em> и катушки <em class="index"> L </em>(рис. 6.47, <em>а</em>), выходное напряжение стабилизатора равно разности между напряжением сети и напряжением на конденсаторе, т. е. </p>
+        <p align="justify" class="text"><img src="images/6_47.gif" width="306" height="175" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="index"><em><U>U</U></em><span class="indexsmall">L</span> = <em><U>U</U></em> - <em><em><U><em><U>U</U></em></U></em></em></span><span class="indexsmall">C</span>, </p>
+        <p align="justify" class="text"> при этом <em> <span class="index">U</span></em><span class="index"> =</span> |<span class="index"><em>U</em></span><em><span class="indexsmall">L</span></em> - <em> <span class="index">U</span><span class="indexsmall">C</span></em>|. </p>
+        <p align="justify" class="text"> Зная ёмкость <em class="index">С</em> конденсатора и характеристику <em class="index">U</em><span class="indexsmall">L</span> <span class="index">=</span> <em class="index">f</em>(<em class="index">I</em>)  катушки, можно построить (рис. 6.47, <em>б</em>) зависимость <em class="index"> U</em> <span class="index">=</span> |<span class="index"><em>U</em></span><em><span class="indexsmall">L</span></em> - <em> <span class="index">U</span><span class="indexsmall">C</span>|</em> <span class="index">= <em> f</em></span>(<em class="index">I</em>), где <em> <span class="index">U</span><span class="indexsmall">C</span></em> - напряжение на конденсаторе. Предположим, что напряжение сети изменилось от <em class="index"> U</em><span class="indexsmalldigit">2</span> до <em class="index"> U</em><span class="indexsmalldigit">1</span>. Тогда, пользуясь кривыми <em class="index"> U</em>(<em class="index">I</em>) и <em> <span class="index">U</span><span class="indexsmall">L</span></em>(<em class="index">I</em>), можно найти соответствующие значения выходного напряжения <em> <span class="index">U</span><span class="indexsmall">L</span></em><span class="indexsmalldigit">2</span> и <em> <span class="index">U</span><span class="indexsmall">L</span></em><span class="indexsmalldigit">1</span>. При этом значениям <em class="index"> U</em><span class="indexsmalldigit">2</span> и <em> <span class="index">U</span><span class="indexsmall">L</span></em><span class="indexsmalldigit">2</span> соответствует ток <em> <span class="index">I</span></em><span class="indexsmalldigit">2</span>, а значениям <em class="index"> U</em><span class="indexsmalldigit">1</span> и <em> <span class="index">U</span><span class="indexsmall">L</span></em><span class="indexsmalldigit">1</span> - ток <em> I</em><span class="indexsmalldigit">1</span>. Из рис. 6.47, <em>б</em> видно, что значительное изменение напряжения <em> <span class="symbol">D</span><span class="index">U</span></em><span class="index"> = <em> U</em></span><span class="indexsmalldigit">2</span> - <em class="index"> U</em><span class="indexsmalldigit">1</span> влечёт за собой сравнительно малое изменение выходного напряжения <em> <span class="symbol">D</span><span class="index">U</span><span class="indexsmall">L</span></em> <span class="index">= <em> U</em></span><em><span class="indexsmall">L</span></em><span class="indexsmalldigit">2</span> - <em> <span class="index">U</span><span class="indexsmall">L</span></em><span class="indexsmalldigit">1</span>; стабилизатор будет тем лучше, чем более пологой является конечная часть характеристики катушки. </p>
+        <p align="justify" class="text"> На практике часто применяют схему стабилизатора (рис. 6.48, <em>а</em>), в которой линейная катушка <em class="index"> L</em> с <img src="images/6_48.gif" width="281" height="138" align="left">ненасыщенным магнитопроводом включена последовательно с нелинейной цепью, состоящей из параллельно соединенных конденсатора <em class="index">С</em> и катушки <em class="index"> L</em><span class="indexsmalldigit">1</span> с насыщенным ферромагнитным сердечником. В результате получают почти полную стабилизацию напряжения. Заметим, что подключение нагрузки к стабилизатору ухудшает характеристику <em> <span class="index">U</span><span class="indexsmall">L</span></em>(<em class="index">U</em>) (рис. 6.48, <em>б</em>), делая её менее пологой. </p>
+        <p align="justify">&nbsp;</p>
+      </div></td>
+  </tr>
+    <tr> 
+      <td height="20"><a href="../charper6/page6524.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> </td>
+      <td>
+      <div align="right"><a href="../charper6/page6611.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>      </td>
+    </tr>
+</table> 
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.6.5.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.6.5.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="../charper1/style11.js" type="text/javascript"></SCRIPT>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+        <p align="center"><strong>6.6.5.3. Управление двигателем постоянного тока</strong></p>
+        <p align="justify"><span class="text">Использование различных способов пуска в ход, регулирования частоты вращения вала и торможения двигателей постоянного тока (ДПТ) позволяет получить схемы с разнообразными свойствами, отвечающими условиям работы исполнительных механизмов. На рис. 6.56 приведена схема управления ДПТ параллельного возбуждения, предусматривающая пуск в функции времени, плавное регулирование частоты вращения и динамическое торможение при остановке или реверсировании. Регулирование частоты вращения вала осуществляется за счёт изменения магнитного потока возбуждения <em class="index">Ф</em></span><span class="indexsmall"><em>в</em></span><span class="text"> посредством регулировочного реостата <em class="index"> R</em></span><span class="indexsmall"><em>р</em></span><span class="text"> в цепи обмотки возбуждения <em>ОВ</em>. При отключении обмотки <em>ОВ</em> левым ножом рубильника <em> Q2</em> она замыкается на резистор <em class="index"> R</em></span><span class="indexsmall"><em>г</em></span><span class="text"> без разрыва цепи.</span></p>
+        <p align="center"><img src="images/6_56.gif" width="471" height="592"></p>
+        <p align="justify" class="text">Реверсирование двигателя осуществляется переводом контроллера <em> S1</em> в положение &quot;Назад&quot;. В тот момент времени, когда контроллер окажется в нулевом положении, контакторы <em>КМ1</em> и <em>КМ2</em> потеряют питание и ДПТ отключится от сети. Включится контакт <em>КМ1 </em>в цепи реле <em>К1</em>, что повлечёт за собой последовательное отключение контактора <em>КМ6</em>, включение реле <em>К2</em>, отключение контактора <em>КМ7 </em>и введение пускового реостата <em> R<span class="indexsmall">п</span></em>. Одновременно с этим будет подано напряжение на контактор <em>КМ5 </em>(контакт <em>К3</em> замкнут), который включит резистор динамического торможения <em> R<span class="indexsmall">д</span></em>.</p>
+        <p align="justify" class="text"> Дальнейший перевод контроллера <em> S1</em> в положение &quot;Назад&quot; и замыкание контактов не влияет на процесс торможения двигателя, т. к. на контакторы <em>КМ3 </em>и<em> КМ4 </em>может быть подано напряжение только через контакт <em>К3</em>, который в это время разомкнут. Замыкание этого контакта произойдёт после окончания торможения, когда реле <em>К3</em> отпустит свой якорь. Одновременно отключатся контактор <em>КМ5 </em>и резистор <em> R<span class="indexsmall">д</span></em>. Вслед за этим включатся контакторы <em>КМ3</em>,<em> КМ4</em>, отключится реле <em>К1</em> и произойдёт пуск в обратном направлении. Остановка двигателя при любом направлении вращения вала производится посредством перевода контроллера <em> S1</em> в нулевое положение. При этом происходит описанное выше динамическое торможение.</p>
+        <p align="justify" class="text">В схеме предусмотрены максимально-токовая защита (реле <em>КА</em>), нулевая (реле <em>КU</em>) и защита ослабления магнитного поля <span class="index"><em>Ф</em></span><em><span class="indexsmall">в</span></em> или обрыва цепи возбуждения (реле <em>К4</em>). Все виды защит вызывают отпускание якоря реле <em> KU. </em> В результате, в любом крайнем положении контроллера <em> S1</em> левые контакты катушек контакторов <em>КМ6</em> и <em>КМ7</em> отключаются от сети.
+        </p>
+        </div></td>
+  </tr>
+    <tr> 
+      <td height="20"><a href="../charper6/page6652.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> </td>
+      <td>
+      <div align="right"><a href="Vopros.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>      </td>
+    </tr>
+</table> 
+</body>
+</html>

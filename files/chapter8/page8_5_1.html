@@ -1,0 +1,305 @@
+<html>
+<head>
+<title>8.5.1. Принцип работы синхронного двигателя
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter10/10.5.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter10/10.5.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT></head>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:22pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:30.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:24.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 14px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 14px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 16px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 14px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing: .1px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight:normal;
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexbigEST {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align:25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        <div align="left"> <p align="center"><span style='font-size:14pt;font-family:Ariall;color:darkblue;'><b>8.5.1. Принцип работы синхронного двигателя<br></b></span>
+    <div align="left"><span style='position:relative;top:6pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:16ptl;color:#8a2be2;'> <b>При включении обмоток <i>1</i> якоря (рис.&nbsp;8.12<i>a</i>) в трехфазную сеть токи статорной обмотки, смещенные по фазе на угол 2&#960;<i> / </i>3, создают вращающееся с частотой <i>n</i><span class="indexsmalldigit"><b>1</b></span> = 60<i>f</i><span class="indexsmalldigit"><b>1</b></span>/<i>p</i> магнитное поле Ф<span class="indexsmalldigit"><b>я</b></span>. Однако ротор с магнитным потоком Ф<span class="indexsmalldigit"><b>в</b></span>, созданным постоянным током <i>I</i><span class="indexsmalldigit"><b>в</b></span> обмотки возбуждения <i>2</i>, будет неподвижным, так как быстровращающееся магнитное поле Ф<span class="indexsmalldigit"><b>я</b></span> действует на ротор со знакопеременной силой, не создающей среднего момента, т.е. пусковой момент синхронного двигателя <i>М</i><span class="indexsmalldigit"><b>п</b></span> = 0.</b><br></span>
+            <div align="left"><span style='position:relative;top:18pt;margin-left:43pt;font-size:12pt;font-family:Arial'> <img src="page8_5_1/image001.gif" vspace='16' align='left'> </span>
+ <div align="left"><span style='position:relative;top:2pt;margin-left:13pt;font-size:12pt;font-family:Arial;line-height:16ptl;color:#d60093;'><b>Но если предварительно разогнать ротор до частоты вращения <i>n</i><span class="indexsmalldigit"><b>2</b></span>, близкой к синхронной <i>n</i><span class="indexsmalldigit"><b>1</b></span>, то возникающий электромагнитный момент, как результат взаимодействия (притяжения) разноименных полюсов магнитных полей якоря и ротора, (см.&nbsp;рис.&nbsp;8.12<i>б</i>) заставит следовать ротор за магнитным полем статора, как говорят, втянуться в синхронизм.</b><br></span
+             <div align="left"><span style='position:relative;top:13pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:16pt'> <b>Для разгона современных синхронных двигателей (СД) в их ротор встраивают пусковую короткозамкнутую обмотку <i>3</i> (см.&nbsp;рис.&nbsp;8.12<i>а</i>), подобную беличьей клетке асинхронных двигателей. Стержни этой обмотки укладывают в специальные пазы полюсов и соединяют по торцам ротора. </b>     </span>            
+    <tr>
+ <td height="20"><div align="left"><span style='position:relative;top:-25pt;margin-left:0pt'><a href="page8_5.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> 
+      </td><td>
+<div align="right"><span style='position:relative;top:-25pt;margin-left:0pt'><a href="page8_5_2.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

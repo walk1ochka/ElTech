@@ -1,0 +1,52 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.6.5.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.6.5.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="../charper1/style11.js" type="text/javascript"></SCRIPT>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+        <p align="center"><strong>6.6.5.2. Управление синхронным двигателем</strong></p>
+        <p align="justify"><span class="text">При управлении синхронным двигателем <em>СД</em> осуществляется пуск, отключение, форсировка возбуждения и гашение магнитного поля в аварийных режимах. Схема управления высоковольтным <em>СД</em> с постоянно включенным возбудителем <em>В </em>(генератором постоянного тока параллельного возбуждения) на валу показана на рис. 6.55.</span></p>
+        <p align="justify" class="text">При пуске включается рубильник <em> Q1</em> и выключатель <em> Q2</em>; подаётся напряжение на блокировочное реле <em>К1</em> и контактор гашения магнитного поля <em>КМ1</em>, который размыкает свой контакт <em>КМ1</em>, шунтирующий сопротивление гашения <em> R. </em>Одновременно замыкается контакт <em>КМ1</em> в цепи контактора <em>КМ2</em>. Далее замыкается контакт <em>К1</em>, срабатывает реле <em>К2</em> и подаётся напряжение на реле <em>К3</em>, которое при срабатывании размыкает свой контакт в цепи промежуточного реле <em>К4</em>. </p>
+        <p align="center" class="text"><img src="images/6_55.gif" width="646" height="446"></p>
+        <p align="justify" class="text">После нажатия кнопки <em> SB1</em> (&quot;Пуск&quot;) включается контактор <em>КМ2</em>, который подаёт напряжение на включающую катушку <em> QF1</em> высоковольтного выключателя. Последний подключает своими контактами <em> QF</em> статор двигателя к сети, отключает контактор <em>КМ1</em> и реле <em>К1</em>. Начинается разгон двигателя. Одновременно замыкается контакт <em> QF1</em> в цепях реле <em>К4</em> и катушки <em> QF2</em>, но реле <em>К4</em> не срабатывает, т. к. контакт <em>К3</em> уже разомкнулся. Иначе включилось бы реле <em>К4</em>, т. к. реле гашения магнитного поля <em>К5</em> ещё не успеет к этому моменту времени разомкнуть свой контакт. Это привело бы к включению катушки <em> QF2</em> и отключению статора двигателя от сети. </p>
+        <p align="justify" class="text">После этого теряет питание реле <em>К2</em>, т. к. реле <em>К1</em> было отключено, и с замедлением размыкает свой контакт <em>К2</em>. За ним с замедлением отключается реле <em>К3</em>, и замыкается его контакт <em>К3</em> в цепи реле <em>К4</em>, которое снова не получит питания, т. к. реле <em>К5</em> уже успеет разомкнуть свой контакт <em>К5</em>. На этом заканчивается работа аппаратов управления. Синхронный двигатель с 
+  асинхронной частотой вращения вала втягивается в синхронизм.</p>
+        <div align="justify"><span class="text">Остановка синхронного двигателя происходит после нажатия на кнопку <em> SB2</em> (&quot;Стоп&quot;). Аналогично происходит отключение двигателя от сети при потере возбуждения: замыкается контакт <em>К5 </em>в цепи катушки реле <em>К4</em>, которое, срабатывая, включает катушку <em> QF2</em>. Это приводит к отключению статорной обмотки двигателя от сети.
+          </span>
+        </div>        </div></td>
+  </tr>
+    <tr align="center"> 
+    <tr> 
+      <td height="20"><a href="../charper6/page6651.html"><img src="../images/back.gif" width="60" height="32" border="0"></a> </td>
+      <td>
+      <div align="right"><a href="../charper6/page6653.html"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>      </td>
+    </tr>
+</table> 
+</body>
+</html>

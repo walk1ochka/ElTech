@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>5.8.2.6. Реализация Т-образных фильтров типа k</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {font-size: 24px}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong> <strong>5.8.2.6. Реализация <em>Т</em>-образных фильтров типа <em>k </em></strong> </strong></p>
+        </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <p class="text"> Рассмотрим свойства симметричных <em>Т</em>-образных фильтров типа <em>k </em>.        
+        <p class="text">
+          <a href="page5_8_2_6_1.htm">- <i>Т</i>-образный ФНЧ типа <i>k</i>.</a>        
+       <br>
+       <a href="page5_8_2_6_2.htm">- <i>Т</i>-образный ФВЧ типа <i>k</i>. </a>
+       <br> 
+       <span class="head1">- <i>Т</i>-образный ПФ типа <i>k</i>.  </span>        
+        <p>В схеме ПФ как последовательная, так и параллельная ветви содержат колебательные контуры (рис. 5.38, <em>а </em>). Обычно эти контуры настраиваются на одну и ту же частоту <em class="symbol">w</em><span class="indexsmaldigit">0</span>, называемую средней частотой полосы пропускания. Номинальное характеристическое сопротивление фильтра <img src="page5_8_2_6_3/page5_8_2_6_3_clip_image002.gif" width="163" height="25" align="absmiddle">Условие согласования ПФ <img src="page5_8_2_6_3/page5_8_2_6_3_clip_image004.gif" width="194" height="25" align="absmiddle"></p>
+        <p> Из схемы фильтра видно, что постоянный ток в нагрузку не проходит, т. к. этому препятствует <img src="page5_8_2_6_3/Untitled-1.gif" width="186" height="265" align="left">наличие ёмкости <em>С</em><span class="indexsmaldigit">1</span> последовательной ветви. С ростом частоты напряжение на нагрузке увеличивается, а затухание фильтра <em class="symbol">a</em><span class="indexsmaldigit">1</span> уменьшается (рис. 5.38, <em>б </em>), т. к. уменьшается сопротивление последовательной ветви <em class="index">Z</em><span class="indexsmaldigit">1</span> и уменьшается шунтирующее действие параллельной ветви <em class="index">Z</em><span class="indexsmaldigit">2</span> . На частоте среза <span class="symbol"><em>w</em></span><em class="indexsmall">с</em><span class="indexsmaldigit">1</span>, на которой выполняется условие <em class="index">Z</em><span class="indexsmaldigit">1</span> <em> = -</em>4<em class="index">Z</em><span class="indexsmaldigit">2</span>, затухание фильтра становитя минимальным. Таким образом, в области частот 0…<span class="symbol"><em>w</em></span><em class="indexsmall">с</em><span class="indexsmaldigit">1</span>, полосовой фильтр имеет такие же характеристики, как некоторый эквивалентный ФВЧ. </p>
+        <p> Аналогичными рассуждениями можно показать, что в области частот <em><span class="symbol"><em>w</em></span><em class="indexsmall">с</em><span class="indexsmaldigit">2</span></em>, … <span class="index">&#x221E;</span>,<span class="symbol"> </span> полосовой фильтр эквивалентен ФНЧ. С ростом частоты сопротивление <em class="index">Z</em><span class="indexsmaldigit">1</span> увеличивается, а <em class="index">Z</em><span class="indexsmaldigit">2</span> уменьшается, поэтому затухание фильтра возрастает. </p>
+        <p>На частоте <em class="symbol">a</em><span class="indexsmaldigit">0</span> сопротивление <em class="index">Z</em><span class="indexsmaldigit">1</span> обращается в нуль, а <em class="index">Z</em><span class="indexsmaldigit">2</span> - в бесконечность. На этой частоте затухание <em class="symbol">a</em><span class="indexsmaldigit">1</span> равно нулю (в реальном фильтре оно больше нуля). Полоса пропускания ПФ определяется разностью частот среза <span class="symbol">Dw</span> = <em class="symbol">w</em><em class="indexsmall">с</em><span class="indexsmaldigit">2</span> - <em class="symbol">w</em><em class="indexsmall">с</em><span class="indexsmaldigit">1</span>. Кривые коэффициента затухания ПФ изображены на рис. 5.38, <em>б</em>: <em class="symbol">a</em><span class="indexsmall"><em>ид</em></span><em> </em>- идеального фильтра; <span class="symbol"><em>a</em></span><span class="indexsmaldigit">1</span> - фильтра без потерь, согласованного на всех частотах; <span class="symbol"><em>a</em></span><span class="indexsmaldigit">2</span>- реального фильтра, нагруженного активным сопротивлением <em class="index">R</em><span class="indexsmall"><em>н</em></span><em></em>&nbsp;=&nbsp;<em class="index">Z</em><span class="indexsmall"><em>c</em></span><span class="indexsmaldigit">0</span>. </p>
+        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Расчёт параметров полосовых фильтров ведут по формулам:        
+        <span class="text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_6_3/page5_8_2_6_3_clip_image002_0001.gif" width="377" height="109" align="absmiddle"><br>         
+        <span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_6_3/Untitled-2.gif" width="337" height="41">          <p class="text"><a href="page5_8_2_6_4.htm">- <i>Т</i>-образный ЗФ типа <i>k</i>.</a>                                  
+        </div>
+    </tr>
+    <tr>
+
+      
+<td height="20"><a href="page5_8_2_6_2.htm"><img src="../images/back.gif" width="60" height="32" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="page5_8_2_6_4.htm"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

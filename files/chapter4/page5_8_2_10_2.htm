@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>5.8.2.10. Активные фильтры</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong> <strong> </strong> <strong>        <strong>5.8.2.10. Активные фильтры </strong>  </strong> </strong></p>
+      </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <p class="text">Требования к миниатюризации электронной аппаратуры и фильтрации сигналов на низких частотах (скажем, с частотой среза 10 Гц) привели к разработке активных фильтров, которые не содержат индуктивных элементов и могут быть реализованы в виде интегральных микросхем. </p>
+        <p>Активные <em>RC</em>-фильтры ( <em>ARC</em>-фильтры) состоят из постоянных резисторов <em>R </em> и конденсаторов <em>C </em> ( <em>RC</em>-звеньев) и активных элементов (операционных усилителей, транзисторов), работающих в линейном режиме. Передаточная функция <em>ARC</em>-фильтра по напряжению <em>H</em><span class="indexsmall"><em>u</em></span>(<em>p</em>) = <em class="indexbig">U</em><span class="indexsmaldigit">2</span>(<em>p</em>)/<em class="indexbig">U</em><span class="indexsmaldigit">1</span>(<em>p</em>) представляет собой отношение двух операторных полиномов, т. е. </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="57%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10/page5_8_2_10_clip_image002.gif" width="331" height="50" align="absmiddle"> </td>
+            <td width="43%" class="head2"> <div align="right">(5.28) </div></td>
+          </tr>
+        </table>
+        <p class="text"><a href="page5_8_2_10_1.htm">- 
+
+ 
+        Реализация <em>ARC</em>-фильтров<strong>.</strong></a></p>
+        <br class="head1">-          Коэффициенты передачи звеньев <em>ARC</em>-фильтра. </br>
+        <p class="text"> Определим комплексный коэффициент передачи по напряжению <span class="index"><em>H</em></span><em><span class="indexsmall">u</span></em>(<em>j<span class="symbol">w</span></em>) звена второго порядка, изображенного на рис. 5.46, <em>а </em>. С этой целью составим уравнения первого закона Кирхгофа для узлов <em>3 </em> и <em>4 </em> схемы с учетом, что входной ток ОУ <span class="index"><em>I</em></span><em class="indexsmall">вх </em><span class="symbol">»</span> 0 и <em><u>U</u></em><span class="indexsmaldigit">4</span> <span class="symbol">» </span>0: </p>
+        <blockquote>
+		<p class="text"> <img width="358" height="24" src="page5_8_2_10_2/page5_8_2_10_2_clip_image002.gif"> 
+        <p class="text"> <img src="page5_8_2_10_2/page5_8_2_10_2_clip_image002_0000.gif" width="367" height="22"> 
+        </blockquote>
+
+		<p>откуда
+</p>
+		<table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="69%">&nbsp;&nbsp;&nbsp;&nbsp; <img src="page5_8_2_10_2/page5_8_2_10_2_clip_image002_0001.gif" width="452" height="45" align="absmiddle"> </td>
+            <td width="31%" class="head2"> <div align="right">(5.29) </div></td>
+          </tr>
+        </table>
+		<p>где <em><u>Y</u></em><span class="indexsmall"><em>k</em></span><em> </em>= 1/<em>R</em><em class="indexsmall">k </em> + <em>j</em><span class="symbol"><em>w</em></span><span class="index"><em>C</em></span><em class="indexsmall">k </em> = <em>g</em><em class="indexsmall">k </em>+ <em>j</em><em class="symbol">w</em><em>C</em><em class="indexsmall">k </em>в предположении, что каждый двухполюсник содержит параллельно включенные резистор <em class="index">R</em><span class="indexsmall"><em>k</em></span><em> </em>и конденсатор <em class="index">С</em><span class="indexsmall"><em>k</em></span><em> </em>(рис. 5.46, <em>е</em>). </p>
+		<p> Для звена первого порядка (рис. 5.46, <em>д </em>) </p>
+		<table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="page5_8_2_10_2/page5_8_2_10_2_clip_image002_0002.gif" width="163" height="41" align="absmiddle"><em><img src="page5_8_2_10_2/page5_8_2_10_2_clip_image002_0003.gif" width="72" height="21" align="absmiddle"></em>. </td>
+            <td width="50%" class="head2"> <div align="right">(5.30) </div></td>
+          </tr>
+        </table>
+		<p> Соответствующим выбором параметров двухполюсников, в которых оставляют один элемент (либо резистор, либо конденсатор), можно реализовать заданную функцию <em>H</em>(<em>j<span class="symbol">w</span></em>) цепи. На рис. 5.46, <em>б </em>, <em>в </em> и <em>г </em> изображены схемы ФНЧ, ФВЧ и ПФ, параметры которых определяют передаточные функции по напряжению следующим образом: 	</p>
+		<table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="71%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10_2/page5_8_2_10_2_clip_image002_0004.gif" width="340" height="86" align="absmiddle"> </td>
+            <td width="29%" class="head2"> <div align="right">(5.31) </div></td>
+          </tr>
+          <tr>
+            <td> &nbsp;&nbsp;&nbsp;&nbsp; <img src="page5_8_2_10_2/page5_8_2_10_2_clip_image002_0005.gif" width="402" height="48" align="absmiddle"> </td>
+            <td> <div align="right" class="head2">(5.32) </div></td>
+          </tr>
+          <tr>
+            <td>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="373" height="43" src="page5_8_2_10_2/page5_8_2_10_2_clip_image002_0006.gif"> </td>
+            <td class="head2"> <div align="right">(5.33) </div></td>
+          </tr>
+        </table>
+		<p> При этом схема ФВЧ (рис. 5.46, <em>в </em>) образована из схемы рис. 5.46, <em>б </em> перестановкой конденсаторов и резисторов, а его АЧХ <em class="index">H</em>(<em class="symbol">w</em>) (рис. 5.47, <em>б</em>) можно качественно получить из АЧХ <em class="index">H</em>(<em class="symbol">w</em>) ФНЧ, если последнюю (рис. 5.47, <em>а</em>) зеркально отразить относительно вертикальной оси, проведенной через частоту среза <span class="symbol"><em>w</em></span><em class="indexsmall">с </em>. Передаточную функции ПФ (рис. 5.47, <em>в</em>) получают после расчёта и объединения функций <em>H</em>(<em>j<span class="symbol">w</span></em>) ФВЧ и ФНЧ первого (второго) порядков, поэтому порядок ПФ всегда является чётным. На базе одного ОУ с МОС, в которой отсутствуют звенья типа <em>Т</em>-образного моста (см. рис. 5.45, <em>в</em>), рекурсивный фильтр реализовать нельзя.</p>
+		<p align="center"><img src="page5_8_2_10_2/Untitled-4.gif" width="508" height="147"> </p>
+		
+		
+		<br class="head1"><a href="page5_8_2_10_3.htm" class="text">- Проектирование <em>ARC</em>-фильтров.</a> 
+       <br class="text"><a href="page5_8_2_10_4.htm">-  Порядок расчёта активного ФНЧ.   </a>
+	   <br class="text"><a href="page5_8_2_10_5.htm">-   Алгоритм расчёта АЧХ и ФЧХ АRС-фильтров на ЭВМ.   </a>
+           <br class="text">  <a href="page5_8_2_10_6.htm">-        Алгоритмы расчёта временных характеристик ARC-фильтров.   </a>
+        <p>&nbsp; </p>
+        </div>
+		
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_8_2_9.htm"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_9.htm"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

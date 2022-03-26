@@ -1,0 +1,263 @@
+<html>
+<head>
+<title>2.1.5.5. Соотношение между комплексной и временной функциями</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter3/3.1.5.5.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter3/3.1.5.5.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+               
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align='center'><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>2.1.5.5. Сотношение между комплексной и временной функциями</b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:6pt;margin-left:23pt'><b>Любая точка в комплексной плоскости или вектор, направленный от начала координат к данной точке, изображается комплексным числом <i>А</i> = <i>a</i> + <i>jb</i>, где <i>a</i> &#8722; координата точки по оси действительных чисел; <i>b</i> &#8722; координата точки по оси действительных чисел (рис. 2.10).</b><br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:23pt;color:blue;'><b>Воспользовавшись формулой Эйлера, </b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:43pt;color:red;'><b><i>e</i><span class='indexbigdigit'><b><i>j</i>&#969;<i>t</i></b></span> = cos&#969<i>t</i> +  <i>j</i>sin&#969;<i>t</i>, <span style="position:relative;margin-left:353pt">(2.9)</b></span></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:0pt;color:blue;'><b>запишем комплекс амплитуды напряжения в тригонометрической форме (рис. 2.9<i>б</i>):</b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:43pt;color:red;'><b><img src="Images/image196.gif" width="434" height="29"><span style="position:relative;top:-9pt">.<span style="position:relative;margin-left:140pt;">(2.10)</b></span></span></span><br>
+    <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:6pt;margin-left:23pt;color:#9400d3;'><b>Соотношение (2.10) показывает, что синусоидальная функция напряжения <i>u</i>(<i>t</i>) = <i>U</i><span class="indexsmall"><b>m</b></span>sin(&#969;<i>t</i> + &#936;<span class="indexsmall"><b>u</b></span>) есть проекция вращающегося вектора на мнимую ось, или есть мнимая часть (без <i>j</i>) комплексной амплитуды напряжения</span><span style='position:relative;top:6pt;margin-left:0pt'>, так как</b></span><br>
+  <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:1pt;margin-left:43pt'><img src="Images/image198.gif" width="244" height="28"><span style="position:relative;top:-6pt"><span style="position:relative;margin-left:285pt;color:#9400d3;"><b>(2.11)</b><br>
+              <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:4pt;margin-left:0pt'><b>а косинусоидальная функция напряжения <i>u</i>(<i>t</i>) = <i>U</i><span class="indexsmall"><b>m</b></span>cos(&#969;<i>t</i> + &#936;<span class="indexsmall"><b>u</b></span>) есть проекция вращающегося вектора на действительную ось, или действительная часть комплексной амплитуды напряжения, так как </b></span.<br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:43pt'><img src="Images/image200.gif" width="250" height="30"><span style="position:relative;margin-left:275pt;"><b>(2.12)</b></span><br>
+             
+              <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:23pt;color:black;'><b>Например, <i>u</i> = 10sin(&#969;<i>t</i> + 45°) <img src="Images/image155.gif" width="58" height="16"><span style="position:relative;top:0pt;"><img src="Images/image202.gif" width="219" height="30"> где <img src="Images/image204.gif" width="95" height="30" align="absmiddle"> &#8722; комплексная амплитуда напряжения.</b> <br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:23pt'><b>Поделив комплексную амплитуду напряжения на <img src="Images/image206.gif" width="25" height="22" align="absmiddle">, получим комплекс действующего значения напряжения или комплекс напряжения:</b><br>
+                 
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:43pt'><img src="Images/image210.gif" width="314" height="43"><span style="position:relative;margin-left:227pt;top:-13pt"><b>(2.13)</b><br>
+ <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:23pt'><b>По аналогии запишем комплекс тока <img src="Images/image212.gif" width="58" height="28" align="absmiddle"> 
+и комплекс ЭДС <img src="Images/image214.gif" width="76" height="28" align="absmiddle">.</b><br>
+             <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:23pt'><b>Например, ток <i>i</i> = 14,1sin(314<i>t</i> &#8722; 30°) А <img src="Images/image155.gif" width="37" height="18"> <img src="Images/image216.gif" width="259" height="45" align="absmiddle">A.</b><br>
+            <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:23pt;color:blue'><b>Обратный переход от комплексов к синусоидальным функциям осуществляют следующим образом:</b></span.<br>
+               <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:43pt'><img src="Images/image002.gif" width="79" height="30" align="middle"> 
+                        <img src="Images/image155.gif" width="39" height="16" align="middle"> 
+                        <i><b>u</i>(<i>t</i>) = </b><img src="Images/image006.gif" width="29" height="23" align="middle"><i>U</i></b>sin(&#969;<i>t</i> + &Psi;<span class="indexsmall"><b>u</b></span>); <img src="Images/image008.gif" width="82" height="27" align="absmiddle"><img src="Images/image155.gif" width="36" height="14" align="asbmiddle"> 
+                        <i>i</i>(<i>t</i>) = <i><b>I</b></i><span class="indexsmall"><b>m</b></span></b>sin(&#969;<i>t</i> + &#936;<span class="indexsmall"><b><i>i</i></b></span>) и т. д. <br></span><br>
+
+
+   <tr><td height="20"><a href="../charper2/page2152.html"><img src="../images/back.gif" width="60" height="20" border="0" align="left"></a> 
+    </td>
+      <td>
+        
+<div align="right"><a href="../charper2/page2156.html"><img src="../images/forward.gif" width="70" height="22" border="0" align="right"></a></div>
+</td>
+    </tr>
+
+</body>
+</html>
+
+   

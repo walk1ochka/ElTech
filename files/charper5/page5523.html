@@ -1,0 +1,304 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.5.2.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.5.2.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:01pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:0pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:0pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight:normal;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing:0px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+        <br><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b> 5.5.2.3. Принцип действия магнитных усилителей (МУ)</b><br></span>
+       <div align='left'> <span style="position:relative;top:4pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:#d00093'><b>На рис. 6.45 выполнены построения графиков магнитных потоков Ф<span class="indexsmalldigit"><b>1</b></span>(<em>t</em>) и Ф<span class="indexsmalldigit"><b>2</b></span>(<em >t</em>), вебер-амперных характеристик Ф<span class="indexsmalldigit"><b>1</b></span>(<em>F</em><span class="indexsmalldigit"><b>1</b></span>) и <em>Ф</em><span class="indexsmalldigit"><b>2</b></span>(<em>F</em><span class="indexsmalldigit"><b>2</b></span>) при подмагничивании магнитопроводов постоянным током. Последовательнось определения наиболее характерных точек характеристик отмечена стрелками. Так как магнитопроводы МУ имеют одинаковые размеры и изготавливаются из одинаковых материалов, то и магнитные характеристики Ф<span class="indexsmalldigit"><b>1</b></span>(<em>F</em><span class="indexsmalldigit"><b>1</b></span>) и Ф<span class="indexsmalldigit"><b>2</b></span>(<em>F</em><span class="indexsmalldigit"><b>2</b></span>) будут идентичными. Построение графиков <em> F</em><span class="indexsmalldigit"><b>1</b></span>(<em>t</em>) и <em> F</em><span class="indexsmalldigit"><b>2</b></span>(<em>t</em>) произведено в порядке, изложенном при построении графика рис. 5.42<em>б</em>. </b><br></span><br>
+        <div align='left'> <span style="position:relative;top:2pt;margin-left:43pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'>
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="255" height="331" align="left">
+            <param name="movie" value="Upr/Ris45.swf">
+            <param name="quality" value="high">
+            <embed src="Upr/Ris45.swf" width="255" height="331" vspace="12" align="left" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"></embed>
+          </object></span>
+        <div align='left'> <span style="position:relative;top:-10pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:blue;'><b>При подмагничивании магнитопроводов МДС обмоток <em> F</em><span class="indexsmalldigit"><b>1</b></span> = <em> w</em><span class="indexsmall"><b>р</b></span><i>i</i><span class="indexsmalldigit"><b>1</b></span> + <em> w</em><span class="indexsmall"><b>у</b></span><i>i</i><span class="indexsmall"><b>у</b></span>  и <em>F</em><span class="indexsmalldigit"><b>2</b></span> = <em> w</em><span class="indexsmall"><b>р</b></span><i>i</i><span class="indexsmalldigit"><b>2</b></span> &#8211; <em>w</em><span class="indexsmall"><b>у</b></span><i>i</i><span class="indexsmall"><b>у</b></span>.  После сложения МДС получим <em> F</em><span class="indexsmalldigit"><b>1</b></span> + <em>F</em><span class="indexsmalldigit"><b>2</b></span> = (<em>i</em><span class="indexsmalldigit"><b>1</b></span> + <em> i</em><span class="indexsmalldigit"><b>2</b></span>)<em>w</em><span class="indexsmall"><b>р</b></span> = <em> iw</em><span class="indexsmall"><b>р</b></span>, откуда ток<br><span style='position:relative;margin-left:43pt;'> <em>i</em> =  (<em>F</em><span class="indexsmalldigit"><b>1</b></span> + <em> F</em><span class="indexsmalldigit"><b>2</b></span>)/<em>w</em><span class="indexsmall"><b>р</b></span>. </b><br></span></span>
+       <div align='left'> <span style="position:relative;top:3pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b> График <em>F</em><span class="indexsmalldigit"><b>1</b></span> + <em> F</em><span class="indexsmalldigit"><b>2</b></span> = <em> f</em>(<em>t</em>) на рис. 6.45 в другом масштабе представляет собой график тока <em>i</em>(<em>t</em>) при подмагничивании магнитопроводов постоянным током <em>I</em><span class="indexsmall"><b>у</b></span>. Максимальное значение тока <em>i</em> получается тогда, когда магнитопроводы полностью насыщены в течение всего периода изменения магнитных потоков. При этом ток будет изменяться примерно по синусоидальному закону. </b><br></span>
+       <div align='left'> <span style="position:relative;top:3pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:blue;'><b>Если несинусоидальный ток <em> i</em> рабочей цепи заменить эквивалентным синусоидальным током, то последний будет сдвинут по фазе относительно напряжения <em> u</em> на 90°. Учитывая это, рабочие обмотки можно рассматривать как некоторые индуктивные катушки с сопротивлениями <em>Х</em><span class="indexsmall"><b>р</b></span> = <em> U</em><i>/</i><em>I</em>, значения которых [при <em>U</em> = const] зависят от степени подмагничивания магнитопроводов током <em>I</em><span class="indexsmall"><b>у</b></span>: при <em>I</em><span class="indexsmall"><b>у</b></span> = 0 сопротивления катушек <em>Х</em><span class="indexsmall"><b>р</b></span> будут наибольшими. Наименьшие сопротивления будет при таком токе <em> I</em><span class="indexsmall"><b>у</b></span>, при котором магнитопроводы окажутся полностью насыщенными в течение всего периода изменения магнитных потоков.</b>
+</span>
+    <tr> 
+      <div align='left'><td height="20"><span style="position:relative;top:-26pt;margin-left:0pt"><a href="../charper5/page5522.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> </td>
+      <td>
+      <div align="right"><span style="position:relative;top:-26pt;margin-left:0pt"><a href="../charper5/page5524.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>      </td>
+    </tr>
+
+</body>
+</html>

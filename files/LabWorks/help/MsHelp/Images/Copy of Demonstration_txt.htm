@@ -1,0 +1,138 @@
+<html>
+
+<head>
+<title> Инструкция по работе в EWB </title>
+</head>
+
+<body bgcolor="#FFFFFF" vlink="#0000FF" background="../descr/13.gif">
+<font FACE="Times New Roman" SIZE="4">
+
+<p align="center">Введение.<br>
+<embed SRC="lw01demointro.wav" AUTOSTART="true" CONTROLS="Console" VOLUME="100"
+width="128" height="128"> </p>
+
+<p><b><a NAME="I01"></a><a HREF="#II01">1. Сборка исследуемой схемы.</a></b><br>
+</p>
+
+<p align="center"><a NAME="I02">Перенесите</a> на &quot;рабочий
+стол&quot; программы EWB необходимые для
+моделирования элементы: резистор, конденсатор,
+источник напряжения, два элемента земля,
+осциллограф. <br>
+<br>
+<a NAME="II01"><embed SRC="DemoDrag&amp;Drop.avi" AUTOSTART="false" CONTROLS="true"
+width="441" height="339"></a> </p>
+
+<p><a NAME="I03"></a><a HREF="#II02">Установите следующие
+параметры элементов:</a><br>
+
+<ul>
+  <li>Резистор <span STYLE="padding-left: 30px;"><i><b>R</b></i> = 100 Ом;</span> </li>
+  <li>Конденсатор <i><b>C</b></i> = 1 мкФ; </li>
+  <li>Источник напряжения: <ul>
+      <li>Напряжение <i><b>U</b></i> = 1 В; </li>
+      <li>Частота <span STYLE="padding-left: 35px;"><i><b>f</b></i> = 1000 Гц;</span> </li>
+      <li>Фаза <span STYLE="padding-left: 55px;"><span
+        STYLE="padding-right: 1px; font-family: Symbol; font-style: italic; font-weight: bold;">y</span><sub><i><b>u</b></i></sub>
+        = 0.</span> </li>
+    </ul>
+  </li>
+</ul>
+
+<p align="center"><a NAME="II02"><embed SRC="DemoParamCh.avi" AUTOSTART="false"
+CONTROLS="true" width="394" height="310"></p>
+</a>
+
+<p align="center"><a NAME="I04">Соедините элементы
+проводниками так как показано на рисунке.</a> <br>
+<br>
+<embed SRC="DemoConnect.avi" AUTOSTART="false" CONTROLS="true" width="394" height="320"> </p>
+
+<p align="center"><a NAME="I05">Измените цвет проводов:</a> канал
+<i><b>А</b></i> - <font COLOR="RED">красный</font>, канал <i><b>B</b></i> - <font
+COLOR="BLUE">синий</font>. <br>
+<br>
+<embed SRC="DemoColorCh.avi" AUTOSTART="false" CONTROLS="true" width="311" height="337"> </p>
+
+<p>Сборка схемы закончена. </p>
+
+<p><a NAME="I06"><b>2. Моделирование.</b></a> </p>
+
+<p><a NAME="I07">Перед запуском</a> процесса
+моделирования настройте осциллограф. Щелкните
+два раза левой кнопкой мыши по иконке
+осциллографа чтобы раскрыть его.<br>
+Установите следующие параметры: 
+
+<ul>
+  <li>Время 0.1 мс/дел; </li>
+  <li>Канал А 500 мВ/дел; </li>
+  <li>Канал В 500 мВ/дел; </li>
+</ul>
+
+<p align="center"><embed SRC="DemoOccillPr.avi" AUTOSTART="false" CONTROLS="true"
+width="498" height="365"></p>
+
+<p align="center"><a NAME="I08">Нажмите кнопку</a> <b>Start</b> для
+запуска процесса моделирования.<br>
+<br>
+<img SRC="Start.gif" width="195" height="24"> </p>
+
+<p align="center"><a NAME="I09">На экране осциллографа</a>
+появятся две кривые от тока (<font COLOR="RED">красная
+кривая</font>) от напряжения (<font COLOR="BLUE">синяя кривая</font>).
+<br>
+<br>
+<embed SRC="DemoOccill.avi" AUTOSTART="false" CONTROLS="true" width="486" height="206"> </p>
+
+<p>Процесс моделирования завершен. </p>
+
+<p><b><a NAME="I10">3. Анализ результатов,</a> полученных
+при моделировании (измерение угла сдвига фаз).</b> </p>
+
+<p align="center"><a NAME="I11">На осциллографе нажмите кнопку
+zoom.<br>
+</a>Совместите красный визир с началом сигнала от
+тока (<font COLOR="RED">красная кривая</font>), а синий визир
+с началом сигнала от напряжения (<font COLOR="BLUE">синяя
+кривая</font>). В окне с обозначением T<sub>2</sub> <font
+FACE="Symbol">-</font> T<sub>1</sub> снимите значение 1.62500 <font
+FACE="Symath">H</font> 10<sup>-4</sup> с.<br>
+<br>
+<img SRC="Demo_pic_05.gif" width="175" height="43"> <br>
+<embed SRC="DemoOccillZ.avi" AUTOSTART="false" CONTROLS="true" width="596" height="480"> </p>
+
+<p><a NAME="I12">Вычисление угла сдвига фаз:</a> </p>
+
+<p>Период <img SRC="Demo_pic_01.gif" ALIGN="MIDDLE" width="137" height="48"> </p>
+
+<p>Составляем пропорцию<br>
+10<sup>-3</sup> <span STYLE="padding-left: 70px;">360</span><br>
+1.625*10<sup>-4</sup> <span STYLE="padding-left: 15px;"><font FACE="Symbol"><b><i>j</i></b></font></span>
+</p>
+
+<p>Откуда <img SRC="Demo_pic_02.gif" ALIGN="MIDDLE" width="217" height="53"> </p>
+
+<p>Результат: <font FACE="Symbol"><i><b><span STYLE="padding-right: 5px;">j</span></b></i></font>
+= <font FACE="Symbol">-</font>58.5<img SRC="Demo_pic_04.gif" width="4" height="15">. </p>
+
+<p>Знак &quot;<font FACE="Symbol">-</font>&quot;, потому что кривая
+тока <i><b>i</b></i> (<font COLOR="RED">красный цвет</font>)
+опережает кривую напряжения <b><i>u</i></b> (<font COLOR="BLUE">синий
+цвет</font>). </p>
+
+<p><a NAME="I13">Проверка:<br>
+</a><img SRC="Demo_pic_03.gif" ALIGN="MIDDLE" width="425" height="51"> </p>
+
+<p><b><a NAME="I14"></a><a HREF="#II08">4. Запись схемы на диск.</a></b> </p>
+
+<p align="center">В главном меню выберите FIle&gt;&gt;SaveAs, в
+раскрывшемся окне введите имя файла Demo1.ca4.<br>
+Нажмите кнопку <b>Сохранить</b> для записи файла.<br>
+<br>
+<a NAME="II08"><embed SRC="DemoFileSave.avi" AUTOSTART="false" CONTROLS="true" </p> </p>
+
+<p align="center"><font SIZE="6"><b>Конец</b></font> </font></p>
+</a>
+</body>
+</html>

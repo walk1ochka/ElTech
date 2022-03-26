@@ -1,0 +1,142 @@
+<html>
+<head>
+
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter5/5.8.2.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter5/5.8.2.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>5.8.2.3. Параметры фильтров</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong>5.8.2.3</strong>. <strong>Параметры фильтров </strong> </p>
+        </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <span class="text"> В теории фильтров за основной параметр принимают не нормированную        <span class="index">N</span><span class="indexsmall">u</span>(<span class="symbol">w</span>)   или логарифмическую 
+         <img src="page5_8_2_3/page5_8_2_3_clip_image002_0034.gif" width="109" height="22" align="absmiddle"> АЧХ, а <strong class="head2">коэффициент затухания </strong>(ослабления) <span class="symbol">a</span>(<span class="symbol">w</span>), выраженный в логарифмической форме и равный (для симметричных ЧФ) </span>
+        <table width="100%"  border="0">
+          <tr>
+            <td width="51%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="277" height="49" src="page5_8_2_3/page5_8_2_3_clip_image002_0002.gif"></td>
+            <td width="49%"> <div align="right" class="head2">(5.19) </div></td>
+          </tr>
+        </table>
+        или
+        <table width="100%"  border="0">
+          <tr>
+            <td width="52%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="244" height="49" src="page5_8_2_3/page5_8_2_3_clip_image002_0003.gif"></td>
+            <td width="48%" class="head2"> <div align="right">(5.20) </div></td>
+          </tr>
+        </table>
+ Уравнение (5.19) можно представить, как 
+ 
+          <img src="page5_8_2_3/page5_8_2_3_clip_image002_0037.gif" width="165" height="32" align="absmiddle">. Тогда при        
+ 
+        <span class=symbol>a</span>=1 дБ,<br> 
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0038.gif" width="177" height="25" align="absmiddle"> , т. е. коэффициентом затухания <span class="symbol">a</span> в 1 дБ обладает фильтр, у которого при согласованной нагрузке напряжение на выходе в 1,12 раз меньше, чем напряжение на входе.<br><br>
+        <p> Представим уравнение (5.20) в виде  <img src="page5_8_2_3/page5_8_2_3_clip_image002_0039.gif" width="139" height="25" align="absmiddle"> . Тогда при <span class="symbol">a</span> = 1  Нп, <img src="page5_8_2_3/page5_8_2_3_clip_image006_0002.gif" width="155" height="24" align="absmiddle">, т. е. коэффициентом затухания <span class="symbol">a</span> = 1 Нп обладает ЧФ, у которого сигнал <img src="page5_8_2_3/page5_8_2_3_clip_image010.gif" width="25" height="24" align="absmiddle"> пройдя фильтр, уменьшился в <img src="page5_8_2_3/page5_8_2_3_clip_image012.gif" width="60" height="19" align="absmiddle">раз. </p>
+        <p>В полосе пропускания <span class="symbol">Dw</span> идеальных фильтров коэффициент затухания <img src="page5_8_2_3/page5_8_2_3_clip_image004_0003.gif" width="59" height="20" align="absmiddle">и <img src="page5_8_2_3/page5_8_2_3_clip_image006_0003.gif" width="92" height="24" align="absmiddle">, т. е. затухания нет. В реальных фильтрах достичь значения <span class="symbol">a</span>(<span class="symbol">w</span>) = 0 в полосе <span class="symbol">Dw</span><em> </em>невозможно даже при полном согласовании фильтра с источником сигнала и нагрузкой на какой-то частоте, т. к. характеристические сопротивления фильтров 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0022.gif" width="25" height="23" align="absmiddle"> и 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0023.gif" width="28" height="23" align="absmiddle"> зависят от частоты. Для получения значения <span class="symbol">a</span>(<span class="symbol">w</span>) = 0 в полосе <span class="symbol">Dw</span><em> </em>реального фильтра нужно, что­бы сопротивление 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0024.gif" width="59" height="23" align="absmiddle"> источника и сопротивление <img src="page5_8_2_3/page5_8_2_3_clip_image022.gif" width="44" height="24" align="absmiddle">нагрузки изменялись по тем же законам, что и соответствующие сопротивления 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0025.gif" width="48" height="22" align="absmiddle"> и 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0026.gif" width="52" height="23" align="absmiddle"> фильтра, что нереально на практике.</p>
+        <p>Реальное нагрузочное сопротивление фильтра должно быть активным для того, чтобы энергия сигнала передавалась через фильтр только в одном направлении: от передатчика к приёмнику. Это условие может быть выполнено при согласовании фильтра с нагрузкой на какой-то одной частоте. На других частотах, вследствие рассогласования, характеристики фильтров ухудшаются. В качестве примера на рис. 5.31 представлены характеристики затухания <span class="symbol">a</span>(<span class="symbol">w</span>) идеальных (кривые <em>1</em>) и реальных (кривые <em>2</em>) фильтров нижних (<em>а</em>) и верхних (<em>б</em>) частот. </p>
+         Определим максимальное значение коэффициента затухания 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0027.gif" width="36" height="21" align="absmiddle">  реального ЧФ на границах среза 
+
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002.gif" width="21" height="21" align="absmiddle">: <br>
+
+        <table width="100%"  border="0">
+          <tr>
+            <td width="64%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_3/page5_8_2_3_clip_image002_0029.gif" width="371" height="24" align="middle">  </blockquote></td>
+            <td width="36%" class="head2" align=right>(5.21)</td>
+          </tr>
+        </table>
+        <span class="text"> Минимальное гарантированное значение коэффициента затухания 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0030.gif" width="33" height="21" align="absmiddle"> на границах полосы задерживания (на частотах 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0031.gif" width="21" height="21" align="absmiddle">, рис. 5.31) обычно принимают равным 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0032.gif" width="146" height="20" align="absmiddle">, иногда 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0033.gif" width="88" height="22" align="absmiddle">. <br>
+        <p align="center" class="text"><img src="page5_8_2_3/Untitled-1.gif" width="700" height="284" align="absmiddle"></p>
+        <p> Между полосой пропускания <em class="symbol">Dw</em> и полосой задержки <em class="symbol">Dw</em><span class="indexsmaldigit">3 </span>в реальных фильтрах имеется <strong class="head2">переходная область </strong> (см. рис. 5.31). <strong class="head2">Избирательность </strong>ЧФ (степень разграничения полос пропускания и задержки) определяется <strong class="head2">крутизной </strong>характеристики затухания <em class="symbol">a</em>(<em class="symbol">w</em>) в переходной области, характеризующейся коэффициентом          <img src="page5_8_2_3/page5_8_2_3_clip_image002_0.gif" width="76" height="21" align="absmiddle">  (для ФНЧ) или 
+
+ 
+        
+
+ 
+         <img src="page5_8_2_3/page5_8_2_3_clip_image002_01.gif" width="75" height="21" align="absmiddle">  (для ФВЧ). </p>
+        <p> Исходя из вышеизложенного, сформулируем требования к частотному фильтру. Фильтр должен иметь:</p>
+        <p><img src="page5_8_2_3/12.gif" width="234" height="186" align="left"></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- большой коэффициент затухания 
+
+ 
+        <img src="page5_8_2_3/page5_8_2_3_clip_image002_0000.gif" width="33" height="21" align="absmiddle"> в полосе задержки и малое затухание <img src="page5_8_2_3/123.gif" width="82" height="22" align="absmiddle"> в полосе пропускания;</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- достаточную крутизну нарастания (затухания) <span class="symbol">a</span>(<span class="symbol">w</span>) вблизи частоты среза <span class="symbol">w</span><span class="indexsmall">c</span>: чем больше крутизна характеристики <span class="symbol">a</span>(<span class="symbol">w</span>), тем лучше селективность ЧФ. Так, в последние годы в телевизионных приёмниках и кабельных системах (для ограничения полосы пропускания<span class="symbol"> Dw</span>) используют фильтры с поверхностными акустическими волнами с плоской АЧХ в полосе <span class="symbol">Dw</span> и очень крутыми краями, с отношением ширины полосы пропускания <span class="symbol">Dw</span> для <img src="page5_8_2_3/page5_8_2_3_clip_image014_0000.gif" width="20" height="20" align="absmiddle">= -3 дБ к ширине полосы для <img src="page5_8_2_3/page5_8_2_3_clip_image014_0000.gif" width="20" height="20" align="absmiddle">= -40 дБ, достигающим величины 0,9 (рис. 5.32). </p>
+        <p> Зная общие требования к фильтру, можно их трансформировать применительно к АЧХ фильтра <img src="page5_8_2_3/page5_8_2_3_clip_image002_0035.gif" width="45" height="22" align="absmiddle">или к её квадрату <img src="page5_8_2_3/page5_8_2_3_clip_image004_0009.gif" width="109" height="26" align="absmiddle">: </p>
+        <table width="100%"  border="0">
+          <tr>
+            <td width="52%"> <blockquote>              <img src="page5_8_2_3/page5_8_2_3_clip_image002_02.gif" width="197" height="61" align="absmiddle">   </blockquote></td>
+            <td width="48%"> <div align="right" class="head2">(5.22) </div></td>
+          </tr>
+        </table>
+        <p> Расчет частотных фильтров (в том числе по заданным АЧХ) при минимальном числе входящих в них элементов в настоящее время ведут по разработанным методикам, как правило, с использованием ЭВМ. </p>
+      </div></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_8_2_2.htm"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="page5_8_2_4.htm"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

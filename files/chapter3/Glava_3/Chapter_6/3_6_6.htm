@@ -1,0 +1,81 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.6.6.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter4/4.6.6.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<title>4.6.6. Дифференцирующие и интегрирующие цепи </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<!--<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>-->
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<div id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></div>
+ <!-- <SCRIPT language="JavaScript1.2" src="style59.js" type="text/javascript"></SCRIPT>-->
+<table width="100%" height="100%" border="0" cellspacing="0">
+  <tr align="center" valign="top">
+    <td height="20" colspan="2" class="head1">      <div align="center">        
+        <h3 class="head1"><strong>4.6.6. Дифференцирующие и интегрирующие цепи</strong></h3>
+        <br>
+      </div></td>
+  </tr>
+  <tr align="center">
+    <td colspan="2" valign="top"><table width="100%"  border="0">
+        <!--DWLayoutTable-->
+        <tr> 
+          <td width="100%" height="284" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <!--DWLayoutTable-->
+              <tr> 
+                <td width="100%" height="282 " valign="top"><div align="justify"> 
+                    <p class="text">В электронных устройствах нашли применение <strong class="head2">дифференцирующие </strong>и <strong class="head2">интегрирующие </strong> цепи, напряжение <em>u</em><span class="indexsmallDigit">2</span> на выходе которых практически пропорционально производной <em>u</em><span class="indexsmallDigit">2</span> = <em>k</em><span class="indexsmallDigit">1</span><em>du</em><span class="indexsmallDigit">1</span><em>/dt </em> или интегралу <em>u</em><span class="indexsmallDigit">2</span> = <img src="gifs/f_71.gif" width="57" height="24" align="absmiddle">от входного напряжения <em>u</em><span class="indexsmallDigit">1</span>, где <em>k</em><span class="indexsmallDigit">1</span> и <em>k</em><span class="indexsmallDigit">2</span> - постоянные коэффициенты. </p>
+                    <p class="text">Дифференцирование и интегрирование функций при определённых условиях может производиться с помощью <em>RL- </em> или <em>RC</em>-схем, рассмотренных в п. 4.54, или путём применения цепей, содержащих не только пассивные, но и активные элементы, например, операционные усилители. </p>
+                    <p class="text">Рассмотрим условия и требования к элементам пассивных <em>RL- </em> и <em>RC</em>-цепей, при выполнении которых достигается заданная погрешность указанных операций. </p>
+                    <p class="text">С этой целью изобразим пассивную <em>RL- </em> или <em>RC</em>-цепь в обобщённой операторной форме (рис. 4.74), передаточные функции по напряжению которой при дифференцировании и интегрировании сигнала равны: </p>
+                    <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gifs/f_72.gif" width="191" height="15" align="absmiddle">и <img src="gifs/f_73.gif" width="194" height="15" align="absmiddle"></p>
+                    <p class="text">                    
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="190" height="99" align="left">
+  <param name="movie" value="swf/4_74.swf">
+  <param name=quality value=high>
+  <embed src="swf/4_74.swf" width="190" height="99" align="left" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash"></embed>
+</object>                    
+Выразим напряжения <em>U</em><span class="indexsmallDigit">1</span>(<em>p</em>) и <em>U</em><span class="indexsmallDigit">2</span>(<em>p</em>) через операторные токи и сопротивления ветвей в предположении, что сопротивление нагрузки цепи значительно больше её выходного сопротивления, т. е. примем <em>I</em><span class="indexsmallDigit">2</span>(<em>p</em>) = 0: </p>
+                    <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gifs/f_74.gif" width="338" height="15"></p>
+                    <p class="text">Тогда передаточная функция по напряжению обобщённой цепи </p>
+                    <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gifs/f_75.gif" width="356" height="15"></p>
+                    <p class="text">Очевидно, что передаточная функция <em>H<span class="indexsmall">u</span></em>(<em>p</em>) обобщённой цепи может быть пропорциональной оператору <em>р </em> или 1/<em>p </em>только при </p>
+                    <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gifs/f_76.gif" width="129" height="19"></p>
+                    <p class="text">В этом случае (пренебрегая единицей в знаменателе) имеем: </p>
+                    <p class="text"><img src="gifs/f_77.gif" width="194" height="15" align="absmiddle">для <strong class="head2">дифференцирующей </strong> цепи, равносильное условию, что постоянная времени<span class="symbol"> t </span>= <em>L</em>/<em>R</em> или <em class="symbol">t</em> = <em>RC</em> (см. рис. 4.56, <em> а </em> и <em>б</em>) намного меньше длительности дифференцируемого сигнала; </p>
+                    <p class="text"><img src="gifs/f_78.gif" width="183" height="15" align="absmiddle">для <strong class="head2">интегрирующей </strong>цепи, равносильное условию, что постоянная времени цепи <em class="symbol">t </em>(см. <!--<a href="#" onMouseOver="stm(Text[0],Style[0])" onMouseOut="htm()">-->рис. 4.59<!--</a>--> <em>а </em> и <em>б</em>) должна быть значительно больше интервала интегрирования. </p>
+                    <p class="text">Из условия <img src="gifs/f_79.gif" width="124" height="19" align="absmiddle"> следует, что выходной сигнал <em>u</em><span class="indexsmallDigit">2</span> значительно меньше входного <em>u</em><span class="indexsmallDigit">1</span>, что требует применения усилительных устройств или использования других схем, имеющих активные элементы. </p>
+
+                </div></td>
+              </tr>
+            </table></td>
+          <td></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td height="20"><a href="ex_4_6.htm"><img src="../../../images/back.gif" width="60" height="32" border="0"></a> </td>
+    <td>
+      <div align="right"><a href="../questions.htm"><img src="../../../images/forward.gif" width="70" height="32" border="0"></a></div></td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<HTML><HEAD>
+<TITLE>Search Engine Builder Standard -- Search this site</TITLE>
+</HEAD>
+
+<BODY> 
+
+<!-- You can copy the following search FORM code and insert it to where you want to display a search box on a web page. -->
+<!-- You can modify the src. For example, modify to src="../webdata.js" if the file "webdate.js" is in the parent folder of the search page. -->
+<!-- Don't modify the name of the FORM and INPUT -->
+
+
+
+<!-- ********** BEGIN Search Engine Builder Code for search engine ********** -->
+<FORM name="formSear" action="search.html" method="GET" onSubmit="return OnSearchSubmit()">
+<P align="center">
+<table border=0 width="100%">
+<tr valign=baseline>
+  <td width="736">
+  <p align="center">
+  <INPUT TYPE="text" NAME="searWords" SIZE="41" MAXLENGTH="100" VALUE="">
+  <INPUT name="Send" type="submit" value="Искать">
+  </p> 
+  </td>
+</tr>
+<tr>
+<td valign=top width="100%">
+<p align="center">искать в   
+<select name=search> 
+<OPTION selected value=0>тексте</OPTION> 
+<OPTION value=1>заголовках</OPTION> 
+<OPTION value=2>ключевых словах</OPTION> 
+<OPTION value=3>описаниях</OPTION>
+<OPTION value=4>имени файла</OPTION>
+</select> &nbsp; по     
+<select name=match> 
+<OPTION value=0>всем словам</OPTION> 
+<OPTION value=1>любому слову</OPTION> 
+<OPTION value=2>точное совпадение</OPTION> 
+</select>  
+  </td> 
+</tr>  
+</table>
+</FORM>
+<p align="left">
+
+
+<!-- The following include codes are to generate search results, so you can move them to where you want to show search result. -->
+<script type="text/javascript" language="JavaScript" src="webdata.js"> </script>
+<script type="text/javascript" language="JavaScript" src="searchfunc.js"> </script>
+<!-- ********** END Search Engine Builder Code for search engine ********** -->
+
+
+
+<!-- If you want to use IFRAME, you need to set the output style to "Output to iframe in the search page" in the "Options" dialog of the program.
+Otherwise please remove the following line (). -->
+      
+
+
+</BODY> 
+</HTML>

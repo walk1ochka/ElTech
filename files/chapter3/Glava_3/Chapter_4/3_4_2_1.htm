@@ -1,0 +1,257 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.4.6.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter4/4.4.6.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<title>3.4.2.1. Операторные сопротивления пассивных элементов цепи.</title>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align="center">
+        <span style='font-size:14pt; font-family:Arial;color:darkblue;'><b>3.4.2.1. Операторные сопротивления пассивных элементов цепи <br></b></span>
+                     <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:10pt;margin-left:23pt;color:blue;"><b>Будем рассматривать функции <i>e</i>(<i>t</i>), <i>u</i><span class="indexsmall"><b>C</b></span>(0<span class="indexsmall"><b>-</b></span>) и <i>i</i>(<i>t</i>) как функции-оригиналы, имеющие изображения <i>E</i>(<i>p</i>),  <em>u</em><span class="indexsmall"><b>C</b></span>(0<span class="indexsmall"><b>-</b></span>)/<i>p </i>и </b><br></span>
+                   <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:12pt;margin-left:43pt"><b><em>I</em>(<i>p</i>) = L[<em>i</em>(<em>t</em>)] = <img src="gifs/f_63.gif" align="absmiddle" weight="70" height="52"></b><br>                  
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>Тогда изображение напряжения на резисторе <i>R </i> равно <em>U</em><span class="indexsmall"><em><b>R</b></em></span>(<em>p</em>) = L[<i>Ri</i><span class="indexsmall"><b><em>R</em></b></span>(<em>t</em>)] =<i> RI</i>(<em>p</em>), а <span style='color:red;'>операторное сопротивление резистора (согласно закону Ома) </b><br></span>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><b><em>Z</em><span class="indexsmall"><b><em>R</em></b></span>(<em>p</em>) = <i>U</i><span class="indexsmall"><i><b>R</b></i></span>(<em>p</em>)/<i>I</i><span class="indexsmall"><i><b>R</b></i></span>(<i>p</i>) = <i>R</i>.</b> <span style='margin-left:310pt;font-size:12pt; font-family:Arial'><b>(3.12)</b> <br>
+                    
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>Изображение напряжения на зажимах индуктивной катушки <em>L </em></b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:1pt;margin-left:43pt"><b><em>U</em><span class="indexsmall"><b>L</b></span>(<em>p</em>) = L[<em>u</em><span class="indexsmall"><b>L</b></span>(<em>t</em>)] = L[<em>Ldi</em><span class="indexsmall"><b>L</b></span>(<em>t</em>)/ <em>dt </em>] = <img src="gifs/f_646566.gif"  align="middle" height="54"></b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:1pt;margin-left:43pt"><b>=<img src="gifs/f_6768.gif" align="absmiddle" height="55"></em>
+                  </b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:0pt"><b>где <img src="gifs/f_69.gif" align="absmiddle" height="31">                  </b><br>                  
+                 <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>Итак,</b><br>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><b><i>d</i>[<i>f</i>(<em>t</em>)]/<em>dt</em> = <i>pF</i>(<em>p</em>)  &#8211; <em>f</em>(0<span class="indexsmalldigit"><b>+</b></span>), <span style='margin-left:310pt;font-size:12pt; font-family:Arial'>(3.13)</b> </b><br>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:0pt"><b>где под <em>f</em>(0<span class="indexsmalldigit"><b>+</b></span>) подразумевают предел функции, к которому она стремится, когда время <em>t </em> неограниченно убывает, оставаясь положительным, т. е. для получения изображения производной по времени достаточно изображение оригинала умножить на оператор <em>р</em> и вычесть его начальное значение при <em>t</em> = 0<span class="indexsmalldigit"><b>+</b></span>.</b><br>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>При <em>f</em>(0<span class="indexsmallDigit"><b>+</b></span>) = 0 дифференцированию оригинала (во временной области) соответствует операция умножения изображения на оператор <em> р</em>:</b><br>
+                 <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><b><i>d</i>[<em>f</em>(<em>t</em>)]<i>/</i><em>dt</em> = <em>pF</em>(<em>p</em>).<span style='margin-left:344pt;font-size:12pt; font-family:Arial'>(3.14)</b> <br>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>При <em>i</em><span class="indexsmall"><b>L</b></span>(0<span class="indexsmallDigit"><b>+</b></span>) <em>= i</em><span class="indexsmall"><b>L</b></span>(0<span class="indexsmallDigit"><b>-</b></span>) = 0 (HHУ) изображение напряжения на элементе <em>L </em> равно <i>U</i><span class='indexsmall'><b>L</b></span>(<i>p</i>) = <em>LpI</em>(<em>p</em>). <span style='color:red;'>Откуда операторное индуктивное сопротивление катушки: </b><br</span></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><b><em>Z</em><span class="indexsmall"><b>L</b></span>(<em>p</em>) <em>= </em><em>U</em><span class="indexsmall"><b>L</b></span>(<em>p</em>)/<em>I</em>(<em>p</em>)  = <em>Lp</em>.</b></span>
+                      <span style='margin-left:310pt;font-size:12pt; font-family:Arial'>(3.15<b>) </b><br>
+                   <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>Изображение напряжения на зажимах конденсатора <em> С </em>  </b><br>                
+                  <span style="font-size:12pt;font-family:Arial"><span style="margin-left:40pt"><i>U</i><span class="indexsmall"><b>C</b></span>(<em>p</em>) = L[<em>u</em><span class="indexsmall"><b>C</b></span>(<em>t</em>)] = <strong>L <img src="gifs/f_70.gif" align="middle" height="68"></strong></b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>Определим интеграл в правой части равенства. Применяя формулу (3.14) к равенству <img src="gifs/f_71.gif" align="absmiddle" height="63"> получим </b><br>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:43pt"><b><i>p</i>L<img src="gifs/f_72.gif" align="absmiddle" height="64"> и  L<img src="gifs/f_73.gif" align="absmiddle" height="64"><span style='margin-left:230pt;font-size:12pt; font-family:Arial'>(3.16)</b> <br>
+                 <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:0pt"><b>т. е. для получения изображения интеграла от функции времени  (тока в нашем случае) в пределах от 0<span class="indexsmalldigit"><b>+</b></span> до <em>t</em> достаточно разделить её изображение на оператор <em>р</em>. </b><br>
+                <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b> Итак, изображение напряжения конденсатора с начальным зарядом </b> <br>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:1pt;margin-left:43pt"><img src="gifs/f_74.gif"  align="absmiddle" height="46">
+  <span style='margin-left:267pt;font-size:12pt; font-family:Arial'><b>(3.17)</b><br>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:0pt"><b>а без начального заряда <em>u</em><span class="indexsmall"><b>C</b></span>(0<span class="indexsmall"><b>&#8722;</b></span>) = 0, <em>U</em><span class="indexsmall"><b>C</b></span>(<em>p</em>) = <i>I</i>(<i>p</i>)/(1/<em>pC</em>) </b>.<br>
+                  
+                 <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b> <span style='color:red;'>Отсюда операторное ёмкостное сопротивление конденсатора </b><br></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:43pt"><b><img src="gifs/f_75.gif" weight="140" height="28"><span style='margin-left:275pt;font-size:12pt; font-family:Arial'>(3.18</b>)</b><br>
+                         
+                <a href="3_4_2_2.htm"><span style="font-size:12pt;font-family:Arial"><span style="margin-left:40pt;color:blue;"><b>3.4.2.2. Операторные схемы замещения и компонентные уравнения пассивных элементов;</a></b><br>
+<span style="position:relative;top:0pt"><a href="tabl_3_3.htm"><span style="font-size:12pt;font-family:Arial"><span style="margin-left:40pt;color:blue;"><b>Таблица 3.3;</a></b><br>
+<span style="position:relative;top:0pt"><a href="3_4_2_3.htm"><span style="font-size:12pt;font-family:Arial"><span style="margin-left:40pt;color:blue;"><b>3.4.2.3. Законы Ома и Кирхгофа в операторной форме;</a></b><br>
+<span style="position:relative;top:0pt"><a href="upr_3_7.htm"><span style="font-size:12pt;font-family:Arial"><span style="margin-left:40pt;color:blue;"><b>Упражнение 3.7.</a></b><br><br>
+      
+  <tr>
+    <td height="20"><br><br><a href="../Chapter_4/3_4_2.htm"><img src="../../../images/back.gif" width="60" height="20" border="0" align="left"></a> </td>
+    <td>
+      <div align="right"><a href="../Chapter_4/3_4_2_2.htm"><img src="../../../images/forward.gif" width="70" height="22" border="0" align="right"></a></div></td>
+  </tr>
+</body></html>

@@ -1,0 +1,305 @@
+<!-- DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd" -->
+<html><head>
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter7/7.3.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter7/7.3.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>6.3.2. 
+  Опыт короткого замыкания</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="File-List" href="page732_files/filelist.xml">
+
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+<style type="text/css">
+<!--
+.style7 {font-size: 12px}
+-->
+</style>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+font-family:"Arial";}
+h1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-weight: normal;
+                  font-family:"Arial";}
+
+h2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial";
+	font-weight:normal;
+	font-style:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom: 0pt;
+	text-align:justify;
+	text-indent:21.3pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:24.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.5pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+body {
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color: #000000;
+  scrollbar-shadow-color: #3f4447;
+  scrollbar-face-color: #d3d3d3;
+  scrollbar-highlight-color: #d3d3d3;
+  scrollbar-dark-shadow-color: #FFFFFF;
+  scrollbar-3d-light-color: #000000;
+}
+.head1 {
+	font-size: 16px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+.head2 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: norml;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+	font-weight:normal;
+                  line-height: 16px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: bold;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style:italic; 
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.Symbol {
+	font-size: 16px;
+	font-family: Symbol;
+	font-weight: bold;
+	color: #000000;
+	font-style: normal;
+	letter-spacing: 2px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight:normal;
+}
+.indexsmalldigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif, bold;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexbigest {
+	font-size: 10px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight:normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 30%;
+}
+-->
+</style>
+</head>
+<body style="word-spacing: 0; text-align: left; text-indent: 0; line-height: 100%; margin-left: 2; margin-right: 0; margin-top: 0; margin-bottom: 0">
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style122.js" type="text/javascript"></SCRIPT>
+  <table width="97%" height="98%" border=".2" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+<div align="center"> 
+       <span style='position:relative;top:20pt;left:0pt;right:0pt'><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>6.3.2. Опыт короткого замыкания</b><br></span>
+
+<div align="left" class="head1"><span style='position:relative;top:8pt;left:5pt;right:4pt'><span style='font-size:12pt;font-family:Arial;color:#d60093;'> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>При опыте КЗ вторичную обмотку замыкают накоротко (рис. 6.6), а к первичной подводят пониженное напряжение <i>U</i><span class="indexsmalldigit"><b>1к</b></span> = (0,05...0,1) <i>U</i><span class="indexsmalldigit"><b>1н</b></span>,  при котором токи в обмотках  равны номинальным токам, т. е. <i>I</i><span class="indexsmalldigit"><b>1</b></span> = <i>I</i><span class="indexsmalldigit"><b>1к</b></span> = <i>I</i><span class="indexsmalldigit"><b>1н</b></span> и <i>I</i><span class="indexsmalldigit"><b>2</b></span> = <i>I</i><span class="indexsmalldigit"><b>2к</b></span> = <i>I</i><span class="indexsmalldigit"><b>2н</b></span>. При пониженном напряжении <i>U</i><span class="indexsmalldigit"><b>1</b></span> = <i>U</i><span class="indexsmalldigit"><b>1к</b></span> магнитный поток в сердечнике Ф мал, поэтому потерями мощности в стали &#916;<i>Р</i><span class="indexsmalldigit"><b>cm</b></span> трансформатора пренебрегают.</b> <br></span>
+    <div align="left" class="head1"><span style='position:relative;top:4pt'><left:22pt><span style='font-size:12pt;font-family:Arial;color:#5a5acc;'> &#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>Так как в реальном трансформаторе сопротивления <i>R</i><span class="indexsmalldigit"><b>0</b></span> &gt;&gt; (<i>R</i><span class="indexsmalldigit"><b>1</b></span> + <i>R</i>'<span class="indexsmalldigit"><b>2</b></span>) и <i>X</i><span class="indexsmalldigit"><b>0</b></span> &gt;&gt; (<i>X</i><span class="indexsmalldigit"><b>1</b></span> + <i>Х</i>'<span class="indexsmalldigit"><b>2</b></span>), то в схеме замещения исключают поперечную ветвь. При этом показание ваттметра приближенно равно активным потерям в обмотках (потерям в меди).</b></span><br></span><br><br>
+     <span style='position:relative;top:12pt'>&#160;&#160;&#160;&#160;&#160;&#160;&#160;  <img src="page632/image001.gif" align='left' hspace='20' vspace="16">
+
+<div align="left"><span style='position:relative;top:-40pt'><span style='font-size:12pt;font-family:Arial'> &#160;&#160;&#160;&#160;&#160;&#160;&#160; <b>Откуда </b>
+<div align="left" class="head1"><span style='position:relative;top:0pt'><span style='font-size:12pt;font-family:Arial'> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="page632/f2.jpg" width='436' height='89pt'><br>
+<div align="left" class="head1"><span style='position:relative;top:6pt'><span style='font-size:12pt;font-family:Arial;color:#d00093;'> &#160;&#160;&#160;&#160;&#160;&#160;&#160;<b>В каталожных данных на силовой трансформатор кроме значений номинальной мощности <i>S</i><span class="indexsmalldigit"><b>н</b></span> в кВ&#183;А и номинальных напряжений <i>U</i><span class="indexsmalldigit"><b>1н</b></span>/<i>U</i><span class="indexsmalldigit"><b>2н</b></span> приводят также значения потерь в стали  &Delta;<i>P</i><span class="indexsmall"><b>cm</b></span> = <i>P</i><span class="indexsmalldigit"><b>0</b></span> и в меди &Delta;<i>P</i><span class="indexsmalldigit"><b>м</b></span>. Значения тока ХХ и напряжения КЗ трансформатора выражают в процентах: </b><br></span>
+<div align="left" class="head1"><span style='position:relative;top:2pt'><span style='font-size:12pt;font-family:Arial'> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<img src="page632/f3.jpg" width='460' height='45'></b></span>
+</div>
+
+    
+<tr>
+      
+<td height="20"><span style='position:relative;top:-30pt;'><a href="page631.html"><img src="../images/back.gif" width="60" height="20" border="0" left="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><span style='position:relative;top:-30pt;'> <a href="page64.html"><img src="../images/forward.gif" width="70" height="22" border="0" right='0'></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

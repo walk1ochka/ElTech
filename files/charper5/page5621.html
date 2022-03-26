@@ -1,0 +1,309 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.6.2.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.6.2.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<style type="text/css">
+<!--
+.style1 {font-style: italic}
+-->
+</style>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:01pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:0pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:0pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight:normal;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing:0px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="../charper1/style11.js" type="text/javascript"></SCRIPT>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="ctnter"> 
+        <span style='font-size:14pt;font-family:Arial;color:darkblue;'><b> 5.6.2.1. Классификация и принципы действия реле</b><br></span>
+        <div align='left'><span style="position:relative;top:5pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:red;'><b>Электромагнитное реле (ЭМР) имеет два или более устойчивых состояний в зависимости от системы управления реле. Основными параметрами электромагнитных реле являются: мощность срабатывания (10<span class='indexbigdigit'><b>-3</b></span>…10<span class='indexbigdigit'><b>3</b></span>&#160; Вт), коммутируемая мощность (10<span class='indexbigdigit'><b>-1</b></span>… 10<span class='indexbigdigit'><b>-4</b></span>&#160; Вт), которая определяется параметрами контактов реле, время срабатывания (1 … 200 мс) и отпускания, размеры и масса, надёжность.</b><br></span>
+       <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:blue;'><b>По принципу действия различают электромагнитные реле нейтральные постоянного и переменного тока и поляризованные.</b><br></span>
+        <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:#d00093;'><b>По характеру движения якоря электромагнитные реле делятся на три группы: поворотные (рис. 5.49<em>а</em>), с втяжным якорем (рис. 5.49<em>б</em>) и язычкового типа (рис. 5.49<em>в</em>).</b><br></span>
+        <div align='left'><span style="position:relative;top:0pt;margin-left:43pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><img src="images/image549.gif" width="617" height="220"></b><br>
+        <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:black;'><b>На рис. 5.49<em>а</em> приведена схема конструкции поворотного ЭМР постоянного тока. Реле состоит из магнитопровода <em>1</em>, сердечника <em>2</em>, катушки <em>3</em>, якоря <em>4</em>, контактов <em>5</em>, пружины <em>6</em>. Если к катушке подвести управляющий сигнал (электрическое напряжение), то за счёт возникновения электромагнитной силы якорь притянется к сердечнику электромагнита. В результате этого контакты реле замкнутся. Если управляющий сигнал снять, то якорь возвратится в прежнее положение под действием пружины <em>6</em>, и контакты реле будут разомкнуты.</b><br></span>
+        <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><span style='color:red;'>Принцип действия реле с втяжным якорем (см. рис. 5.49<em>б</em>) </span>так же, как и поворотных реле, основан на притяжении якоря <em>1</em> к сердечнику <em>2</em> электромагнита, на катушку <em>3</em> которого подаётся управляющий сигнал. При этом поднимается контактная перемычка <em>4</em>, замыкая контакты <em>5</em>. При снятии управляющего сигнала якорь под действием силы тяжести опускается на упоры <em>6</em>, размыкая контакты. </b><br></span>
+       <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><span style='color:red;'>В реле язычкового типа, называемого герконом (см. рис. 6.49<em>в</em>)</span>, контакты, расположенные на пластинах <em>2</em> из ферромагнитного материала - пермалоя помещены внутри герметизированного стеклянного баллона <em>1</em>, наполненного инертным газом. При подаче управляющего сигнала на катушку <em>3</em> этого реле под воздействием магнитного поля пластины <em>2</em> замыкаются. Реле способно коммутировать мощность порядка 20 Вт. </b><br>
+      <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b>Преимущества герконов по сравнению с двумя предыдущими типами реле &#8211; по габаритам, быстродействию и надёжности. Недостатком герконовых реле является повышенная чувствительность к внешним магнитным полям. Для уменьшения их влияния геркон помещают в экранирующий корпус из магнитно-мягкого материала. </b><br></span>
+       <div align='left'><span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:blue;'><b>Обычно для сердечников и магнитопроводов реле используют материалы с большой магнитной проницаемостью, чаще всего электротехническую сталь. Контакты малой мощности изготавливают из серебра, золота, платино-иридиевого и других сплавов. Эти материалы создают малое переходное сопротивление. Для коммутации относительно мощных цепей применяют контакты, изготовленные из вольфрама, а также из сплавов вольфрама с серебром и из меди и графита. </p></span </b>
+       
+    <tr> 
+      <td height="20"><a href="../charper5/page5611.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> </td>
+      <td>
+      <div align="right"><a href="../charper5/page5622.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div></td>
+    </tr>
+</body>
+</html>

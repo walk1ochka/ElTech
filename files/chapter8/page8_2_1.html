@@ -1,0 +1,315 @@
+<html>
+<head>
+<title>8.2.1. ЭДС генератора </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter10/10.2.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter10/10.2.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:22pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:30.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:24.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 14px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 14px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 16px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 14px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing: .1px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexbigEST {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align:25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        <div align="center"><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>8.2.1. ЭДС генератора</b> <br>
+     <div align="left"><span style='position:relative;top:3pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:14pt;color:blue'><b> При работе синхронной машины в качестве генератора возбужденный ротор приводится во вращение с частотой <i>n</i><span class="indexsmalldigit"><b>2</b></span>  внешним механическим моментом (например, моментом гидравлической или паровой турбины).</b><br></span>
+             <div align="left"><span style='position:relative;top:4pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;color:black'> <b><span style='color:red;'>Магнитодвижущая сила ОВ</span> создаёт магнитный поток Ф<span class="indexsmalldigit"><b>в</b></span>, неподвижный относительно полюсов <i>N&#8211;S</i> и замыкающийся через сердечник статора (см. рис. 8.1<i>а</i>). <span style='color:red;'>Вращающимся магнитным потоком Ф<span class="indexsmalldigit"><b>в</b></span></span> в фазах статорной обмотки индуктируются ЭДС <i>Е</i><span class="indexsmalldigit"><b>я</b></span>  с частотой <i>f</i><span class="indexsmalldigit"><b>1</b></span> = <i>pn</i><span class="indexsmalldigit"><b>2</b></span><i> / </i>60, смещённые во времени на электрический угол 120°.  </b><br></span>
+ <span style='position:relative;top:2pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:black;'><b> Рассмотрим ЭДС, индуктируемую в фазе обмотки статора. Конструкция машины обеспечивает синусоидальное распределение магнитной индукции <i>В</i> полюсов в воздушном зазоре, вследствие чего при вращении ротора (индуктора) с частотой <i>n</i><span class="indexsmalldigit"><b>2</b></span> = <i>n</i><span class="indexsmalldigit"><b>0</b></span> в каждом витке обмотки создаётся синусоидально изменяющаяся ЭДС <i>e</i><span class="indexsmalldigit"><b>1</b></span> = 2<i>B</i><span class="indexsmall"><b>i</b></span><i>lv</i>, где <i>B</i><span class="indexsmall"><b>i</b></span> &#8211; магнитная индукция в местах нахождения проводников длиной <i>l</i>  витка обмотки; <i>v</i> = &#960;<i>dn</i><span class="indexsmalldigit"><b>0</b></span><i> / </i>60 &#8211; скорость вращения ротора. При числе витков <i>w</i> фазной обмотки статора максимальное значение индуктированной в ней  ЭДС </b><br></span>
+   <span style='position:relative;top:4pt;margin-left:43pt;font-size:12pt;font-family:Arial'> <b><i>E</i><span class="indexsmall"><b>m</b></span> = 2<i>wB</i><span class="indexsmall"><b>m</b></span><i> lv</i>, </b> <br>
+ <span style='position:relative;top:2pt;margin-left:0pt'><span style='font-size:12pt;font-family:Arial'><b> где <i>B</i><span class="indexsmall"><b>m</b></span> &#8211; максимальное значение магнитной индукции над полюсом ротора.</b><br></span>  
+          <div align='left'>  <span style='position:relative;top:2pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;color:#D60093;'> <b>Заменив синусоидальное распределение магнитной индукции в зазоре средним значением <i>B</i><span class="indexsmalldigit"><b>cp</b></span> = 2<i>B</i><span class="indexsmall"><b>m</b></span><i> / </i>&#960; (<i>B</i><span class="indexsmall"><b>m</b></span> = &#960;<i>B</i><span class="indexsmalldigit"><b>cp</b></span> <i>/ </i> 2) и преобразовав, имеем <i>E</i><span class="indexsmall"><b>m</b></span> = 2&#960;<i>w</i>(<i>pn</i><span class="indexsmalldigit">0</span> <i>/ </i>60)<i>l</i>&#964;<i>B</i><span class="indexsmall"><b>cp</b></span>, где &#964; = &#960;<i>d</i> / </i>2<i>p</i> &#8211; полюсное деление.</b><br></span>
+             <span style='position:relative;top:2pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial'> <b>Учитывая, что произведение <i>l</i>&#964; = <i>S</i> &#8211; сечение поверхности, пронизываемой магнитным потоком Ф<span class="indexsmalldigit"><b>в</b></span>= <i>В</i><span class="indexsmalldigit"><b>ср</b></span><i>S</i> полюса, получим действующее значение ЭДС </b><br></span>
+           <span style='position:relative;top:2pt;margin-left:43pt;'font-size:12pt;font-family:Arial'> <img height="40pt" src="page8_2_1/f4.gif" hspace="1" align="middle" > <span style='position:relative;top:0pt;margin-left:220pt'><b>(8.2)</b><br></span>
+              <span style='position:relative;top:0.1cm;margin-left:0pt;font-size:12pt;font-family:Arial'><b> где <img src="page8_2_1/f5.gif" hspace="1" align="middle" height="40pt"> &#8211; постоянный коэффициент ЭДС, зависящий от конструктивных особенностей синхронной машины; <i>k</i><span class="indexsmalldigit"><b>оя</b></span> &#8211; обмоточный коэффициент фазы статора.</b><br></span>
+            <span style='position:relative;top:2pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;color:#dc143c;'><b>Таким образом, частота <i>f</i><span class="indexsmalldigit"><b>1</b></span> ЭДС <i>Е</i><span class="indexsmalldigit"><b>я</b></span> якоря пропорциональна частоте вращения ротора, а её неизменность обеспечивается условием <i>n</i><span class="indexsmalldigit"><b>0</b></span> = const. Регулирование величины ЭДС <i>Е</i><span class="indexsmalldigit"><b>я</b></span> (напряжения <i>U</i> ) на выходе генератора осуществляют изменением магнитного потока Ф<span class="indexsmalldigit"><b>в</b></span>, точнее, изменением тока возбуждения <i>I</i><span class="indexsmalldigit"><b>в</b></span> в обмотке <i>ОВ</i> (см.&nbsp;рис.&nbsp;8.2). </b></span><br><br><br>
+            
+    <tr>
+    <td height="20"><a href="page8_2.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> 
+      <td>
+        
+<div align="right"><a href="page8_2_2.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

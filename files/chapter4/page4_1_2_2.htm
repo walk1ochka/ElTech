@@ -1,0 +1,239 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1))  
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter4/4.1.2.2.wma LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter4/4.1.2.2.wma AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>5.1.4. Формы записи ряда Фурье</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+// End --> 
+</SCRIPT>
+</style>
+</head>
+<body>
+       
+<br><br><div align="center"><span style="font-size:14pt; font-family:Arial;color:darkblue;"><b>4.1.2.2.  Амплитудно-фазовая форма записи ряда Фурье</b><br></span>
+
+            
+            <div align='left'><span style="position:relative; top:12pt; font-size:12pt; font-family:Arial"><span style="margin-left:23pt;line-height:15pt;color:#d00093;"><b>Амплитудно-фазовая форма записи вещественного ряда Фурье периодической несинусоидальной функции <i>s</i>(<i>t</i>) имеет следующий вид: </b><br></span>
+            
+                <div align='left'><span style="position:relative; top:9pt; font-size:12pt; font-family:Arial"><span style="margin-left:23pt;line-height:15pt"><b><i>s</i>(<i>t</i>) = <i>s</i><span class='indexsmalldigit'><b>0</b></span> + <i>s</i><span class='indexsmalldigit'><b>1</b></span>(<i>t</i>) + <i>s</i><span class='indexsmalldigit'><b>2</b></span>(<i>t</i>) + ... + <i>s</i><span class='indexsmalldigit'><b><i>k</i></b></span>(<i>t</i>)<i> = a</i><span class='indexsmalldigit'><b>0</b></span>/2 + <i>A</i><span class='indexsmalldigit'><b>1<i>m</i></b></span>sin(&#969;<span class='indexsmalldigit'><b>1</b></span><i>t</i> + &#936;<span class='indexsmalldigit'><b>1</b></span>) + <i>A</i><span class='indexsmalldigit'><b>2<i>m</i></b></span>sin(&#969;<span class='indexsmalldigit'><b>2</b></span><i>t</i> + &#936;<span class='indexsmalldigit'><b>2</b></span>) + ... + <i>A</i><span class='indexsmalldigit'><b><i>mk</i></b></span>sin(&#969;<span class='indexsmalldigit'><b><i>k</i></b></span><i>t</i> + &#936;<span class='indexsmalldigit'><b><i>k</i></b></span>),   <div align="right"><span style="position:relative;top:-12pt"><b>(4.1)</b><br>
+              
+           <div align='left'><span style="position:relative;top:3pt;font-size:12pt;font-family:Arial"><span style="margin-left:0pt;line-height:15pt"><b>где</b> <i>а</i><span class="indexsmalldigit"><b>0</b></span>/2 &#8211; постоянная  составляющая; <i>s</i><span class="indexsmalldigit"><b>1</b></span>(<i>t</i>) = <sup><img src="page4_1_4_1/page5_1_4_1_clip_image002.gif" width="125" height="24" align="absmiddle"></sup> &#8211; основная гармоника c основной частотой <br>&#969;<span class='indexsmalldigit'><b>1</b></span> = 2&#960;/<i>T</i>; <i>s</i><span class='indexsmalldigit'><b>2</b></span>(<i>t</i>), ... , <i>s</i><span class='indexsmalldigit'><b><i>k</i></b></span>(<i>t</i>) &#8211; высшие  (кратные частоте &#969;<span class="indexsmalldigit"><b>1</b></span>) гармоники; <i>A</i><span class='indexsmalldigit'><b><i>mk</i></b></span> и &#936;<span class='indexsmalldigit'><b><i>k</i></b></span> &#8211; амплитуда и начальная фаза <i>k</i>-й гармоники.</b><br> 
+    <div align='left'><span style="position:relative; top:8pt; font-size:12pt; font-family:Arial"><span style="margin-left:33pt;line-height:15pt"><a href="page4_1_4_2.htm"><b> &#8226; тригонометрическая (вещественная) форма записи,</a><br>
+
+<div align='left'><span style="position:relative; top:8pt; font-size:12pt; font-family:Arial"><span style="margin-left:33pt;line-height:15pt"><a href="page4_1_4_3.htm"><b> &#8226; запись ряда Фурье в компактном виде,</a><br>
+
+<div align='left'><span style="position:relative; top:8pt; font-size:12pt; font-family:Arial"><span style="margin-left:33pt;line-height:15pt"><a href="page4_1_4_4.htm"><b> &#8226; запись ряда Фурье в комплексной форме. </b><br> <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <tr>
+      
+    <td height="20"><a href="page4_1_2_1.htm"><img src="../images/back.gif" width="60" height="20" border="0" align='left'></a> 
+    </td>
+      <td>
+        
+<div align="right"><a href="page4_1_2_3.htm"><img src="../images/forward.gif" width="70" height="22" border="0" align='right'></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

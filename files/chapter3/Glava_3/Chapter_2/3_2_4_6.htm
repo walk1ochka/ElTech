@@ -1,0 +1,239 @@
+<html>
+<head>
+<title>4.2.4.6. Определение постоянных интегрирования при комплексно-сопряжённых корнях</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+ var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.2.4.6.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter4/4.2.4.6.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align="center"><span style='font-size:14pt; font-family:Arial;color:darkblue;'><b>3.2.4.6. Определение постоянных интегрирования при комплексно-сопряжённых корнях<br></b></span>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:5pt;margin-left:23pt"><b>При соотношении параметров <em>RLC-</em>цепи:<span style="position:relative;top:-1pt"><img src="gen_gifs/3_2_4_6_clip_image002.gif" width="110" height="26" align="absmiddle"> &#160;или<img src="gen_gifs/3_2_4_6_clip_image004.gif" width="64" height="26" align="absmiddle">корни уравнения <img src="gen_gifs/3_2_4_6_clip_image006.gif" width="118" height="27" align="absmiddle"> комплексно-сопряжены: </b><br>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><img src="gen_gifs/3_2_4_6_clip_image008.gif"width="335" height="32"  align="absmiddle">, <br><span style="font-size:12pt;font-family:Arial"><span style="margin-left:0pt"><b>где <img src="gen_gifs/3_2_4_6_clip_image010.gif" width="71" height="21" align="absmiddle"> &#8211; коэффициент затухания  и <img src="gen_gifs/3_2_4_6_clip_image012.gif" width="42" height="27" align="absmiddle"><img src="gen_gifs/3_2_4_6_clip_image014.gif" width="75" height="32" align="absmiddle"> &#8211; угловая частота свободных (собственных) колебаний реального контура; <img src="gen_gifs/3_2_4_6_clip_image016.gif" width="80" height="27" align="absmiddle"> &#8211; собственная частота идеального контура (при <em>R = </em>0). </b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>Общее решение уравнения (3.7) ищут в виде: </b><br>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:1pt;margin-left:43pt"><b><img src="gen_gifs/3_2_4_6_clip_image018.gif" width="250" height="30"align="absmiddle"> или <img src="gen_gifs/3_2_4_6_clip_image020.gif" width="250" height="30" align="absmiddle">,</b><br>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:0pt"><b>где <em>i</em><span class="indexsmalldigit"><b>y</b></span> = 0 при <em>е</em>(<em>t</em>) = <em>U = </em>const. </b>
+                   <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>Постоянные <em>A</em><span class="indexsmalldigit"><b>1</b></span> и <em>A</em><span class="indexsmalldigit"><b>2</b></span> (или <em>A </em>и <i>&#947;</i>) находят из начальных условий: <em>i</em>(0<span class="indexsmall"><b>+</b></span>) = <em>i</em>(0<span class="indexsmall"><b>-</b></span>) = 0; откуда <em>A</em><span class="indexsmalldigit"><b>2</b></span> = 0 и ток <sub><img src="gen_gifs/3_2_4_6_clip_image022.gif" width="155" height="31"></sub></sub></sub></span>
+<span style="position:relative;top:-12pt">. Производная тока&#160;<span style="position:relative;top:6pt;"><img width="322" height="29" src="gen_gifs/3_2_4_6_clip_image024.gif"><span style="position:relative;top:-6pt;margin-left:0pt">.</b>
+               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:-6pt;margin-left:23pt"><b>При <em>t = </em>0<span class="indexsmall"><b>+</b></span>, <em><img src="gen_gifs/3_2_4_6_clip_image026.gif" width="165" height="25" align="middle"></em> (см. (3.8)).  Откуда <em>A</em><span class="indexsmalldigit"><b>1</b></span> = <img src="gen_gifs/3_2_4_6_clip_image028.gif" width="35" height="44" align="absmiddle"> и ток <img src="gen_gifs/3_2_4_6_clip_image030.gif" width="143" height="45" align="middle">. </b></span><br>
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:-6pt;margin-left:23pt"><b>По аналогии, определим постоянные интегрирования <em>А </em>и <i>&#947;</i>. Ток при <em>t </em> = 0<span class="indexsmall"><b>+</b></span>, <em>i </em>(0<span class="indexsmall"><b>+</b></span>) <em>= </em>0; <img src="gen_gifs/3_2_4_6_clip_image032.gif" width="80" height="39" align="middle">; <em>A</em>sin&#947; = 0; &#947; = 0; 
+                    <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:43pt"><img src="gen_gifs/3_2_4_6_clip_image034.gif" width="39" height="40" align="absmiddle"> = &#8211;&#945;<i>Ae</i><sup><b>&#8211;&#945;</b><i><b>t</i></b> </sup>sin(&#969;<span class="indexsmall"><b>c</b></span><em>t + &#947;</em>) + &#969;<span class="indexsmall"><b>c</b></span><em>Аe</em><sup><b>&#8211;&#945;<i>t</i></b></sup>cos(&#969;<span class="indexsmall"><b>c</b></span><em>t + &#947;</em>); &#160;<img src="gen_gifs/3_2_4_6_clip_image042.gif" width="47" height="36" align="middle">= &#969;<span class="indexsmall"><b>c</b></span><em>A = U/L</em>.</b>
+                   <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt;color:red;"><b>Откуда <i>A = U</i> / (&#969;<span class="indexsmalldigit"><b>c</b></span><i>L</i>). В результате получим ток <i>i</i>(<i>t</i>) = [<i>U</i> / (&#969;<span class='indexsmalldigit'><b>c</b></span><i>L</i>)][<i>e</i><span class='indexbigdigit'><b>&#8211;&#945;<i>t</i></b></span>sin&#969;<span class='indexsmalldigit'><b>c</b></span><i>t</i>]. </span></b></br><br></span>
+<div align='left'>
+<a href="3_2_4_7.htm"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:40pt"><b>3.2.4.7. Ток <em>i </em>в переходном процессе при комплексно-сопряжённых корнях; </a> </b> <br>
+  <a href="3_2_4_8.htm"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:40pt"><b>3.2.4.8. Декремент затухания переходного процесса; </a></b> <br>
+  <a href="3_2_4_9.htm"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:40pt"><b>3.2.4.9. Напряжения <em>u</em><span class="indexsmall"><font color="#005FA9"><b>L</b></font></span>, <em>u</em><span class="indexsmall"><font color="#005FA9"><b>C</b></font></span>и ток <em>i </em> при комплексно-сопряженных и равных корнях </a></b>.</span>
+                  
+  <tr>
+    <td height="20"><a href="3_2_4_5.htm"><img src="../../../images/back.gif" width="60" height="20" border="0" align='left'></a> </td>
+    <td>
+      <div align="right"><a href="3_2_4_7.htm"><img src="../../../images/forward.gif" width="70" height="22" border="0" align='right'></a></div></td>
+  </tr>
+
+</body>
+</html>

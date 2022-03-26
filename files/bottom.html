@@ -1,0 +1,128 @@
+<html>
+<head>
+<title>Список тем</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="styles/emx_nav_left.css" rel="stylesheet" type="text/css">
+ 
+</head>
+
+<div id="globalNav">
+<img alt="" src="styles/gblnav_left.gif" height="16" width="4" id="gnl">
+<img alt="" src="styles/glbnav_right.gif" height="16" width="4" id="gnr">
+<script type="text/javascript">
+
+
+
+//configure path for left and right arrows
+var goleftimage='./styles/button.gif'
+var gorightimage='./styles/button.gif'
+//configure menu width (in px):
+var menuwidth=screen.width-76
+//configure menu height (in px):
+var menuheight=20
+//Specify scroll buttons directions ("normal" or "reverse"):
+var scrolldir="reverse"
+//configure scroll speed (1-10), where larger is faster
+var scrollspeed=15
+//specify menu content
+  
+
+ var menu1= '<a href="index1.html" target="_parent" id="gl2" class="glink" title="Электрические цепи постоянного тока">Тема 1</a>'
+  var menu2= '<a href="index2.html" target="_parent" id="gl2" class="glink" title="Линейные электрические цепи синусоидального тока">Тема 2</a>'
+  var menu3= '<a href="index3.html" target="_parent" id="gl2" class="glink" title="Переходные процессы в линейных электричесих цепях">Тема 3</a>'
+  var menu4= '<a href="index4.html" target="_parent" id="gl2" class="glink" title="Электрические цепи периодического несинусоидального тока">Тема 4</a>'
+  var menu5= '<a href="index5.html" target="_parent" id="gl2" class="glink" title="Магнитные цепи и электромагнитные устройства">Тема 5</a>'
+  var menu6= '<a href="index6.html" target="_parent" id="gl2" class="glink" title="Трансформаторы">Тема 6</a>'
+  var menu7= '<a href="index7.html" target="_parent" id="gl2" class="glink" title="Асинхронные машины">Тема 7</a>'
+  var menu8= '<a href="index8.html" target="_parent" id="gl2" class="glink" title="Синхронные машины">Тема 8</a>'
+  var menu9= '<a href="index9.html" target="_parent" id="gl2" class="glink" title="Машины постоянного тока">Тема 9</a>'
+  var menu10= '<a href="index10.html" target="_parent" id="gl2" class="glink" title="Основы электропривода">Тема 10</a>'
+  var menucontents=menu1 + menu2 + menu3 + menu4 + menu5 + menu6 + menu7 + menu8 + menu9 + menu10 
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+
+var iedom=document.all||document.getElementById
+var leftdircode='onMouseover="moveleft()" onMouseout="clearTimeout(lefttime)"'
+var rightdircode='onMouseover="moveright()" onMouseout="clearTimeout(righttime)"'
+if (scrolldir=="reverse"){
+var tempswap=leftdircode
+leftdircode=rightdircode
+rightdircode=tempswap
+}
+if (iedom)
+document.write('<span id="temp" style="visibility:hidden;position:absolute;top:-100;left:-5000">'+menucontents+'</span>')
+var actualwidth=''
+var cross_scroll, ns_scroll
+var loadedyes=0
+function fillup(){
+if (iedom){
+cross_scroll=document.getElementById? document.getElementById("test2") : document.all.test2
+cross_scroll.innerHTML=menucontents
+actualwidth=document.all? cross_scroll.offsetWidth : document.getElementById("temp").offsetWidth
+}
+else if (document.layers){
+ns_scroll=document.ns_scrollmenu.document.ns_scrollmenu2
+ns_scroll.document.write(menucontents)
+ns_scroll.document.close()
+actualwidth=ns_scroll.document.width
+}
+loadedyes=1
+}
+window.onload=fillup
+
+function moveleft(){
+if (loadedyes){
+if (iedom&&parseInt(cross_scroll.style.left)>(menuwidth-actualwidth)){
+cross_scroll.style.left=parseInt(cross_scroll.style.left)-scrollspeed+"px"
+}
+else if (document.layers&&ns_scroll.left>(menuwidth-actualwidth))
+ns_scroll.left-=scrollspeed
+}
+lefttime=setTimeout("moveleft()",50)
+}
+
+function moveright(){
+if (loadedyes){
+if (iedom&&parseInt(cross_scroll.style.left)<0)
+cross_scroll.style.left=parseInt(cross_scroll.style.left)+scrollspeed+"px"
+else if (document.layers&&ns_scroll.left<0)
+ns_scroll.left+=scrollspeed
+}
+righttime=setTimeout("moveright()",50)
+}
+
+
+if (iedom||document.layers){
+with (document){
+write('<table border="0" cellspacing="0" cellpadding="3">')
+write('<td valign="middle"><a href="#" '+leftdircode+'><img src="'+goleftimage+'"border=0></a> </td>')
+write('<td width="'+menuwidth+'px" valign="top">')
+if (iedom){
+write('<div style="position:relative;width:'+menuwidth+'px;height:'+menuheight+'px;overflow:hidden;">')
+write('<div id="test2" style="position:relative;left:'+screen.width/4+'px;top:5px">')
+write('</div></div>')
+}
+else if (document.layers){
+write('<ilayer width='+menuwidth+' height='+menuheight+' name="ns_scrollmenu">')
+write('<layer name="ns_scrollmenu2" left=0 top=0></layer></ilayer>')
+}
+write('</td>')
+write('<td valign="middle"> <a href="#" '+rightdircode+'>')
+write('<img src="'+gorightimage+'"border=0></a>')
+write('</td></table>')
+}
+}
+
+</script>
+ </div> 
+  <!-- end globalNav --> 
+<head><script type="text/css">
+a:link {color: red;}
+a:visited {color: blue;}
+a:hover {color: jellow;}
+a: active {color:lime;}
+</style></head>
+<body bdcolor="#dcdcdc" text="#a52a2a" link="#0000ff" vlink="#0000ff" alink="#ffff99">
+</body>
+</html>
+                                                            

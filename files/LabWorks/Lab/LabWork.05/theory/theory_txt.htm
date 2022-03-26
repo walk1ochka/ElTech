@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+<title>Theory</title>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows 1251">
+<style>
+.fnt
+{
+FONT-FAMILY: times;
+font-size: 20px;
+}
+</style>
+</head>
+
+<body background="images/fon.gif" class="fnt">
+
+<p><strong>Теоретические сведения и расчетные
+формулы.</strong></p>
+<a name="M01">
+<p>Метод эквивалентного генератора основан на
+теореме Тевенина об эквивалентном генераторе
+(активном двухполюснике), которая гласит: любую
+сложную линейную электрическую цепь с
+произвольным числом источников тока и
+источников напряжения (рис 5.1, а) можно заменить
+простой схемой (рис. 5.1, б) , состоящей из
+эквивалентного генератора (ЭГ) с ЭДС <em><strong>E</strong></em><sub>эг</sub>
+и последовательно соединенного с ним
+внутреннего сопротивления <em><strong>R</strong></em><sub>эг</sub>;
+при этом обе схемы оказываются идентичными по
+отношению к выходным зажимам к которым
+подключена нагрузка , например <em><strong>R</strong></em><sub>6</sub>
+(рис 2).</p></a>
+
+<p align="center"><img src="images/im1.gif" width="638" height="387"
+alt="im1.gif (5273 bytes)"></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<em>а)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em>
+рис. 5.1 <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+б)</em></p>
+
+<p>Тогда искомый ток (<em><strong>I</strong></em><sub>6</sub>) в
+нагрузке</p>
+
+<p align="center"><em><strong>I</strong></em><sub>6</sub>=<em><strong>E</strong></em><sub>эг</sub>/(<em><strong>R</strong></em><sub>эг</sub>+<em><strong>R</strong></em><sub>6</sub>)
+&nbsp;&nbsp; (5.1)</p>
+
+<p align="left">Преобразовав последнее выражение </p>
+
+<p align="center"><em><strong>U</strong></em><sub>20</sub>=<em><strong>R</strong></em><sub>6</sub><em><strong>I</strong></em><sub>6</sub>-<em><strong>R</strong></em><sub>эг</sub><em><strong>I</strong></em><sub>6</sub>,</p>
+
+<p>замечаем, что оно соответствует уравнению
+внешней характеристики источника напряжения
+(ИН), параметры которого (<strong><em>E</em></strong><sub>эг</sub> и
+<em><strong>R</strong></em><sub>эг</sub>) можно определить из двух
+режимов работы ИН: </p>
+
+<p>- режима холостого хода (<em><strong>I</strong></em><sub>6</sub>=0,
+шестая ветвь разомкнута)</p>
+
+<p align="center"><em><strong>E</strong></em><sub>эг</sub>=<em><strong>U</strong></em><sub>20X</sub>=<em><strong>U</strong></em><sub>6X</sub>
+&nbsp;&nbsp; (5.2)</p>
+
+<p>т.е. ЭДС эквивалентного генератора напряжению
+холостого хода <em><strong>U</strong></em><sub>20X</sub> на его
+зажимах;</p>
+
+<p>- режим короткого замыкания (<em><strong>U</strong></em><sub>20</sub>=0)
+</p>
+
+<p align="center"><em><strong>R</strong></em><sub>вт</sub>=<em><strong>E</strong></em><sub>эг</sub>/<em><strong>I</strong></em><sub>6k</sub>
+&nbsp;&nbsp; (5.3)</p>
+
+<p>где <em><strong>I</strong></em><sub>6k</sub> - ток короткого
+замыкания шестой ветви.</p>
+
+<p>Таким образом, для определения тока в одной
+ветви, в частности в шестой ветви, достаточно
+провести два опыта: опыт ХХ, измерив <em><strong>U</strong></em><sub>20X</sub>=<strong><em>E</em></strong><sub>эг</sub>,
+и опыт КЗ, измерив в <em><strong>I</strong></em><sub>6k</sub> и
+определив <em><strong>R</strong></em><sub>эг</sub>=<em><strong>E</strong></em><sub>эг</sub>/<em><strong>I</strong></em><sub>6k</sub>.
+Расчет тока в шестой ветви ведут по формуле (5.1).</p>
+<a name="M02">
+<p>При теоретических расчетах параметров ЭГ&nbsp; (<strong><em>E</em></strong><sub>эг</sub>
+и <em><strong>R</strong></em><sub>эг</sub>) выбирают метод с
+минимально необходимым числом уравнений для
+расчета <em><strong>U</strong></em><sub>6X</sub>=<strong><em>E</em></strong><sub>эг</sub>.</p>
+</a>
+<a name="M03">
+<p>Так для преобразованной схемы (рис. 5.1) и при
+разомкнутой шестой ветви (рис. 5.2, <em>а</em>)
+напряжение <em><strong>U</strong></em><sub>6X</sub>=-<em><strong>E</strong></em><sub>5</sub>+<strong><em>R</em></strong><sub>5</sub><em><strong>I</strong></em><sub>5X</sub>-<em><strong>R</strong></em><sub>2</sub><em><strong>I</strong></em><sub>2X</sub>.</p>
+</a>
+<p><img src="images/im2.gif" alt="im2.gif (8907 bytes)"></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+a)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+б)</p>
+
+<p align="center">рис 5.2</p>
+
+<p>Токи <strong><em>I</em></strong><sub>5x</sub> и <strong><em>I</em></strong><sub>2x</sub>
+определим по методу контурных токов (см. рис. 5.2,
+а): <strong><em>I</em></strong><sub>5x</sub>=<em><strong>I</strong></em><sub>k1</sub>; <em><strong>I</strong></em><sub>2x</sub>=-<em><strong>I</strong></em><sub>k2</sub>;</p>
+
+<p align="center">(<em><strong>R</strong></em><sub>3</sub>+<em><strong>R</strong></em><sub>4</sub>+<em><strong>R</strong></em><sub>5</sub>)
+<em><strong>I</strong></em><sub>k1</sub>-<em><strong>R</strong></em><sub>3</sub><em><strong>I</strong></em><sub>k2</sub>=<em><strong>E</strong></em><sub>4</sub>+<em><strong>E</strong></em><sub>5</sub>;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12<em><strong>I</strong></em><sub>k1</sub>-3<em><strong>I</strong></em><sub>k2</sub>=28;</p>
+
+<p align="center">-<em><strong>R</strong></em><sub>3</sub><em><strong>I</strong></em><sub>k1</sub>+(<em><strong>R</strong></em><sub>1</sub>+<em><strong>R</strong></em><sub>2</sub>+<em><strong>R</strong></em><sub>3</sub>)<em><strong>I</strong></em><sub>k2</sub>=<em><strong>E</strong></em><sub>1</sub>+<em><strong>E</strong></em><sub>1</sub>';
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -3<em><strong>I</strong></em><sub>k1</sub>+6<em><strong>I</strong></em><sub>k2</sub>=12;</p>
+
+<p align="center"><img src="images/image002.gif"></p>
+
+<p align="center"><img src="images/image004.gif" alt="image004.gif (2017 bytes)"></p>
+
+<p align="left">Тогда <em><strong>I</strong></em><sub>5x</sub>=3,24 А; <em><strong>I</strong></em><sub>2</sub>=-3,62
+А; <em><strong>U</strong></em><sub>6х</sub>=-20+5*5,24+2*3,62=-2,77 В.</p>
+
+<p>Для определения сопротивления <em><strong>R</strong></em><sub>эт</sub>
+вычертим схему без источников энергии (рис. 5.2, б)
+и определим входное сопротивление по отношению к
+зажимам 2-0, предварительно заменив треугольник
+сопротивлений <em><strong>R</strong></em><sub>3</sub>-<em><strong>R</strong></em><sub>4</sub>-<em><strong>R</strong></em><sub>5</sub>
+эквивалентной звездой <em><strong>R</strong></em><sub>14</sub>-<em><strong>R</strong></em><sub>24</sub>-<em><strong>R</strong></em><sub>34</sub>.</p>
+
+<p>Сопротивления лучей которой равны:</p>
+
+<p align="center"><img src="images/image006.gif" alt="image006.gif (4116 bytes)"></p>
+
+<p align="left">Тогда внутреннее сопротивление
+эквивалентного генератора:</p>
+
+<p align="center"><img src="images/image008.gif" alt="image008.gif (3163 bytes)"></p>
+
+<p align="left">Ток в шестой ветви (см. (5.1))</p>
+
+<p align="center"><img src="images/image011.gif" alt="image011.gif (1435 bytes)"></p>
+
+<p align="left">&nbsp;</p>
+</body>
+</html>

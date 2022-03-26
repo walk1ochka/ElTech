@@ -1,0 +1,305 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.2.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.2.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:01pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:0pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:0pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000066;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: bold;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing:0px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: bold;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align:25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="../charper1/style11.js" type="text/javascript"></SCRIPT>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+       
+        <div align="center"><span style='position:relative;margin-top:1pt;font-size:14pt;font-family:Arial;color:darkblue;'>5.2.1. Назначение и типы магнитных цепей <br></b></span>
+     <div align="left"><span style='position:relative;top:2pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15pt;color:blue'><span style='color:red;'>Магнитная цепь</span> &#8211; это совокупность устройств, содержащих ферромагнитные тела, электромагнитные процессы в которых могут быть описаны с помощью понятий магнитодвижущей силы, магнитного потока и разности магнитных потенциалов.</b><br></span>
+       <div align="left"><span style='position:relative;top:0pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:black'>Различают:<div align="left"><span style='position:relative;top:0pt;margin-left:43pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'>&#8226; магнитные цепи с постоянными магнитами;</b><br>
+      <div align="left"><span style='position:relative;top:0pt;margin-left:43pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'> &#8226; магнитные цепи, в которых магнитный поток создается постоянным или переменным током, протекающим в одной или нескольких обмотках, размещённых на ферромагнитных сердечниках. <br>
+        <div align="left"><span style='position:relative;top:0pt;margin-left:23p;'><img src="images/image508.gif" width="260" height="370" align="left">
+<div align="left"><span style='position:relative;top:4pt;margin-left:23pt;color:#d00093'>Обычно в электромагнитных устройствах стремятся на пути магнитного потока разместить ферромагнитные материалы <em>2</em> с относительной магнитной проницаемостью &#181; = 500…10000, чтобы уменьшить величину тока намагничивающей обмотки <em>1</em> (рис. 5.8<em>а</em>). Однако между частями магнитопровода неизбежны воздушные зазоры (рис. 5.8<em>б</em>), или магнитопровод специально изготавливают с регулируемым зазором <em>3</em> (см. рис. 5.8<em>а</em>) с магнитной проницаемостью &#181;<span class="indexsmalldigit"><b>0</b></span>. </b></span>
+        <div align="left"><span style='position:relative;top:3pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15pt'>В низкочастотных устройствах (<em>f</em> &lt; 1000 Гц) катушки размещают на ферромагнитных сердечниках, что приводит к многократному усилению магнитных потоков и их концентрации в самом ферромагнитном материале, и, как следствие, создается нужная конфигурация магнитного поля и магнитной цепи. Например, в четырёхполюсном генераторе постоянного тока (рис. 5.8<em>б</em>), катушки <em>4</em> возбуждения магнитного потока Ф размещены на полюсах статора; магнитные силовые линии проходят через соседние северный <em> N</em> и южный <em> S</em> полюсы, замыкаясь через статор <em>3</em> и цилиндрический якорь <em>1</em>, при вращении которого в расположенной на нём обмотке индуктируется ЭДС. С помощью коллектора и щёток <em>2</em> обмотка якоря подключается к приёмнику энергии.</b>
+        <div align="left"><span style='position:relative;top:0pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:blue'>Если вся магнитная цепь выполнена из одного ферромагнитного материала и имеет одинаковое сечение, то она называется <i>однородной</i><em>.</em> Магнитная цепь, содержащая материалы с различными магнитными свойствами или имеющая воздушные зазоры, называется <i>неоднородной</i><em>. </em>Магнитная цепь, во всех сечениях которой магнитный поток Ф одинаков, называется <i>неразветвлённой</i>. В <i>разветвлённой</i> магнитной цепи потоки на различных участках неодинаковы.</div></b></span>
+      
+ <tr> 
+      <td height="20"><a href="../charper5/page52.html"><img src="../images/back.gif" width="60" height="20" border="0" align="left"></a> </td>
+      <td>
+      <div align="right"><a href="../charper5/page522.html"><img src="../images/forward.gif" width="70" height="22" border="0" align="right"></a>      </td>
+    </tr>
+
+</body>
+</html>

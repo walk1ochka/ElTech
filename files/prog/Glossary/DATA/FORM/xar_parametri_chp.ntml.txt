@@ -1,0 +1,44 @@
+<html>
+<head><META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>
+Условия , для получения максимальной мощности в нагрузке.
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="#0044bb" vlink="#0044bb" alink="#0044bb">
+<table border="1" width="100%" cellspacing="0" cellpadding="2">
+<td nowrap bgcolor="#f0f0f0">
+<B>
+<font color="#FF6600">
+
+Характерестические параметры четырехполюсника(ЧП)
+
+</B>
+</FONT>
+</td>
+</table>
+
+
+
+<TABLE  CELLSPACING=30% >
+<TR>
+<TD>
+<FONT Size="4" Color="0000A0">
+<CENTER>
+
+<BR>а)Характеристические  сопротивления :
+<BR><img align="absmiddle" src="tema7088.gif"> (7.38)
+<BR><img align="absmiddle" src="tema7129.gif"> (7.54)и
+<BR><img align="absmiddle" src="tema7130.gif"> (7.55) - для несимметричного ЧП; 
+<BR>б)Собственная постоянная передачи :
+<BR><img align="absmiddle" src="tema7089.gif"> (7.39) - для симметричного ЧП;
+<BR><img align="absmiddle" src="tema7090.gif"> (7.40) - для несимметричного ЧП;
+<BR>где <img align="absmiddle" src="tema7090.gif"> (7.40)
+<BR>или<I>a = </I>10 lg(<I>U</I><FONT SIZE=4 ><SUB>1</SUB></FONT><I>/U</I><FONT SIZE=4 ><SUB>2</SUB></FONT>)<FONT SIZE=4 ><SUP>2</SUP></FONT><I> = </I>20 lg(<I>U</I><FONT SIZE=4 ><SUB>1</SUB></FONT><I>/U</I><FONT SIZE=4 ><SUB>2</SUB></FONT>) [дБ] - постоянная ослабления;(7.45)
+
+</CENTER>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+</body>
+</html>

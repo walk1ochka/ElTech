@@ -1,0 +1,63 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T5.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T5.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<body>
+<script language="javascript">
+
+var pos=100;
+var speed=75;            
+var msg="<span style='position:relative; font-size:14pt; font-family:Arial; color:darkblue;line-height:20pt;'><br><br><b>Определению реакции цепи на несинусоидальные периодические воздействия посвящена эта тема. Большое внимание уделено анализу искажений сигналов при прохождении через частотно-зависимые цепи (фильтры), методам расчёта и синтеза пассивных фильтров.  Как и при изучении других тем, рекомендуется выполнить ряд  заданий и лабораторную работу в виртуальной лаборатории.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Arial;font-size:18px;color:#a52a2a'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 5</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad="Type()">
+
+<center><span style="position:relative;top:30pt;font-size:14pt;font-family:Arial;color:darkblue;"><b>Тема 4 </b></span>
+<span style="position:relative;top:45pt;font-size:18pt"><center><font style="color:#994433;"><b>ЭЛЕКТРИЧЕСКИЕ ЦЕПИ <br><font style="color:#994433;">ПЕРИОДИЧЕСКОГО НЕСИНУСОИДАЛЬНОГО ТОКА</b></span></center><br>
+<table width="75%" height="80%" border="0" align="center"><tr><td valign="top">
+<br><div id="layerA" class=text align="absmiddle"></div>
+</table>
+<table width="98%" height="5%" border=0 align="center"><span class=head1>
+<tr><td>
+<br><span style='position:relative;top:-46pt'><center><div valign="bottom"><a href="page4_1.htm" align="center"><span style='position:relative;font-size:14pt;font-family:Arial;color:blue;'><b>НАЧАТЬ</b></span></a></div></center>
+</td></tr>
+</body></html>

@@ -1,0 +1,239 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.5.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter4/4.5.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<title>3.5.2.1 Нормирование и построение АЧХ и ФЧХ </title>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align="center">
+      <div align="center"> 
+        <span style='font-size:14pt; font-family:Arial;color:darkblue;'><b>3.5.2.1. Нормирование и построение АЧХ и ФЧХ   </b><br></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt;color:#d00093;"><b>Учитывая большой диапазон изменения частоты &#969;, при построении графиков АЧХ и ФЧХ (для наглядности и удобства) как частоту, так и величины <em>H</em>(&#969;) и &#936;(&#969;) нормируют и часто выражают в логарифмических единицах.</b><br></span>
+
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:2pt;margin-left:23pt"><b>Обозначим:</b><br>
+                <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><img src="gifs/f_02.gif" height="44">     <br>          
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:0pt"><b>где &#969;<span class="indexsmall"><b>p</b></span> &#8211; резонансная частота. </b><br>
+                <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>На рис. 3.38<em>а </em> и рис. 3.38<em>б </em> приведен пример нормированных частотных характеристик цепи. При построении графиков принято по оси абсцисс откладывать не нормированную частоту &#937;, а равномерные отрезки lg&#969;, но на самой оси записывают значения частоты &#969; = 10<span class="indexbigdigit"><b><i>n</i></b></span>, где <em>n </em> = …, -1, 0, 1, 2 , 3,… (рис. 3.39<i>a</i>)</b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span  style="position:relative;top:6pt;margin-left:23pt;color:blue;"><b>Интервал частот, на концах которого частоты отличаются в 10 раз, т. е. &#969;<span class="indexsmalldigit"><b>2</b></span>/&#969;<span class="indexsmalldigit"><b>1</b></span> <em>= </em>10, назывaют декадой (рис. 3.38<i>в</i>), а интервал частот, на концах которого частоты отличаются в 2 раза, т. е. &#969;<span class="indexsmalldigit"><b>2</b></span>/&#969;<span class="indexsmalldigit"><b>1</b></span> <em>= </em>2, называют октавой. Таким образом, единицей частоты является декада, реже октава.</b> <br></span>
+                 <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:11pt;margin-left:23pt"><b>По оси ординат АЧХ откладывают значения <em>H</em>(&#969;), выраженные в децибелах (дБ):</b> <br>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:5pt;margin-left:43pt"><b>&#945;(&#969;) = 20lg<em>H</em>(&#969;)<span style="margin-left:250pt">(3.26) </b><br>                 
+                  
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:43pt"><img src="gifs/image014.gif" weight="380" height="290"><br>
+        
+                 <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>В этом случае зависимость &#945;(&#969;) называют <i>логарифмической амплитудно-чаcтотной характеристикой</i> (ЛАЧХ) звена (устройства). Децибельная мера коэффициента передачи <em>H</em>(&#969;) удобна для определения суммарной величины коэффициента &#945; нескольких звеньев, включенных последовательно (рис. 3.39<em>б</em>), как сумму &#945;<span class="indexsmall"><b>k</b></span> отдельных звеньев:</b><br> 
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><b>&#945; = &#945;<span class="indexsmalldigit"><b>1</b></span> + &#945;<span class="indexsmalldigit"><b>2</b></span> +... + &#945;<span class="indexsmall"><b>n</b></span>. </b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>Например, устройство состоит из двух звеньев с коэффициентами передачи <em>H</em><span class="indexsmalldigit"><b>1</b></span>(&#969;<span class="indexsmalldigit"><b>1</b></span>) = 100 и <em>H</em><span class="indexsmalldigit"><b>2</b></span>(&#969;<span class="indexsmalldigit"><b>1</b></span>) = 1000 при частоте &#969; = &#969;<span class="indexsmalldigit"><b>1</b></span>. Коэффициенты &#945;<span class="indexsmalldigit"><b>1</b></span> <em> = </em>20lg<em>H</em><span class="indexsmallDigit"><b>1</b></span>(&#969;<span class="indexsmalldigit"><b>1</b></span>) <em> = </em>20lg100 = 40 дБ и &#945<span class="indexsmalldigit"><b>2</b></span> <em> = </em> 20lg<em>H</em><span class="indexsmallDigit"><b>2</b></span>(&#969;<span class="indexsmalldigit"><b>1</b></span>) <em> = </em> 20lg1000 = 60 дБ, а суммарный коэффициент &#945; = &#945;<span class="indexsmalldigit"><b>1</b></span> <em>+</em> &#945;<span class="indexsmalldigit"><b>2</b></span> =  40 + 60 = 100 дБ. </b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>Фазочастотная характеристика &#936;(&#969;) строится в том же логарифмическом масштабе частот для оси абсцисс, а по оси ординат откладывают фазовый угол в радианах или градусах. </b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt;color:#d00097;"><b>При построении характеристики &#945;(&#969;) многозвенного устройства ЛАЧХ отдельных звеньев аппроксимируют прямыми линиями, что упрощает их суммирование, вычитание и т. п. Примеры построения ЛАЧХ простейших звеньев приведены в 3.5.3. </b><br></span>
+                
+  <tr>
+    <td height="20"><br><br><a href="../Chapter_5/3_5_2.htm"><img src="../../../images/back.gif" width="60" height="20" border="0" align="left"></a> </td>
+    <td>
+      <div align="right"><a href="../Chapter_5/3_5_3.htm"><img src="../../../images/forward.gif" width="70" height="22" border="0" align="right"></a></div></td>
+  </tr></body></html>

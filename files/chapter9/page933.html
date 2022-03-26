@@ -1,0 +1,170 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter9/9.3.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter9/9.3.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title> 9.3.3. Противо-ЭДС и баланс мощностей цепи якоря двигателя постоянного тока </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial";
+	color:black;
+	layout-grid-mode:line;
+	font-weight:normal;
+	font-style:italic;}
+h6
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial";
+	layout-grid-mode:line;
+	font-weight:normal;
+	font-style:italic;
+	text-decoration:underline;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.3pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family:Arial;
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family:Arial;
+	letter-spacing:-.5pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:Arial;}
+span.a0
+	{font-family:Arial;}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+ .indexsmalldigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -25%;
+	position: static;
+}
+.indexbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 35%;
+	position: static;
+}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="page933/style933.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+        <td height="20" colspan="2" class="head1">
+       <br><div align="center"><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>9.3.3. Противо-ЭДС и баланс мощностей цепи якоря двигателя постоянного тока</b></span><br>
+    
+<div align="left"><span style='position:relative;top:8pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial'> <b>Если вращающий момент <i>М</i> больше момента сопротивления <i>M</i><span class="indexsmalldigit"><b>с</b></span> механизма на валу, т. е. <i>M > M</i><span class="indexsmalldigit"><b>с</b></span>, то якорь начинает вращаться. Однако при вращении якоря его проводники пересекают магнитный поток Ф<span class="indexsmalldigit"><b>в</b></span> и, согласно закону электромагнитной индукции, в них индуктируется ЭДС. Суммарную ЭДС всех проводников якорной обмотки называют противо-ЭДС, так как направление ЭДС противоположно направлению тока якоря <i>I</i><span class="indexsmalldigit"><b>я</b></span> <a href="#" onMouseOver="stm(Text[0],Style[0])" onMouseOut="htm()"><span style='font-size:12pt;font-family:Arial'> <font color="blue">(см. рис. 9.6<i>б</i>)</font></b></a>.</span>
+
+<div align="left"><span style='position:relative;top:6pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:16pt;color:#d60093;'> <b>Уравнение электрического равновесия для якорной обмотки выглядит следующим образом:</b></span>
+
+<div align="left"><span style='position:relative;top:8pt;margin-left:43pt;font-size:12pt;font-family:Arial;line-height:16pt;color:black;'> <b><i>U = E</i><span class="indexsmalldigit"><b>я</b></span> + <i>R</i><span class="indexsmalldigit"><b>я</b></span><i>I</i><span class="indexsmalldigit"><b>я</b></span>, <span style='position:relative;margin-left:430pt'>(9.4)</b><br></b></span>
+
+<div align="left"><span style='position:relative;top:3pt;margin-left:0pt;font-size:12pt;font-family:Arial;line-height:16pt;color:black;'> <b>где <i>U</i> &#8722; напряжение на зажимах якорной обмотки. </b><br></span>
+
+<div align="left"><span style='position:relative;top:8pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:16pt;color:red;'> <b>Умножив члены последнего уравнения на ток <i>I</i><span class='indexsmalldigit'><b>я</b></span>, получим уравнение баланса мощностей цепи якоря ДПТ</b><br></span>
+
+<div align="left"><span style='position:relative;top:8pt;margin-left:43pt;font-size:12pt;font-family:Arial;line-height:16pt;color:#8a2bcf;'> <b><i>Р</i><span class="indexsmalldigit"><b>э</b></span> <i> = UI</i><span class="indexsmalldigit"><b>я</b></span><i> = E</i><span class="indexsmalldigit"><b>я</b></span><i>I</i><span class="indexsmalldigit"><b>я</b></span> + <i>R</i><span class="indexsmalldigit"><b>я</b></span><i>I</i><span class="indexsmalldigit"><b>я</b></span><span class='indexbigdigit'><b>2</b></span><span style='position:relative;top:opt;margin-left:390pt'>(9.5)</b><br></b></span>
+
+<div align="left"><span style='position:relative;top:8pt;margin-left:0pt;font-size:12pt;font-family:Arial;line-height:16pt;color:#D00093;'> <b>которое показывает, что электрическая мощность <i>Р</i><span class="indexsmalldigit"><b>э</b></span>, подводимая к якорю двигателя из сети, преобразуется в электромагнитную мощность <i>Р</i><span class="indexsmalldigit"><b>эм</b></span> = <i>E</i><span class="indexsmalldigit"><b>я</b></span><i>I</i><span class="indexsmalldigit"><b>я</b></span><i> = М  /</i> &#969; и мощность электрических потерь  &#916;<i>Р</i><span class="indexsmalldigit"><b>я</b></span> = <i>R</i><span class="indexsmalldigit"><b>я</b></span><i>I</i><span class="indexsmalldigit"><b>я</b></span><span class='indexbigdigit'><b>2</b></span> в обмотке якоря.</b></span>
+  
+    <tr> <td height="10"><div align='left'><span style='position:relative;top:-30pt;margin-left:0pt;'><a href="page932.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> 
+</td>
+      <td>
+<div align="right"><span style='position:relative;top:-30pt;margin-left:0pt;'><a href="page934.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>
+</td>
+    </tr>
+
+</body>
+</html>

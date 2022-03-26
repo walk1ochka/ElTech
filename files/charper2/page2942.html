@@ -1,0 +1,146 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter3/3.9.4.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter3/3.9.4.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>2.9.4.2. Активная, реактивная и полная мощности трёхфазной системы при неравномерной нагрузке</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></script>
+</head>
+<body>
+<table width="100%" height="99%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      
+    <td height="29" colspan="2" class="head1"> 
+      <div align="center"><b class="head1">2.9.4.2. Активная, реактивная и полная мощности трёхфазной системы при неравномерной нагрузке<br>
+        </b></div>
+    </td>
+  </tr>
+    <tr align="center"> 
+  <td colspan="2" valign="top"><table width="100%"  border="0">
+    <tr>
+          <td width="70%" colspan="2" valign="top"> 
+            <p class="text" align="left"><span class="text">При </span><span class="head2">неравномерной 
+              нагрузке</span><span class="text"> расчёт мощностей проводят для 
+              каждой фазы отдельно:</span></p>
+            <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">P</span><span class="indexsmall">a</span> 
+              = <span class="index">U</span><span class="indexsmall">a</span><span class="index">I</span><span class="indexsmall">a</span> 
+              cos<span class="symbol">j</span><span class="indexsmall">a</span>; <span class="index">P</span><span class="indexsmall">b</span> 
+              = <span class="index">U</span><span class="indexsmall">b</span><span class="index">I</span><span class="indexsmall">b</span>cos<span class="symbol">j</span><span class="indexsmall">b</span>; 
+              <span class="index">P</span><span class="indexsmall">c </span>= 
+              <span class="index">U</span><span class="indexsmall">c</span><span class="index">I</span><span class="indexsmall">c</span>cos<span class="symbol">j</span><span class="indexsmall">c</span> 
+              (для Y);</p>
+            <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">P</span><span class="indexsmall">ab</span> 
+              = <span class="index">U</span><span class="indexsmall">ab</span><span class="index">I</span><span class="indexsmall">ab</span>cos<span class="symbol">j</span><span class="indexsmall">ab</span>; 
+              <span class="index">P</span><span class="indexsmall">bc </span>= 
+              <span class="index">U</span><span class="indexsmall">bc</span><span class="index">I</span><span class="indexsmall">bс</span>cos<span class="symbol">j</span><span class="indexsmall">bc</span>; 
+              <span class="index">P</span><span class="indexsmall">ca</span><span class="index"> 
+              </span>= <span class="index">U</span><span class="indexsmall">ca</span><span class="index">I</span><span class="indexsmall">ca</span>cos<span class="symbol">j</span><span class="indexsmall">ca 
+              </span>(для <span class="symbol">D</span>);</p>
+            <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">Q</span><span class="indexsmall">a</span> 
+              = <span class="index">U</span><span class="indexsmall">a</span><span class="index">I</span><span class="indexsmall">a</span>sin<span class="symbol">j</span><span class="indexsmall">a</span>; 
+              <span class="index">Q</span><span class="indexsmall">b </span>= 
+              <span class="index">U</span><span class="indexsmall">b</span><span class="index">I</span><span class="indexsmall">b</span>sin<span class="symbol">j</span><span class="indexsmall">b</span>; 
+              <span class="index">Q</span><span class="indexsmall">c</span><span class="index"> 
+              </span>= <span class="index">U</span><span class="indexsmall">c</span><span class="index">I</span><span class="indexsmall">c</span>sin<span class="symbol">j</span><span class="indexsmall">c</span> 
+              (для Y);</p>
+            <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">Q</span><span class="indexsmall">ab</span> 
+              = <span class="index">U</span><span class="indexsmall">ab</span><span class="index">I</span><span class="indexsmall">ab</span>sin<span class="symbol">j</span><span class="indexsmall">ab</span>; 
+              <span class="index">Q</span><span class="indexsmall">bc</span> = 
+              <span class="index">U</span><span class="indexsmall">bc</span><span class="index">I</span><span class="indexsmall">bc</span>sin<span class="symbol">j</span><span class="indexsmall">bc</span>; 
+              <span class="index">Q</span><span class="indexsmall">ca</span> = 
+              <span class="index"> U</span><span class="indexsmall">ca</span><span class="index">I</span><span class="indexsmall">ca</span>sin<span class="symbol">j</span><span class="indexsmall">ca</span> 
+              (для <span class="symbol">D</span>);</p>
+            <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">S</span><span class="indexsmall">a</span> 
+              = <span class="index">U</span><span class="indexsmall">a</span><span class="index">I</span><span class="indexsmall">a</span>; 
+              <span class="index">S</span><span class="indexsmall">b</span><span class="index"> 
+              = U</span><span class="indexsmall">b</span><span class="index">I</span><span class="indexsmall">b</span>; 
+              <span class="index">S</span><span class="indexsmall">c</span><span class="index"> 
+              = U</span><span class="indexsmall">c</span><span class="index">I</span><span class="indexsmall">c</span><span class="index"> 
+              </span>(для Y); </p>
+            <table width="100%" border="0">
+              <tr>
+                <td class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">S</span><span class="indexsmall">ab</span><span class="index"> 
+                  = U</span><span class="indexsmall">ab</span><span class="index">I</span><span class="indexsmall">ab</span>; 
+                  <span class="index">S</span><span class="indexsmall">bc</span> 
+                  = <span class="index">U</span><span class="indexsmall">bc</span><span class="index">I</span><span class="indexsmall">bc</span>; 
+                  <span class="index">S</span><span class="indexsmall">ca</span><span class="index"> 
+                  = U</span><span class="indexsmall">ca</span><span class="index">I</span><span class="indexsmall">ca</span> 
+                  (для <span class="symbol">D</span>).</td>
+                <td width = 100 class="head2"> 
+                  <div align="right">(2.173)</div>
+                </td>
+              </tr>
+            </table>
+            <p align="justify" class="text"><span class="head2">Активная, реактивная и полная</span> 
+              мощности, потребляемые трёхфазным приёмником, соединенным звездой 
+              (<em>P</em><sub>Y</sub>, <em>Q</em><sub>Y</sub> и <em>S</em><sub>Y</sub>) или треугольни­ком (<em>P</em><sub><span class="symbol">D</span></sub>, 
+              <em>Q</em><sub><span class="symbol">D</span></sub> и <em>S</em><sub><span class="symbol">D</span></sub>):</p>
+            <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">P</span><span class="indexsmall">Y</span><span class="index"> 
+              = P</span><span class="indexsmall">a</span><span class="index"> 
+              + P</span><span class="indexsmall">b</span><span class="index"> 
+              + P</span><span class="indexsmall">c</span>; <span class="index">Q</span><span class="indexsmall">Y</span><span class="index"> 
+              = Q</span><span class="indexsmall">a</span><span class="index"> 
+              + Q</span><span class="indexsmall">b</span><span class="index"> 
+              + Q</span><span class="indexsmall">c</span>; <span class="index">S</span><span class="indexsmall">Y</span><span class="index"> 
+              </span>=<img src="Images/2942/img002.gif" align="middle"> ;</p>
+            <table width="100%" border="0">
+              <tr> 
+                <td class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="index">P</span><sub><span class="symbol">D</span></sub><span class="index"> 
+                  = P</span><span class="indexsmall">ab</span><span class="index"> 
+                  + P</span><span class="indexsmall">bc</span><span class="index"> 
+                  + P</span><span class="indexsmall">ca</span>; <span class="index">Q</span><sub><span class="symbol">D</span></sub> 
+                  = <span class="index">Q</span><span class="indexsmall">ab</span> 
+                  + <span class="index">Q</span><span class="indexsmall">bc</span> 
+                  + <span class="index">Q</span><span class="indexsmall">ca</span>; 
+                  <span class="index">S</span><sub><span class="symbol">D</span></sub> = 
+                  <img src="Images/2942/img004.gif" align="middle">. </td>
+                <td width = 100 class="head2"> 
+                  <div align="right">(2.174) </div>
+                </td>
+              </tr>
+            </table>
+            <p align="justify" class="text">При этом реактивная мощность <span class="index">Q</span><span class="indexsmall">ф</span> 
+              берётся со знаком минус для фаз, в которые включены ёмкостные элементы, 
+              и со знаком плюс для фаз с индуктивной катушкой.</p>
+            <p class="text"><span class="head2">Примечание</span>. </p>
+            <p align="justify" class="text">1. Расчёт мощностей в трёхфазной системе синусо­и­даль­ного 
+              тока можно вести комплексным методом.<br>
+              2. Если три ЭДС не равны по модулю и сдвинуты на углы, неравные 
+              120° относительно друг друга, то такая система называется <span class="head2">трёхфазной 
+              несимметричной системой</span>. При расчёте трёхфазной несимметричной 
+              системы используют метод симметричных составляющих, основанный на 
+              разложении несимметричной трёхфазной системы на три симметричные 
+              с последующим применением метода наложения решений.<br>
+            </p>
+          </td>
+    </tr>
+  </table></td>
+  </tr>
+    <tr> 
+      
+    <td height="20"><a href="page2941.html"><img src="../images/back.gif" width="60" height="32" border="0"></a> 
+    </td>
+      <td>
+      <div align="right"><a href="upr2.20.html"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>      
+    </td>
+    </tr>
+</table> 
+</body>
+</html>

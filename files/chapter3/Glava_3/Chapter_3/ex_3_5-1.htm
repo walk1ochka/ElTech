@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>4.3.3. Формирование уравнений состояния методом наложения</title>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter4/Z_4.5.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter4/Z_4.5.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></div> <table width="100%" height="100%" border="0" cellspacing="0">
+  <tr align="center" valign="top">
+    <td height="20" colspan="2" class="head1">
+      <div align="center"> 
+        <p>ЗАДАНИЕ 4.5</p>
+        <p>&nbsp; </p>
+      </div></td>
+  </tr>
+  <tr align="left"> 
+    <td colspan="2" valign="top"><p class="text">        Для численного интегрирования уравнений состояния 
+        цепи, полученных в параграфе <a href="4_3_3.htm#us">4.3.3</a> и построения графиков <em>u</em><span class="indexsmall">C</span>(<em>t</em>) и <em>i</em><span class="indexsmall">L</span>(<em>t</em>) переходных процессов можно воспользоваться 
+        одним из пакетов программ: Маtlab, МаthСAD и др. или программой (исполняемым 
+        файлом) <a href="swf/ex_4_5.exe">MPSRK4.exe</a>, написанной на языке Action Script (листинг кода программы приведен в синтаксисе языка C++) для цепи второго порядка с 
+        использованием метода Рунге-Кутта 4-го порядка точности. В программе приняты 
+        следующие обозначения:</p>
+      <p class="text"> <em class="index">A</em>0<em> = 
+          <span class="index">a</span></em><span class="indexsmalldigit">0</span><em>;
+          A</em>1<em> 
+        = a</em><span class="indexsmallDigit">1</span><em>; A</em><span class="text">2</span><em> 
+        = a</em><span class="indexsmallDigit">2</span><em>; B</em><span class="text">0</span><em> 
+        = b</em><span class="indexsmallDigit">0</span><em>; B</em><span class="text">1</span><em> =
+        b</em><span class="indexsmallDigit">1</span><em>; 
+        B</em><span class="text">2</span><em> = b</em><span class="indexsmallDigit">2</span><em>;
+         T = t</em>(0)<em>; H = h; U</em>0<em> =
+         u<span class="indexsmall">C</span></em>(0<span class="indexsmalldigit">+</span>)<em>; 
+        I</em><span class="text">0</span><em> = i<span class="indexsmall">L</span></em>(0<span class="indexsmalldigit">+</span>)<em>;
+         M </em>- число шагов<em> h</em> итераций (порядка 30...40);<em> U =
+         u<span class="indexsmall">n</span> 
+        ; I = i<span class="indexsmall">n</span>; f</em><span class="text">1</span><em> 
+        = du<span class="indexsmall">C</span></em><span class="indexsmalldigit">(<em></em></span><em><span class="indexsmall">n</span></em><span class="indexsmalldigit">)</span><em>/dt; f</em><span class="text">2</span><em> 
+        = di<span class="indexsmall">L</span><span class="indexsmaldigit">(</span><span class="indexsmall">n</span><span class="indexsmaldigit">)</span>/dt. </em></p>
+      <p class="head2">Программа численного интегрирования уравнений состояния 
+        для цепи 2-го порядка методом Рунге-Кутта 4-го порядка точности</p>
+      <p class="text"><font face="Courier New, Courier, mono">&nbsp;&nbsp;&nbsp;&nbsp;#include 
+        &lt;stdio.h&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;float A0,A1,A2,B0,B1,B2;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;float f1(float U, float I) {return A0+A1*U+A2*I;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;float f2(float U, float I) {return B0+B1*U+B2*I;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;void main(){<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float k1,k2,k3,n1,n2,n3,y1,y2,H,T,U0,I0,I,U; 
+        int M,j;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf (&quot;A0 = &quot;); 
+        scanf (&quot;%f&quot;,&amp;A0); printf (&quot;A1 = &quot;); scanf (&quot;%f&quot;,&amp;A1);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf (&quot;A2 = &quot;); 
+        scanf (&quot;%f&quot;,&amp;A2); printf (&quot;B0 = &quot;); scanf (&quot;%f&quot;,&amp;B0);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf (&quot;B1 = &quot;); 
+        scanf (&quot;%f&quot;,&amp;B1); printf (&quot;B2 = &quot;); scanf (&quot;%f&quot;,&amp;B2);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf (&quot;H = &quot;); 
+        scanf (&quot;%f&quot;,&amp;H); printf (&quot;T0 = &quot;); scanf (&quot;%f&quot;,&amp;T);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf (&quot;UC(0) = 
+        &quot;); scanf (&quot;%f&quot;, &amp;U0);U=U0; printf (&quot;IL(0) = &quot;); 
+        scanf (&quot;%f&quot;, &amp;I0); I=I0;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf (&quot;Число шагов 
+        порядка 30…40: &quot;); scanf (&quot;%d&quot;, &amp;M);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;printf (&quot;\nA0=%.4f\tA1=%.4f\tA2=%.4f\nB0=%.4f\tB1=%.4f\tB2=%.4f\nH=%.4f 
+        \n \n T(0) =&#8594;%.4f\t\tUc(0) = %.4f\t\tIl(0) = %.4f\n&quot;,A0,A1,A2,B0,B1,B2,H,T,U0,I0);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (j=1;j&lt;=M;j++) 
+        {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        y1= f1(U, I); y2= f2(U, I); k1= H*y1; n1= H*y2; T+= H/2; U=U0+k1/2; I=I0+n1/2;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y1= 
+        f1(U, I); y2= f2(U, I); k2= H*y1; n2= H*y2; U= U0+k2/2;I= I0+n2/2;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y1= 
+        f1(U, I); y2= f2(U, I); k3= H*y1; n3=H*y2; T+=H/2; U=U0+k3; I=I0+n3;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;y1= 
+        f1(U, I); y2= f2(U, I);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;U= 
+        U0+(k1+(k2+k3)*2+H*y1)/6; U0= U;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I= 
+        I0+(n1+(n2+n3)*2+H*y2)/6; I0= I;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if 
+        (j&lt;10) printf (&quot;T(%d) = %.4f\t\tUC(%d) = %.4f\t\tIL(%d) = %.4f\n&quot;,j,T,j,U,j,I);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else 
+        printf (&quot;T(%d)= %.4f\t\tUC(%d)= %.4f\t\tIL(%d)= %.4f\n&quot;,j,T,j,U,j,I);<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;} </font></p>
+      <p class="text"> Для начала организации итерационного цикла на ЭВМ находят 
+        начальные значения переменных <em>u</em><span class="indexsmall1">0</span> = <em>u</em><span class="indexsmall">C</span>(0<span class="indexsmalldigit">+</span>) = <em>u</em><span class="indexsmall">C</span>(0<span class="indexsmalldigit">-</span>) и <em>i</em><span class="indexsmall1">0</span> = <em>i</em><span class="indexsmall">L</span>(0<span class="indexsmalldigit">+</span>)= <em>i</em><span class="indexsmall">L</span>(0<span class="indexsmalldigit">-</span>). 
+        <br>
+        Алгоритм реализации метода Рунге-Кутта заключается в циклических вычислениях 
+      значений <em>u</em><span class="indexsmall">n</span><span class="indexsmalldigit">+1</span> и <em>i</em><span class="indexsmall">n</span><span class="indexsmallDigit">+1</span> на каждом <em>n</em> + 1 шаге по заданным значениям <em>u</em><span class="indexsmall">n</span> и <em>i</em><span class="indexsmall">n</span>      (начиная со значений <em>u</em><span class="indexsmalldigit">0</span> и <em>i</em><span class="indexsmalldigit">0</span>) по следующим формулам:</p>
+      <p class="text"><img src="gifs/f_19.gif" width="580" height="120"></p>
+      <p class="text">Перед началом вычислений надо задать шаг <em>h</em> (в первом приближении 
+        можно принять шаг <em>h</em> <img src="gifs/abo.gif" width="9" height="7"> 10<span class="indexsBIGdigit">-4</span> …10<span class="indexsBIGdigit">-5</span> с), <em>t</em><span class="indexsmalldigit">0</span> = 0 и начальные значения <em>u</em><span class="indexsmall">C</span>(0<span class="indexsmalldigit">+</span>) 
+        и <em>i<span class="indexsmall">L</span></em>(0<span class="indexsmalldigit">+</span>), ввести с клавиатуры также коэффициенты <em>a</em><span class="indexsmalldigit">0</span>, <em>a</em><span class="indexsmallDigit">1</span>, <em>a</em><span class="indexsmaldigit">2</span>, <em>b</em><span class="indexsmalldigit">0</span>, <em>b</em><span class="indexsmallDigit">1</span>, <em>b</em><span class="indexsmallDigit">2</span>. 
+      </p>
+      <p class="text"> 
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="235" height="127" hspace="10" vspace="0" align="left">
+          <param name="movie" value="swf/4_40.swf">
+          <param name=quality value=high>
+          <embed src="swf/4_40.swf" width="235" height="127" hspace="10" vspace="0" align="left" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash"></embed> 
+        </object>
+        Рассчитаем эти коэффициенты для цепи (рис. 4.40) с параметрами: <em>e</em> = <em>U</em>        = 10 B; <em>R</em><span class="indexsmalldigit">1</span> = 50 Oм;<br><em> R</em><span class="indexsmallDigit">2</span> = 25 Oм; <em>L</em>= 0,03 Гн; <em>C</em> = 10<span class="indexsBIGdigit">-5</span> Ф: <br>
+        а) при замыкании ключа <em>S</em> и нулевых начальных условиях (<em>u</em><span class="indexsmall">C</span>(0-) = 0 и<em> i<span class="indexsmall">L</span></em>(0-) 
+        = 0); <br>
+        б) при размыкании ключа<em> S</em>, т. е. при ненулевых начальных условиях (<em>u</em><span class="indexsmall">C</span>(0-) 
+        = 3,333 В и <em>i<span class="indexsmall">L</span></em>(0-) = 0,1333 A).<br>
+        <br>
+        <span class="head2">а) Решение первой части задачи.</span> Коэффициенты:<br>
+        <em>a</em><span class="indexsmalldigit">0</span> = <em>e</em>/(<em>R</em><span class="indexsmallDigit">1</span><em>C</em>) = 20000; <em>a</em><span class="indexsmalldigit">1</span> = -1/(<em>R</em><span class="indexsmallDigit">1</span><em>C</em>) = -2000; <em>a</em><span class="indexsmallDigit">2</span> = -1/<em>C</em>= -100000; <em>b</em><span class="indexsmalldigit">0</span> = 
+        0; <em>b</em><span class="indexsmallDigit">1</span> = 1/<em>L</em> = 33,333; <em>b</em><span class="indexsmallDigit">2</span> = - <em>R</em><span class="indexsmallDigit">2</span> /<em>L</em>= -833,33.<br>
+        Результаты расчёта по программе напряжения <em>u</em><span class="indexsmall">C</span>(<em>t</em>) и тока <em>i<span class="indexsmall">L</span></em>(<em>t</em>) приведены 
+        в таблице 4.1 (слева), а их графики изображены на рис. 4.41 (слева). <br>
+      </p>
+      <p align="center" class="text"><img src="gifs/tab_1.gif" width="450" height="265"></p>
+      <p class="text"><span class="head2">б) Решение второй части задачи.</span> 
+        При размыкании ключа <em>S</em> в момент времени <em>t </em>= <em>t</em><span class="indexsmallDigit">1</span> (см. рис. 4.41) конденсатор 
+        <em>С</em>, заряженный до напряжения <em>u</em><span class="indexsmall">C</span>(0<span class="indexsmalldigit">+</span>) = 3,333 В, разряжается на <em>L</em> и <em>R</em><sub>2</sub>, по 
+        которым протекает ток <em>i<span class="indexsmall">L</span></em>(0<span class="indexsmalldigit">+</span>) = 0,1333 А. Согласно второму закону Кирхгофа 
+        в послекоммутационной схеме ток  
+        <img src="gifs/f_20.gif" width="132" height="15" align="absmiddle"> напряжение <img src="gifs/f_21.gif" width="160" height="15" align="absmiddle"></p>
+      <p class="text">Откуда уравнения состояния:</p>
+      <p class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="gifs/f_22.gif" width="355" height="40"></p>
+      <span class="text">где <em>a</em></span><span class="indexsmallDigit">0</span><span class="text"> = 0; <em>a</em></span><span class="indexsmallDigit">1</span><span class="text"> = 0; <em>a</em><span class="indexsmallDigit">2</span> = -1/<em>C</em>= -100000; <em>b</em><span class="indexsmallDigit">0</span> = 0; <em>b</em><span class="indexsmallDigit">1</span> = 
+      1/<em>L</em> = 33,333; <em>b</em></span><span class="indexsmallDigit">2</span><span class="text"> = - <em>R</em></span><span class="indexsmallDigit">2</span><span class="text"> /<em>L</em>= = - 833,33. </span> 
+      <p class="text"> Результаты расчёта по программе напряжения <em>u</em><span class="indexsmall">C</span>(<em>t</em>) и тока 
+        <em>i<span class="indexsmall">L</span></em>(<em>t</em>) приведены в таблице 4.1 (справа), а их графики изображены на рис. 
+        4.41 (справа). </p>
+      <p align="center" class="text"> <img src="gifs/ris_3.gif" width="391" height="218"><br>
+      </p>
+      <p class="text">Из полученного рисунка видно, что переходный процесс в обоих 
+        случаях является колебательным. Однако амплитуда колебаний во втором случае 
+        убывает медленнее, чем в первом, т. к. коэффициент затухания |<span class="symbol">a</span><span class="indexsmallDigit">1</span>| = 1375 с<span class="indexup1"><sup class="text">-1</sup></span> больше 
+        (по модулю) коэффициента |<span class="symbol">a</span><span class="indexsmallDigit">2</span>|= 416,67 с<span class="indexup1"><sup class="text">-1</sup></span>.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td height="20"><a href="4_3_3.htm"><img src="../../../images/back.gif" width="60" height="32" border="0"></a> </td>
+    <td>
+      <div align="right"><a href="../Chapter_4/4_4.htm"><img src="../../../images/forward.gif" width="70" height="32" border="0"></a></div></td>
+  </tr>
+</table>
+</body>
+</html>

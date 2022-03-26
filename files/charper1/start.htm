@@ -1,0 +1,65 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+var pos=100;
+var speed=75;            
+var msg="<br><span style='position:relative;top:24pt; font-size:14pt; font-family:Arial; color:darkblue;line-height:18pt;'><b>&#160;&#160;&#160;&#160;&#160;&#160;В этой теме даны определения основных электрических величин: тока, напряжения, потенциала и ЭДС, их единицы (измерения). Рассмотрены топологические параметры схем электрических цепей (ветвь, узел и контур), компонентные уравнения пассивных элементов цепи (резистора, катушки индуктивности, конденсатора), вольт-амперные характеристики источников энергии. <br>&#160;&#160;&#160;&#160;&#160;&#160;<span style='color:blue;'>Изложены принципы, теоремы и законы электротехники. Дана классификация цепей и рассмотрены методы их анализа. Отмечены особенности применения рассмотренных методов к расчёту цепей с управляемыми источниками энергии и с нелинейными элементами.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Verdana;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+
+
+<body class="fon" onLoad="Type()">
+
+<center><span style="position:relative;top:22pt;font-size:14pt;font-family:Arial;color:darkblue;"><b>Тема 1</b> </span>
+<span style="position:relative;top:30pt;font-size:18pt;font-family:Arial;color:#994433;"><center><b>ЭЛЕКТРИЧЕСКИЕ ЦЕПИ<br>ПОСТОЯННОГО ТОКА</b></span></center>
+
+<table width="90%" height="80%" border="0" align="center"><tr><td valign="top">
+<div id="layerA" class=text align="absmiddle"></b></td></tr>
+
+
+
+
+<center><div align="center"><a href="page11.html" align=""><span style='position:relative;top:300pt;font-size:14pt;font-family:Arial'><b>НАЧАТЬ</a></b>
+
+</table>
+<td><tr>
+</body></html>

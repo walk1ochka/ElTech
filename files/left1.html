@@ -1,0 +1,361 @@
+<html>
+<head>
+<script LANGUAGE="JavaScript">
+<!--
+var total=1;
+var db = new Array();
+// -- Enter Values Here --
+// Format: dbAdd(parent[true|false] , description, URL [blank for nohref], level , TARGET [blank for "content"], new? [1=yes])
+dbAdd(true, "1.1. Элементы и параметры цепей" , "charper1/page11.html" , 0 , "mainFrame" , 0)
+dbAdd(false, "1.1.1. Основные понятия и определения" , "charper1/page111.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.1a. Единицы (измерения) электрических величин" , "charper1/page111a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.1b. Десятичные кратные и дольные единицы" , "charper1/page111b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.1c. Определения единиц электрических величин" , "charper1/page111c.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.2. Состав электрической цепи" , "charper1/page112.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.3. Схемы электрической цепи" , "charper1/page113.html" , 1 , "mainFrame", 0)
+dbAdd(false, "1.1.4. Пассивные элементы цепей" , "charper1/page114.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.4a. Резистор и его свойства" , "charper1/page114a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.1" , "charper1/zadanie11.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.4b. Индуктивная катушка и ее свойства" , "charper1/page114b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.2" , "charper1/zadanie12.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.4c. Конденсатор и его свойства" , "charper1/page114c.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.3" , "charper1/zadanie13.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.5. Активные элементы цепей", "charper1/page115.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.5a. Независимый источник напряжения" , "charper1/page115a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.5b. Зависимый источник напряжения" , "charper1/page115b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.1" , "charper1/upr11.html" , 1 , "mainFrame" , 0) 
+dbAdd(false, "Задание 1.4" , "charper1/zadanie14.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.5c. Независимый источник тока" , "charper1/page115c.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.5d. Зависимый источник тока" , "charper1/page115d.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.6. Взаимные преобразования источников энергии" , "charper1/page116.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.2" , "charper1/upr12.html" , 1 , "mainFrame" , 0) 
+dbAdd(false, "Задание 1.5" , "charper1/zadanie15.html" , 1 , "mainFrame" , 0)
+dbAdd(false, " 1.1.7. Топологические параметры схем цепей" , "charper1/page117.html" , 1 , "mainFrame", 0)
+dbAdd(false, "Задание 1.6" , "charper1/zadanie16.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1. Вопросы для самоконтроля" , "charper1/q11.html" , 1 , "mainFrame" , 0)      
+dbAdd(false, "1.1.8. Законы Ома и Кирхгофа" , "charper1/page118.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.8a. Закон Ома" , "charper1/page118a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.8b. Законы Кирхгофа" , "charper1/page118b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.9. Потенциальная диаграмма контура цепи" , "charper1/page119.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.3" , "charper1/upr13.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.7" , "charper1/zadanie17.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.1.10. Баланс мощностей в электрической цепи" , "charper1/page1110.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.4" , "charper1/upr14.html" , 1 , "mainFrame" , 0)
+dbAdd(true, "1.2. Методы анализа линейных электрических цепей постоянного тока" , "charper1/page12.html" , 0 , "mainFrame" , 0)
+dbAdd(false, "1.2.1. Задача анализа цепи" , "charper1/page121.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.2. Классификация электических цепей" , "charper1/page122.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.2a. Классификация электических цепей (продолжение)" , "charper1/page122a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.3. Принципы и теоремы электротехники" , "charper1/page123.html" , 1 , "mainFrame" , 0) 
+dbAdd(false, "1.2.4. Структурные преобразования схем замещения цепей" , "charper1/page124.html" , 1 , "mainFrame" , 0)   
+dbAdd(false, "1.2.4a. Последовательно-параллельное (смешанное) соединение элементов" , "charper1/page124a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.5" , "charper1/upr15.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.8" , "charper1/zadanie18.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.4b. Преобразования сопротивлений треугольника в звезду и наоборот" , "charper1/page124b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.9" , "charper1/zadanie19.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.4c. Перенос идеального источника напряжения" , "charper1/page124c.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.4d. Перенос идеального источника тока" , "charper1/page124d.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.10" , "charper1/zadanie110.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.5a. Делитель напряжения" , "charper1/page125a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.6" , "charper1/upr16.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.11" , "charper1/zadanie111.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.5b. Делитель тока" , "charper1/page125b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.7" , "charper1/upr17.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.12" , "charper1/zadanie112.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.6. Метод расчета, основанный на законе Ома" , "charper1/page126.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.8" , "charper1/upr18.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.13" , "charper1/zadanie113.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.14" , "charper1/zadanie114.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.7. Метод наложения" , "charper1/page127.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.9" , "charper1/upr19.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.15" , "charper1/zadanie115.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.8. Метод расчета, основанный на законах Кирхгофа" , "charper1/page128.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.10" , "charper1/upr110.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.11" , "charper1/upr111.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.16" , "charper1/zadanie116.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.9. Метод контурных токов" , "charper1/page129.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.12" , "charper1/upr112.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.13" , "charper1/upr113.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.17" , "charper1/zadanie117.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.10. Метод узловых напряжений" , "charper1/page1210.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.14" , "charper1/upr114.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.15" , "charper1/upr115.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.18" , "charper1/zadanie118.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.10a. Метод двух узлов" , "charper1/page1210a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.16" , "charper1/upr116.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.19" , "charper1/zadanie119.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2.11. Метод эквивалентного генератора (МЭГ)" , "charper1/page1211.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.17" , "charper1/upr117.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.20" , "charper1/zadanie120.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.2. Вопросы для самоконтроля" , "charper1/q12.html" , 1 , "mainFrame" , 0)    
+dbAdd(true, "1.3. Применение матриц к расчету электрических цепей" , "charper1/page13.html" , 0 , "mainFrame" , 0)
+
+dbAdd(false, "1.3.1. Граф электрической цепи. Узловая и контурная матрицы" , "charper1/page131.html" , 1 , "mainFrame" , 0)
+
+dbAdd(false, "Задание 1.21" , "charper1/zadanie121.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.3.3. Законы Кирхгофа в матричной форме" , "charper1/page133.html" , 1 , "mainFrame" , 0)
+
+dbAdd(false, "Упражнение 1.18" , "charper1/upr118.html" , 1 , "mainFrame" , 0)
+
+dbAdd(false, "Упражнение 1.19" , "charper1/upr119.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.22" , "charper1/zadanie122.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.3.4. Матричное уравнение контурных токов" , "charper1/page134.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.20" , "charper1/upr120.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.23" , "charper1/zadanie123.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.3.5. Матричное уравнение узловых напряжений" , "charper1/page135.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.21" , "charper1/upr121.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.24" , "charper1/zadanie124.html" , 1 , "mainFrame" , 0)
+dbAdd(true, "1.4. Особенности расчета цепей с зависимыми источниками энергии" , "charper1/page14.html" , 0 , "mainFrame" , 0)
+dbAdd(false, "1.4.1. Особенности расчета цепей с зависимыми источниками энергии" , "charper1/page141.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.22" , "charper1/upr122.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.23" , "charper1/upr123.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.24" , "charper1/upr124.html" , 1 , "mainFrame" , 0)
+dbAdd(true, "1.5. Нелинейные электрические цепи и методы их расчёта" , "charper1/page15.html" , 0 , "mainFrame" , 0)
+dbAdd(false, "1.5.1. Общие положеия" , "charper1/page151.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.1a. Методы расчёта нелинейных электрических цепей" , "charper1/page151a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.1b. Аппроксимирующие функции" , "charper1/page151b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.2. Характеристики нелинейных элементов и способы их задания" , "charper1/page152.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Таблица 1.3. Вид характеристик нелинейных элементов" , "charper1/tabl13.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3. Методы анализа нелинейных резистивных цепей" , "charper1/page153.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3a. Метод фиксированных моментов времени" , "charper1/page153a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3b. Графический метод" , "charper1/page153b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3b1. Последовательное соединение" , "charper1/page153b1.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3b2. Пвраллельное соединение" , "charper1/page153b2.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3b3. Смешанное соединение" , "charper1/page153b3.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3c. Расчет нелинейной цепи с двумя узлами" , "charper1/page153c.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3d. Расчет нелинейной цепи с одним НЭ" , "charper1/page153d.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.25" , "charper1/upr125.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.3e. Метод кусочно-линейной аппроксимации" , "charper1/page153e.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Таблица 1.4. Модели отрезков функции <i>i<sub><i>k</sub></i> = <i>f</i>(<i>u</i><sub><i>k</i></sub></i>)" , "charper1/tabl14.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.26" , "charper1/upr126.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.27" , "charper1/upr127.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.25" , "charper1/zadanie125.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "153f. Метод аналитической аппроксимации" , "charper1/page153f.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.28" , "charper1/upr128.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Задание 1.26" , "charper1/zadanie126.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.4. Анализ нелинейных динамических цепей" , "charper1/page154.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.4a. Метод кусочно-линейной аппроксимации" , "charper1/page154a.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.4b. Численные методы решения уравнений" , "charper1/page154b.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.4c. Выбор переменных системы уравнений" , "charper1/page154c.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.4d. Уравнения состояния простых цепей" , "charper1/page154d.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.29" , "charper1/upr129.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "1.5.4e. Уравнения состояния сложных цепей" , "charper1/page154e.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Упражнение 1.30" , "charper1/upr130.html" , 1 , "mainFrame" , 0)
+dbAdd(false, "Вопросы для самоконтроля" , "charper1/q13.html" , 0 , "mainFrame" , 0)    
+dbAdd(false, "Лаб. работа LR1" , "LabWorks/LwLauncher(1).exe" , 0 , "mainFrame" , 0)
+dbAdd(false, "Лаб. работа LR2" , "LabWorks/LwLauncher(2).exe" , 0 , "mainFrame" , 0)
+dbAdd(false, "Лаб. работа LR3" , "LabWorks/LwLauncher(3).exe" , 0 , "mainFrame" , 0)
+dbAdd(false, "Лаб. работа LR4" , "LabWorks/LwLauncher(4).exe" , 0 , "mainFrame" , 0)
+dbAdd(false, "Лаб. работа LR5" , "LabWorks/LwLauncher(5).exe" , 0 , "mainFrame" , 0)
+dbAdd(false, "Лаб. работа LR12" , "LabWorks/LwLauncher(12).exe" , 0 , "mainFrame" , 0)
+
+dbAdd(false, "Тестирование" , "tests/utis/utlauncher(1_t13.tfp).exe" , 0 , "mainFrame" , 0)
+
+// -- End modifications --
+
+// Get current cookie setting
+var current=getCurrState()
+function getCurrState() {
+  var label = "currState="
+  var labelLen = label.length
+  var cLen = document.cookie.length
+  var i = 0
+  while (i < cLen) {
+    var j = i + labelLen
+    if (document.cookie.substring(i,j) == label) {
+      var cEnd = document.cookie.indexOf(";",j)
+      if (cEnd == -1) { cEnd = document.cookie.length }
+      return unescape(document.cookie.substring(j,cEnd))
+    }
+    i++
+  }
+  return ""
+}
+
+// Add an entry to the database
+function dbAdd(mother,display,URL,indent,top,newitem) {
+  db[total] = new Object;
+  db[total].mother = mother
+  db[total].display = display
+  db[total].URL = URL
+  db[total].indent = indent
+  db[total].top = top
+  db[total].newitem = newitem
+  total++
+  }
+
+// Record current settings in cookie
+function setCurrState(setting) {
+  var expire = new Date();
+  expire.setTime(expire.getTime() + ( 7*24*60*60*1000 ) ); // expire in 1 week
+  document.cookie = "currState=" + escape(setting) + "; expires=" + expire.toGMTString();
+  }
+
+// toggles an outline mother entry, storing new value in the cookie
+function toggle(n) {
+  if (n != 0) {
+    var newString = ""
+    var expanded = current.substring(n-1,n) // of clicked item
+    newString += current.substring(0,n-1)
+    newString += expanded ^ 1 // Bitwise XOR clicked item
+    newString += current.substring(n,current.length)
+    setCurrState(newString) // write new state back to cookie
+  }
+}
+
+// returns padded spaces (in mulTIPles of 2) for indenting
+function pad(n) {
+  var result = ""
+  for (var i = 1; i <= n; i++) { result += "&nbsp;&nbsp;&nbsp;&nbsp;" }
+  return result
+}
+
+// Expand everything
+function explode() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "1"
+    current += "1"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+// Collapse everything
+function contract() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+function tree_close() {
+  window.parent.location = window.parent.content.location;
+  }
+// end -->
+</script>
+<TITLE>Тема 2</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="styles/emx_nav_left.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+ background-image: url(images/left.jpg);
+ margin-left: 5px;
+ margin-top: 5px;
+ margin-right: 5px;
+ margin-bottom: 5px;
+}
+.style1 {
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+}
+body,td,th {
+	color: #ffffff;
+                  font-weight: bold;
+	font-size: 12px;
+}
+-->
+</style></HEAD>
+
+<BODY bgcolor="#0000ff" LINK="#0000ff" VLINK="#00ffff">
+<table width=100% border=0 cellpadding=5 cellspacing=0 bordercolor="#0000ff">
+<tr>
+<td align=left><div align="right"><a href="javascript:contract();"><IMG SRC="images/minimize.gif" WIDTH=16 HEIGHT=14 BORDER=0></a>
+      <a href="javascript:explode();"><IMG SRC="images/maximize.gif" WIDTH=16 HEIGHT=14 BORDER=0></a>
+      <a href="javascript:tree_close();">      </a></div></td>
+</tr>
+<tr>
+  <td align=left><div align="center" class=" style1">Тема 1. ЭЛЕКТРИЧЕСКИЕ ЦЕПИ ПОСТОЯННОГО ТОКА</div></td>
+  </tr>
+</table>
+<br>
+<table border=0 width=100%>
+  <tr><td>
+<font size="-1">
+
+<script LANGUAGE="JavaScript">
+<!--
+// Set the initial state if no current state or length changed
+if (current == "" || current.length != (db.length-1)) {
+  current = ""
+  initState = ""
+  for (i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState)
+  }
+var prevIndentDisplayed = 0
+var showMyDaughter = 0
+// end -->
+
+<!--
+var Outline=""
+// cycle through each entry in the outline array
+for (var i = 1; i < db.length; i++) {
+  var currIndent = db[i].indent           // get the indent level
+  var expanded = current.substring(i-1,i) // current state
+  var top = db[i].top
+  if (top == "") { top="content" }
+  // display entry only if it meets one of three criteria
+  if ((currIndent == 0 || currIndent <= prevIndentDisplayed || (showMyDaughter == 1 && (currIndent - prevIndentDisplayed == 1)))) {
+  Outline += pad(currIndent)
+
+  // Insert the appropriate GIF and HREF
+  newitem = "";
+  if (db[i].newitem) { newitem="_new"; }
+  if (!(db[i].mother)) {
+    Outline += "<IMG SRC=\"images/blank.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/document" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+    }
+  else {
+      if (current.substring(i-1,i) == 1) {
+        Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to collapse\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/minus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/open" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      else {
+     Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to expand\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/plus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/closed" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      }
+    Outline += "&nbsp;";
+
+    if (db[i].URL == "" || db[i].URL == null) {
+      Outline += "" + db[i].display      // no link, just a listed item
+      }
+    else {
+      Outline += " <A HREF=\"" + db[i].URL + "\" TARGET=\"" + top + "\">" + db[i].display + "</A>"
+      }
+ // Bold if at level 0
+    if (currIndent == 0) {
+      Outline = "" + Outline + ""
+      }
+    Outline += "<BR>"
+    prevIndentDisplayed = currIndent
+    showMyDaughter = expanded
+    // if (i == 1) { Outline = ""}
+    if (db.length > 25) {
+      document.write(Outline)
+      Outline = ""
+      }
+    }
+  }
+document.write(Outline)
+// end -->
+</script>
+</font>
+</td>
+  </tr>
+
+
+</body>
+</head>
+</HTML>
+

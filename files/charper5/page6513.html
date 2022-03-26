@@ -1,0 +1,88 @@
+<html>
+<head>
+
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.5.1.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.5.1.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style1 {font-style: italic}
+-->
+</style>
+</head>
+<body>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+        <p align="center"><strong> 6.5.1.3. Вольт-амперная характеристика (ВАХ) управляемого дросселя по первой гармонике</strong></p>
+        <p align="justify"><strong><span class="head2">Под ВАХ по первым гармоникам управляемого дросселя понимают графическую или аналитическую связь между действующим значением первой гармоники переменного напряжения </span></strong><span class="index"><strong> <em><span class="text">U<span class="indexsmalldigit">1</span></span></em></strong></span><span class="head2"><strong> на обмотке </strong></span><span class="index">w</span><span class="text"><span class="indexsmalldigit">1</span></span><span class="head2"><strong> и действующим значением первой гармоники переменного тока </strong></span><span class="index">I</span><span class="text"><span class="indexsmalldigit">1</span></span><span class="head2"><strong> при постоянном токе </strong></span><span class="text"><span class="index">I</span><span class="indexsmalldigit">0</span></span><span class="head2"><strong>, взятом в качестве параметра, т. е. <span class="text"><span class="index">U</span><span class="indexsmalldigit">1</span><span class="text">(<i>I</i></span><span class="indexsmalldigit">1</span><i/>)</span></i> при <span class="text"><span class="index">I</span><span class="indexsmalldigit">0</span></span> = <em>const</em>. </strong></span></p>
+        <p align="justify" class="text"> ВАХ дросселя можно получить опытным путём с помощью схемы (рис. 6.41) или расчётным. Аналитический расчёт и построение ВАХ дросселя проводят, основываясь на аппроксимации кривой намагничивания <em class="index">Н</em>(<em class="index">В</em>) гиперболическим синусом 
+
+
+        <span class="index">H =</span> <span class="index">a</span>sh(<span class="symbol">b</span><span class="index">B</span>) или иными функциями. Методика определения коэффициентов <em> a</em> и <em> b</em> подробно описана в учебнике [6, c. 465]. Например, найденное аналитическое выражение кривой намагничивания <em class="index">Н</em>(<em class="index">В</em>) для стали 1512 имеет вид:        <span class="index">H =</span> 0,245sh(6,85<span class="index">B</span>). </p>
+        <p align="justify" class="text"> Амплитуды постоянной и переменной составляющих магнитной индукции <em class="index">В</em><span class="indexsmalldigit">0</span> и <span class="index"><em>В</em></span><em><span class="indexsmall">m</span></em> определим через потоки и сечение магнитопровода <em> <span class="index">S</span><span class="indexsmall">M</span></em>: </p>
+        <p align="justify" class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em class="index">В</em><span class="indexsmalldigit">0</span> <span class="index">=</span> <em class="index">Ф</em><span class="indexsmalldigit">0</span>/<em><span class="index">S</span><span class="indexsmall">M</span></em>; </p>
+        <table width="100%"  border="0">
+          <tr>
+            <th height="41" scope="col"><div align="left"><span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em class="index">В</em></span><span class="indexsmall">m</span><span class="text"><span class="index"> =</span> <em class="index">Ф</em><span class="indexsmall">m</span>/<em><span class="index">S</span></em></span><span class="indexsmall">M</span> <span class="index">= U</span><span class="indexsmalldigit">1</span><span class="indexsmall">m </span><span class="text"> /(</span><span class="symbol">w</span><span class="index">w</span><span class="indexsmalldigit">1</span><span class="text"><em><span class="index">S<span class="indexsmall">M</span></span></em>) </span><span class="index">=</span><span class="text"> <span class="index">U</span></span><span class="indexsmalldigit">1</span><span class="text"> /(4,44<span class="symbol">w</span><span class="index">w</span></span><span class="indexsmalldigit">1</span><span class="text"><em><span class="index">S<span class="indexsmall">M</span></span></em>).</span></div></th>
+            <th scope="col"><div align="right"><span class="text"><span class="head2">(6.21)</span> </span></div></th>
+          </tr>
+        </table>
+        <p align="justify" class="text">Формула (6.21) даёт возможность найти амплитуду переменной составляющей магнитной индукции по действующему значению синусоидального напряжения <em class="index">U</em><span class="indexsmalldigit">1</span>, частоте <em class="index">f</em>, числу витков <em class="index">w</em><span class="indexsmalldigit">1</span>  и сечению <em class="index">S</em><span class="indexsmall">M</span>. </p>
+        <p align="justify" class="text"> Следует обратить внимание на то, что при сделанных допущениях амплитуда магнитного потока не зависит от степени подмагничивания магнитопровода постоянным током. </p>
+        <p align="justify" class="text"> Ток <em> <span class="index">I</span></em><span class="indexsmalldigit">0</span><span class="index"> = <em> H</em></span><span class="indexsmalldigit">0</span><span class="index"><em>l</em></span><em><span class="indexsmall">M</span></em> /<em class="index"> w</em><span class="indexsmalldigit">0</span>, а действующее значение тока <em> <span class="index">I</span></em><span class="indexsmalldigit">1</span> определим из выражения          <span class="index">w</span><span class="indexsmalldigit">1</span><span class="index">I</span><span class="indexsmalldigit">1</span><span class="indexsmall">m</span><span class="index"> = H</span><span class="indexsmalldigit">1</span><span class="indexsmall">m</span><span class="index">l</span><span class="indexsmall">M</span>:  </p>
+        <p align="justify" class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          <img src="Page6513/page6513_clip_image002_0005.gif" width="191" height="25" align="absmiddle">. </p>
+        <p align="justify" class="text"> При <strong class="head2">графическом</strong> построении ВАХ по первой гармонике <em class="index"> U</em><span class="indexsmalldigit">1</span>(<span class="index"><em>I</em></span><span class="indexsmalldigit">1</span>) (<span class="index">U</span><span class="indexsmalldigit">1</span> <span class="index">=</span> 4,44<span class="symbol">w</span><span class="index">w</span><span class="indexsmalldigit">1</span><span class="index">S</span><span class="indexsmall">M</span><span class="index">B</span><span class="indexsmall">m</span>   - действующее значение напряжения) дросселя задаются различными значениями амплитуды напряжения <em class="index"> U</em><span class="indexsmalldigit">1</span><span class="indexsmall"><em>m</em></span> (т. е. <span class="index"><em>Ф</em></span><em><span class="indexsmall">m</span></em>), по точкам строят кривую тока <em class="index"> i</em> в функции времени и путём разложения её в ряд Фурье находят соответствующие амплитуды первой гармоники тока <em class="index"> I</em><span class="indexsmalldigit">1</span><span class="indexsmall"><em>m</em></span>. (Пример графического построения кривой тока <em class="index"> i</em>(<span class="symbol"><em>w</em></span><span class="index"><em>t</em></span>) дан на рис. 6.42). </p>
+        <p align="justify" class="text"><strong class="head2"> Аналитическое </strong> построение точек обсуждаемой характеристики производят, используя разложение гиперболического синуса и косинуса от постоянной и синусоидально изменяющейся составляющих магнитной индукции <span class="index"><em>В </em>= <em> B</em></span><span class="indexsmalldigit">0</span> + <em> <span class="index">B</span><span class="indexsmall">m</span></em>sin<span class="symbol"><em>w</em></span><em class="index">t</em> в ряды Фурье, коэффициенты которых описываются табулированными функциями Бесселя различных порядков от чисто мнимого аргумента <em> <span class="index">j</span><span class="symbol">b</span><span class="index">В</span><span class="indexsmall">m</span></em> [1, c. 462]. Связь между амплитудой магнитной индукции <em>В<span class="indexsmall">m</span></em>, амплитудой первой гармоники напряженности поля<em> Н</em><span class="indexsmalldigit">1</span><em class="indexsmall">m</em> и постоянной составляющей индукции <span class="index"><em class="index">В</em></span><span class="indexsmalldigit">0</span> в сердечнике имеет вид: </p>
+        <table width="100%"  border="0">
+          <tr>
+            <th height="30" scope="col"><div align="left"><span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="index">H</span><span class="indexsmalldigit">1</span><span class="indexsmall">m</span> </span><span class="index">= </span><span class="text">2<span class="index">a</span>sh(<span class="symbol">b</span><span class="index">B</span></span><span class="indexsmalldigit">0</span><span class="text">)[-</span><span class="index">jJ</span><span class="indexsmalldigit">1</span><span class="text">(<span class="symbol">b</span><span class="index">B</span></span><span class="indexsmall">m</span><span class="text">)],</span></div></th>
+            <th scope="col"><div align="right"><span class="text"><span class="head2">(6.22)</span> </span></div></th>
+          </tr>
+        </table>
+        <p align="justify" class="text">где 
+
+
+        -<span class="index"> J</span><span class="indexsmalldigit">1</span>(<span class="symbol">b</span><span class="index">B</span><span class="indexsmall">m</span>) – табулированная функция Бесселя первого порядка от чисто мнимого аргумента -<em> j<span class="symbol">b</span>В<span class="indexsmall">m</span></em> [7, с. 65]. </p>
+        <p align="justify" class="text"> При этом постоянная составляющая напряжённости магнитного поля </p>
+        <table width="100%"  border="0">
+          <tr>
+            <th height="28" scope="col"><div align="left"><span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="index">H</span><span class="indexsmalldigit">0</span> <span class="index">=</span><span class="index"> a</span>sh(<span class="symbol">b</span><span class="index">B</span><span class="indexsmalldigit">0</span>)[<span class="index">jJ</span><span class="indexsmalldigit">0</span>(<span class="symbol">b</span><span class="index">B</span><span class="indexsmall">m</span>)], </span></div></th>
+            <th scope="col"><div align="right"><span class="text"><span class="head2">(6.23) </span></span></div></th>
+          </tr>
+        </table>
+        <p align="justify" class="text"><img src="images/6_43.gif" width="171" height="176" align="left">где 
+
+
+        <span class="index">J</span><span class="indexsmalldigit">0</span>(<span class="symbol">b</span><span class="index">B</span><span class="indexsmall">m</span>) - функция Бесселя нулевого порядка. </p>
+        <p align="justify" class="text"> На рис. 6.43 качественно изображены ВАХ управляемого дросселя по первым гармоникам. Параметром является ток управления (подмагничивания) <em class="index"> I</em><span class="indexsmalldigit">0</span>. ВАХ для первых гармоник используют при расчёте установившихся режимов в нелинейных цепях, которые называют <strong class="head2">расчётом по первым гармоникам</strong>. Воспользовавшись семейством ВАХ по первым гармоникам <em class="index">U</em><span class="indexsmalldigit">1</span>(<em class="index">I</em><span class="indexsmalldigit">1</span>), можно проанализировать изменение тока <em class="index"> I</em><span class="indexsmalldigit">1</span> от изменения тока <em class="index"> I</em><span class="indexsmalldigit">0</span> при <em class="index"> U</em><span class="indexsmalldigit">1</span> = <em>const</em> (см. пунктирную линию <em>а</em> – <em>б </em>на рис. 6.43), а при <em class="index"> I</em><span class="indexsmalldigit">1</span> = <em>const</em> - построить график <em class="index"> U</em><span class="indexsmalldigit">1</span> в функции <em class="index"> X</em><span class="indexsmalldigit">1</span>, воспользовавшись пунктирной линией <em>в – г</em>. </p>
+        <p align="justify" class="text"> При этом <strong class="head2">индуктивное сопротивление</strong> дросселя по первой гармонике <em class="index">X</em><span class="indexsmalldigit">1</span><span class="symbol"> »</span><em class="index"> U</em><span class="indexsmalldigit">1</span>/<em class="index">I</em><span class="indexsmalldigit">1</span>  (индуктивность дросселя <br><em class="index"> L</em><span class="indexsmalldigit">1</span> <span class="index">= <em> X</em></span><span class="indexsmalldigit">1</span>/<em class="symbol style1">w</em>) является функцией напряжения <em class="index"> U</em><span class="indexsmalldigit">1</span> и тока подмагничивания <em class="index"> I</em><span class="indexsmalldigit">0</span>: изменяя ток подмагничивания, можно управлять сопротивлением <em class="index"> X</em><span class="indexsmalldigit">1</span> дросселя и, соответственно, током <em class="index"> I</em><span class="indexsmalldigit">1</span>. </p>
+      </div></td>
+  </tr>
+    <tr> 
+      <td height="20"><a href="../charper6/page6512.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> </td>
+      <td>
+      <div align="right"><a href="../charper6/upr68.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>      </td>
+    </tr>
+</table> 
+</body>
+</html>

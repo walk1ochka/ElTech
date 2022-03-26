@@ -1,0 +1,61 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T10.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T10.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+
+var pos=100;
+var speed=100;            
+var msg="<span style='position:relative; font-size:14pt; font-family:Arial; color:darkblue;line-height:20pt;'><b>Синхронные машины могут работать как в генераторном режиме, так и в режимах двигателя и компенсатора реактивной мощности. Синхронные генераторы &#8211; самые мощные электрические машины. Мощность генераторов, устанавливаемых на гидростанциях, достигает 640&nbsp;МВт, а турбогенераторов, устанавливаемых на тепловых станциях, &#8211; 1200&nbsp;МВт. Синхронные двигатели используются в устройствах, не требующих изменения частоты вращения: это компрессоры, вентиляторы, насосы. Они выпускаются в диапазоне от 132&nbsp;кВт до 30&nbsp;МВт. Выпускаются синхронные двигатели также и в виде микромашин.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Arial;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad=Type()>
+<br><br><br>
+<center><span style="position:relative;top:0pt;font-size:16pt;font-family:Arial;color:darkblue;"><b>Тема 8 </b></span>
+<span style="position:relative;top:11pt;font-size:18pt"><center><font style="color:#994433;"><b>СИНХРОННЫЕ МАШИНЫ</b></span></center>
+<table width="75%" height="80%" border="0" align="center"><tr><td valign="top">
+<br><br><div id="layerA" class=text align="absmiddle"></div>
+</table>
+<table width="98%" height="5%" border=0 align="bottom"><span class=text></table>
+
+<div align="center"><a href="page8_1.html"><span style='position:relative;top:-72pt;font-size:14pt;font-family:Arial;color:blue;'><b>НАЧАТЬ</b></a>
+</body><html>

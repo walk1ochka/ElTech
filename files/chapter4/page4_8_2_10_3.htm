@@ -1,0 +1,117 @@
+<html>
+<head>
+<title>5.8.2.10. Активные фильтры</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+<!--
+.style5 {font-family: Symbol}
+.style6 {font-size: 14px}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong> <strong> </strong> <strong>        <strong>5.8.2.10. Активные фильтры </strong>  </strong> </strong></p>
+      </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <p class="text">Требования к миниатюризации электронной аппаратуры и фильтрации сигналов на низких частотах (скажем, с частотой среза 10 Гц) привели к разработке активных фильтров, которые не содержат индуктивных элементов и могут быть реализованы в виде интегральных микросхем. </p>
+        <p>Активные <em>RC</em>-фильтры ( <em>ARC</em>-фильтры) состоят из постоянных резисторов <em>R </em> и конденсаторов <em>C </em> ( <em>RC</em>-звеньев) и активных элементов (операционных усилителей, транзисторов), работающих в линейном режиме. Передаточная функция <em>ARC</em>-фильтра по напряжению <em>H</em><span class="indexsmall"><em>u</em></span>(<em>p</em>) = <em class="index">U</em><span class="indexsmaldigit">2</span>(<em>p</em>)/<em class="index">U</em><span class="indexsmaldigit">1</span>(<em>p</em>) представляет собой отношение двух операторных полиномов, т. е. </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="57%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10/page5_8_2_10_clip_image002.gif" width="331" height="50" align="absmiddle"> </td>
+            <td width="43%" class="head2"> <div align="right">(5.28) </div></td>
+          </tr>
+        </table>
+        <br class="text"><a href="page5_8_2_10_1.htm">- 
+
+ 
+        Реализация <em>ARC</em>-фильтров<strong>.</strong></a>
+        <br class="text"><a href="page5_8_2_10_2.htm">-          Коэффициенты передачи звеньев <em>ARC</em>-фильтра.</a> 
+        <p class="head1"> - Проектирование <em>ARC</em>-фильтров<a href="page5_8_2_10_3.htm">.</a> 
+        <p class="text"> В настоящее время проектирование фильтров по заданной АЧХ фильтра основывается на использовании таблиц и номограмм, приводимых в справочниках. Формулировка требований к <em>ARC</em>-фильтрам определяется типом фильтра и структурой используемого справочника. Например, в работе [14] (Джонсон Д., Джонсон Дж., Мур Г. Справочник по активным фильтрам. - М.: Энергоатомиздат, 1983) передаточная функция <em class="index">H</em><span class="indexsmall">u</span>(<em>p</em>) активного <em></em>ФНЧ <em></em>представлена в виде произведения функций звеньев второго порядка <em class="index">H</em><span class="indexsmall">k</span>(<em>p</em>), а для фильтров нечетного порядка как сомножитель входит функция одного звена первого порядка. </p>
+        <p>При заданном способе аппроксимации частотной характеристики (по Баттерворту (<em>B</em>), по Чебышеву (<em>T</em>), по Бесселю (<em>BS</em>)) для звеньев первого и второго порядков функции <em class="index">H</em><span class="indexsmall"><em>u</em></span>(<em>p</em>) определены следующим образом: </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="78%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image002.gif" width="217" height="43" align="absmiddle">              <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0000.gif" width="249" height="47" align="absmiddle"> </td>
+            <td width="22%" class="head2"> <div align="right">(5.34) </div></td>
+          </tr>
+        </table>
+        <p class="text"> а для инверсного Чебышева ( <em>I </em>) и эллиптического ( <em>E </em>) фильтра функции звеньев первого и второго порядков имеют вид: </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="75%">             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img width="415" height="48" src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0001.gif">   </td>
+            <td width="25%"> <div align="right" class="head2">(5.35) </div></td>
+          </tr>
+        </table>
+        <p class="text"> где <em>а</em>, <em>b</em> и <em>с</em> - нормированные коэффициенты; <em class="index">H</em><span class="indexsmaldigit">0 </span>- коэффициент усиления звена при = 
+        0; <span class="symbol"><em>w</em></span><em class="indexsmall">с </em>= 2<span class="symbol"><em>p</em></span><em>f<span class="indexsmall">с</span> </em> - частота среза (граница полосы пропускания <em class="symbol">Dw</em>)звена. </p>
+         Для ФВЧ различных типов передаточные функции: </p>
+        <p class="text"> <img width="462" height="49" src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0002.gif"> </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="72%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="255" height="50" src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0003.gif"> </td>
+            <td width="28%" class="head2"> <div align="right">(5.36) </div></td>
+          </tr>
+        </table>
+        <p class="text"> где <em class="index">H</em><span class="indexsmaldigit">0</span> - коэффициент усиления звена при <em class="symbol">w </em>=<span class="indexsmallSymbol style5"><img src="page5_8_2_10_3/12.jpg" width="21" height="16" align="absmiddle"></span>; а для полосовых (ПФ) второго порядка, образованных из двух ФНЧ первого порядка типа <em>B </em>, <em>T </em>, <em></em><em>E </em>или <em></em><em>I </em>: </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="73%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="305" height="73" src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0004.gif"> </td>
+            <td width="37%"><p align="right" class="head2">(5.37) </p></td>
+          </tr>
+        </table>
+        <p class="text"> Введение в формулы (5.34)…(5.37) угловой частоты среза <span class="symbol"><em>w</em></span><em class="indexsmall">с </em>даёт возможность оперировать безразмерными коэффициентами <em>а</em><em class="indexsmall">k </em>, <em>b</em><span class="indexsmall"><em>k</em></span><em> </em> и <em>с</em><span class="indexsmall"><em>k</em></span><em>. </em> </p>
+        <p>В табл. 5.5 даны эти коэффициенты для некоторых фильтров от второго до шестого порядка включительно, заимствованные из таблиц справочника [14], где они приведены с большим числом значащих цифр и для существенно большего числа разновидностей фильтров. </p>
+        <p>Коэффициенты <em><em>а</em><em class="indexsmall">k </em>, <em>b</em><span class="indexsmall"><em>k</em></span>  и <em>с</em><span class="indexsmall">k</span> </em>нормированы приведением к частоте <span class="symbol"><em>w</em></span><em class="indexsmall">с </em> = 1 рад/с для неравномерности коэффициента передачи <em class="index">H</em><em>u</em>(<em class="symbol">w</em>) в полосе пропускания (<span class="symbol"><em>a</em></span><em><span class="indexsmall">max</span> </em> = - 0,1 дБ и <span class="symbol"><em>a</em></span><em class="indexsmall">max </em>= - 0,5 дБ) или в полосе задерживания (<span class="symbol"><em>a</em></span><em class="indexsmall">min </em>= - 40 дБ) и рассчитаны так, что на частоте среза <span class="symbol"><em>w</em></span><em class="indexsmall">с </em> АЧХ фильтров Баттерворта и инверсного фильтра Чебышева имеет спад -3 дБ. Для фильтров Чебышева и эллиптического фильтра АЧХ на частоте <span class="symbol"><em>w</em></span><em class="indexsmall">с </em> имеет спад, равный значению допустимых пульсаций в полосе пропускания, т. е. в полосе пропускания АЧХ пульсирует между уровнем 
+
+ 
+          
+
+ 
+          <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image0w02.gif" width="58" height="24" align="absmiddle">  и 1. Так, например, при <span class="symbol"><em>a</em></span><em><span class="indexsmall">max</span></em>= -0,5 дБ АЧХ пульсирует между уровнями 0,944 и 1. Наконец, для фильтра Бесселя на частоте <span class="symbol"><em>w</em></span><em class="indexsmall">с</em><em> </em>задержка сигнала равна примерно 1/<span class="symbol"><em>w</em></span><em class="indexsmall">с</em>.
+        </p>
+        <p align="center"><img src="page5_8_2_10_3/Untitled-1.gif" width="641" height="390"></p>
+        <p align="left" class="text"> Определив собственную частоту звена второго порядка <span class="symbol"><em>w</em></span><em><span class="indexsmall">ck</span> </em>= <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0007.gif" width="43" height="28" align="absmiddle">где <span class="symbol"><em>w</em></span><em><span class="indexsmall">c</span></em><em> </em>- частота среза фильтра, а добротность <em class="indexbig">Q</em><span class="indexsmall"><em>k</em></span><em> </em>= <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image004.gif" width="27" height="23" align="absmiddle">/<em>b</em><span class="indexsmall"><em>k</em></span><em> </em>, передаточную функцию звена ФНЧ второго порядка переписывают в нормированном виде: </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="62%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img width="284" height="43" src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0008.gif"> </td>
+            <td width="38%"><p align="right" class="head2">(5.38) </p></td>
+          </tr>
+        </table>
+        <p align="left" class="text"> где <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0009.gif" width="48" height="23" align="absmiddle"><em> p</em>/<img src="page5_8_2_10_3/page5_8_2_10_3_clip_image004_0000.gif" width="35" height="27" align="absmiddle">- нормированная частота; <em>H</em><span class="indexsmaldigit">0</span> &lt; 10; <em>Q </em> &lt; 10; <em>H</em><span class="indexsmaldigit">0</span><em>Q </em> &lt; 100. </p>
+        <p align="left" class="text"> Для более высоких добротностей <em>Q </em> ( <em>Q </em>&gt;10) требуются более сложные схемы <em>А</em><em>RC</em>-фильтров с применением высококачественных типов резисторов и конденсаторов. Чем больше <em>Q</em>, тем больше склонность фильтра к самовозбуждению (генерации). </p>
+        <p align="left" class="text"> Нормированные передаточные функции ФВЧ и ПФ можно получить из (5.34) и (5.35), заменив оператор <em>p </em> оператором <em>s </em> с помощью преобразований: <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image002_0010.gif" width="96" height="23" align="absmiddle">и <img src="page5_8_2_10_3/page5_8_2_10_3_clip_image004_0001.gif" width="232" height="24" align="absmiddle">. </p>
+
+
+        <br class="text"><a href="page5_8_2_10_4.htm" >-     Порядок расчёта активного ФНЧ.</a>
+		<br class="text"><a href="page5_8_2_10_5.htm">-   Алгоритм расчёта АЧХ и ФЧХ АRС-фильтров на ЭВМ.   </a>
+         <br class="text">  <a href="page5_8_2_10_6.htm">-        Алгоритмы расчёта временных характеристик ARC-фильтров.   </a>
+		
+		
+        <p>&nbsp;</p>
+        <p class="text">&nbsp;  </p>
+      </div>
+		
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_8_2_9.htm"><img src="../images/back.gif" width="60" height="32" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_9.htm"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

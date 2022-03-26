@@ -1,0 +1,245 @@
+<html>
+<head>
+<title>3.2.4.5. Ток i, напряжения uL и uC в переходном процессе при вещественных отрицательных корнях</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.2.4.5.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter4/4.2.4.5.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align="center"><span style="font-size:14pt;font-family:Arial;color:darkblue;"><b>3.2.4.5. Ток <em>i</em>, напряжения <em>u</em><span class='indexsmall'><b>L</b></span> и <em> u</em><span class='indexsmall'><b>C</b></span> в переходном процессе <br>при вещественных отрицательных корнях</b><br></span>
+
+<div align='left'><span style="font-size:12pt;font-family:Arial";><span style="margin-left:23pt"><span style="position:relative;top:4pt;color:red;"><b>Ток в цепи</b><br></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><img src="images/f_64.gif" width="190" height="39" align="middle">,<br></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt;color:blue;'><span style="position:relative;top:5pt;margin-left:0pt"><b>а напряжения на индуктивной катушке и на конденсаторе:</b><br></span></span>
+
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:5pt;margin-left:43pt"><img src="images/f_65.gif" width="340" height="93"><br>
+
+<div align="left"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:23pt"><span style="position:relative;top:4pt"><b>Определим постоянную интегрирования <em>К. </em>При <em>t = </em>0 
+
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15t'><span style="position:relative;top:5pt;margin-left:43pt"><img src="images/f_66.gif" width="286" height="44" align="absmiddle"><span> <span style="position:relative;top:25pt"><b><em>K = U</em>,</b> так как согласно теореме Виета <em>p</em><span class="indexsmalldigit"><b>1</b></span><em>p</em><span class="indexsmalldigit"><b>2</b></span> = 1/<em>LC</em>.</b><br>
+ 
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:0pt"><img src="images/image007.gif"  width="250" height="160" hspace="10" align="left" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash"></embed></object></b><br>  
+ 
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:-7pt;margin-left:23pt"><b>Тогда напряжение на конденсаторе </b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><img src="images/f_67.gif" width="248" height="41"><br>
+                   <span style="position:relative;top:3pt"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:23pt"><b>На рис. 3.18 приведены графики переходных величин: <em>i</em>(<em>t</em>), <em>u</em><span class="indexsmall"><b>L</b></span>(<em>t</em>) и <em>u</em><span class="indexsmall"><b>С</b></span>(<em>t</em>). Из полученных аналитических выражений, а также из рисунка видно, что переходный процесс в этом случае является<span style='color:red;'> <em>апериодическим</em></b>.</span></span> <br><br>
+ 
+<a href="3_2_4_6.htm"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:40pt"><b>3.2.4.6. Определение постоянных интегрирования при комплексно-сопряжённых корнях; </a></b><br>
+<a href="3_2_4_7.htm"><span style="font-size:12pt;font-family:Arial"><span style="margin-left:40pt"><b>3.2.4.7. Ток <em>i </em>в переходном процессе при комплексно-сопряжённых корнях; </a></b><br>
+<a href="3_2_4_8.htm"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:40pt"><b>3.2.4.8. Декремент затухания переходного процесса; </a></b><br>
+<a href="3_2_4_9.htm"><span style="font-size:12pt;font-family:Arial";><span style="margin-left:40pt"><b>3.2.4.9. Напряжения <em>u</em><span class="indexsmall"><b>L</b></span>, <em>u</em><span class="indexsmall"><b>C</b></span> и ток <em>i </em> при комплексно-сопряженных и равных корнях.</a></b><br>
+    <br>             
+  <tr>
+    <td height="20"><br><br><a href="3_2_4_4.htm"><img src="../../../images/back.gif" width="60" height="20" border="0" align='left'></a> </td>
+    <td>
+      <div align="right"><a href="3_2_4_6.htm"><img src="../../../images/forward.gif" width="70" height="22" border="0" align='right'></a></div></td>
+  </tr>
+
+</body>
+</html>

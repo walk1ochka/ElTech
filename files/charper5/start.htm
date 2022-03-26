@@ -1,0 +1,64 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T6.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T6.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+
+var pos=100;
+var speed=75;            
+var msg="<span style='position:relative;left;0pt; font-size:14pt; font-family:Arial; color:darkblue;line-height:20pt;'><b>В этой теме рассматриваются магнитные цепи при постоянных, переменных и постоянных и переменных магнитодвижущих силах, анализируются методы их расчёта. Приведена классификация и принципы функционирования электромагнитных устройств и электрических аппаратов: дросселей, реле, контактора, пускателя, магнитного усилителя, феррорезонансных стабилизаторов напряжения, а также их условные обозначения в схемах управления электрическими установками.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Courier New;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 5</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad="Type()">
+<br>
+<center><span style="position:relative;top:0pt;text-indent:0pt;font-size:14pt;font-family:Arial;color:darkblue;"><b>Тема 5 </span></big>
+<span style="position:relative;top:11pt;font-size:18pt"><center><font style="color:#994433;">МАГНИТНЫЕ ЦЕПИ<br> И ЭЛЕКТРОМАГНИТНЫЕ УСТРОЙСТВА</big></span></center>
+
+<table width="75%" height="80%" border="0" align="center"><tr><td valign="top">
+<br><br><div id="layerA" class=text align="absmiddle">
+</b></br></div>
+<br><br><br><br><br><br><br>
+
+<tr><td><a href="page51.html" align=""><span style='position:relative;top:-40pt;font-size:14pt;font-family:Arial;align:center;color:blue;'><font style="color:blue;"><div align='center'><b>НАЧАТЬ</a></span></div>
+</td></tr>
+</body>
+</html>

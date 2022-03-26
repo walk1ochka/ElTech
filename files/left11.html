@@ -1,0 +1,250 @@
+<html>
+<head>
+<script language="JavaScript">
+<!--
+var total=1;
+var db = new Array();
+
+// -- Enter Values Here --
+// Format: dbAdd(parent[true|false] , description, URL [blank for nohref], level , TARGET [blank for "content"], new? [1=yes])
+
+dbAdd( false , "11.1. Классификация микромашин" , "chapter11/page11.html" , 0 , "mainFrame" , 0)
+dbAdd( false , "11.2. Универсальные коллекторные двигатели" , "chapter11/112.html" , 0 , "mainFrame" , 0)
+	dbAdd( true , "11.3. Асинхронные микромашины" , "" , 0 , "mainFrame" , 0)
+dbAdd( false , "11.3.1. Асинхронные микродвигатели общего применения" , "chapter11/1131.html" , 1 , "mainFrame" , 0)
+dbAdd( false , "11.3.2. Асинхронные исполнительные двигатели" , "chapter11/1132.html" ,1 , "mainFrame" , 0)
+dbAdd( false , "11.3.3. Асинхронные тахогенераторы" , "chapter11/1133.html" , 1 , "mainFrame" , 0)
+		dbAdd( true , "11.4. Синхронные микромашины" , "chapter11/114.html" , 0 , "mainFrame" , 0)
+dbAdd( false , "11.4.1. Синхронный микродвигатель с постоянными магнитами" , "chapter11/1141.html" , 1 , "mainFrame" , 0)
+dbAdd( false , "11.4.2. Гистерезисный синхронный микродвигатель" , "chapter11/1142.html" , 1 , "mainFrame" , 0)
+dbAdd( false , "11.4.3. Реактивный синхронный микродвигатель" , "chapter11/1143.html" , 1 , "mainFrame" , 0)
+dbAdd( false , "11.4.4. Шаговый синхронный микродвигатель" , "chapter11/1144.html" , 1 , "mainFrame" , 0)
+		dbAdd( true , "11.5. Микромашины постоянного тока" , "" , 0 , "mainFrame" , 0)
+
+dbAdd( false , "11.5.1. Тахогенераторы постоянного тока " , "chapter11/115.html" , 1 , "mainFrame" , 0)
+
+
+		dbAdd( true , "11.5.2. Микродвигатели постоянного тока" , "chapter11/1152.html" , 1 , "mainFrame" , 0)
+dbAdd( false , "11.5.2.1. Микродвигатели с обычным якорем " , "chapter11/11521.html" , 2 , "mainFrame" , 0)
+dbAdd( false , "11.5.2.2. Микродвигатели с полым якорем" , "chapter11/11522.html" , 2 , "mainFrame" , 0)
+dbAdd( false , "11.5.2.3.  Микродвигатели с гладким якорем" , "chapter11/11523.html" , 2 , "mainFrame" , 0)
+dbAdd( false , "11.5.2.4.  Микродвигатели с дисковым якорем" , "chapter11/11524.html" , 2 , "mainFrame" , 0)
+dbAdd( false , "11.5.3. Электромашинный усилитель с поперечным полем" , "chapter11/page1153.html" , 1 , "mainFrame" , 0)
+
+		dbAdd( false , "Вопросы к теме 11" , "chapter11/faq.html" , 0 , "mainFrame" , 0)
+		dbAdd( false , "Самоконтроль" , "tests/utis/utlauncher(1_t11.tfp).exe" , 0 , "mainFrame" , 0)
+ // dbAdd( false , "" , "" , 0 , "" , 0)
+
+// -- End modifications --
+
+
+
+
+
+// Get current cookie setting
+var current=getCurrState()
+function getCurrState() {
+  var label = "currState="
+  var labelLen = label.length
+  var cLen = document.cookie.length
+  var i = 0
+  while (i < cLen) {
+    var j = i + labelLen
+    if (document.cookie.substring(i,j) == label) {
+      var cEnd = document.cookie.indexOf(";",j)
+      if (cEnd == -1) { cEnd = document.cookie.length }
+      return unescape(document.cookie.substring(j,cEnd))
+    }
+    i++
+  }
+  return ""
+}
+
+// Add an entry to the database
+function dbAdd(mother,display,URL,indent,top,newitem) {
+  db[total] = new Object;
+  db[total].mother = mother
+  db[total].display = display
+  db[total].URL = URL
+  db[total].indent = indent
+  db[total].top = top
+  db[total].newitem = newitem
+  total++
+  }
+
+// Record current settings in cookie
+function setCurrState(setting) {
+  var expire = new Date();
+  expire.setTime(expire.getTime() + ( 7*24*60*60*1000 ) ); // expire in 1 week
+  document.cookie = "currState=" + escape(setting) + "; expires=" + expire.toGMTString();
+  }
+
+// toggles an outline mother entry, storing new value in the cookie
+function toggle(n) {
+  if (n != 0) {
+    var newString = ""
+    var expanded = current.substring(n-1,n) // of clicked item
+    newString += current.substring(0,n-1)
+    newString += expanded ^ 1 // Bitwise XOR clicked item
+    newString += current.substring(n,current.length)
+    setCurrState(newString) // write new state back to cookie
+  }
+}
+
+// returns padded spaces (in mulTIPles of 2) for indenting
+function pad(n) {
+  var result = ""
+  for (var i = 1; i <= n; i++) { result += "&nbsp;&nbsp;&nbsp;&nbsp;" }
+  return result
+}
+
+// Expand everything
+function explode() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "1"
+    current += "1"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+// Collapse everything
+function contract() {
+  current = "";
+  initState="";
+  for (var i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState);
+  history.go(0);
+  }
+
+function tree_close() {
+  window.parent.location = window.parent.content.location;
+  }
+
+// end -->
+
+
+</script>
+<title>Contents</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="styles/emx_nav_left.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	background-image: url(images/left.jpg);
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+.style1 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 12px;
+}
+body,td,th {
+	color: #990000;
+}
+-->
+</style></head>
+
+<body bgcolor=#ffffff link="#006666" vlink="#004444">
+<table width=100% border=0 cellpadding=5 cellspacing=0 bordercolor="#005FA9">
+<tr>
+<td align=left><div align="right"><a href="javascript:contract();"><img src="images/minimize.gif" width=16 height=14 border=0></a>
+      <a href="javascript:explode();"><img src="images/maximize.gif" width=16 height=14 border=0 ></a>
+      <a href="javascript:tree_close();">      </a></div></td>
+</tr>
+<tr>
+  <td align=left><div align="center" class="style1">Тема 11. МИКРОМАШИНЫ</div></td>
+  </tr>
+</table>
+<br>
+<table border=0 width=100%>
+  <tr><td>
+<font size="-1">
+
+<script language="JavaScript">
+<!--
+// Set the initial state if no current state or length changed
+if (current == "" || current.length != (db.length-1)) {
+  current = ""
+  initState = ""
+  for (i = 1; i < db.length; i++) {
+    initState += "0"
+    current += "0"
+    }
+  setCurrState(initState)
+  }
+var prevIndentDisplayed = 0
+var showMyDaughter = 0
+// end -->
+
+<!--
+var Outline=""
+// cycle through each entry in the outline array
+for (var i = 1; i < db.length; i++) {
+  var currIndent = db[i].indent           // get the indent level
+  var expanded = current.substring(i-1,i) // current state
+  var top = db[i].top
+  if (top == "") { top="content" }
+  // display entry only if it meets one of three criteria
+  if ((currIndent == 0 || currIndent <= prevIndentDisplayed || (showMyDaughter == 1 && (currIndent - prevIndentDisplayed == 1)))) {
+  Outline += pad(currIndent)
+
+  // Insert the appropriate GIF and HREF
+  newitem = "";
+  if (db[i].newitem) { newitem="_new"; }
+  if (!(db[i].mother)) {
+    Outline += "<IMG SRC=\"images/blank.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/document" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+    }
+  else {
+      if (current.substring(i-1,i) == 1) {
+        Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to collapse\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/minus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/open" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      else {
+	    Outline += "<A HREF=\"javascript:history.go(0)\" onMouseOver=\"window.parent.status=\'Click to expand\';return true;\" onClick=\"toggle(" + i + ")\">"
+        Outline += "<IMG SRC=\"images/plus.gif\" WIDTH=16 HEIGHT=16 BORDER=0><IMG SRC=\"images/closed" + newitem + ".gif\" WIDTH=16 HEIGHT=16 BORDER=0>"
+        Outline += "</A>"
+        }
+      }
+    Outline += "&nbsp;";
+
+    if (db[i].URL == "" || db[i].URL == null) {
+      Outline += "" + db[i].display      // no link, just a listed item
+      }
+    else {
+      Outline += " <A HREF=\"" + db[i].URL + "\" TARGET=\"" + top + "\">" + db[i].display + "</A>"
+      }
+	// Bold if at level 0
+    if (currIndent == 0) {
+      Outline = "" + Outline + ""
+      }
+    Outline += "<BR>"
+    prevIndentDisplayed = currIndent
+    showMyDaughter = expanded
+    // if (i == 1) { Outline = ""}
+    if (db.length > 25) {
+      document.write(Outline)
+      Outline = ""
+      }
+    }
+  }
+document.write(Outline)
+// end -->
+</script>
+</font>
+</td>
+  </tr>
+</table>
+<hr>
+<br>
+</body>
+</html>

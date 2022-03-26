@@ -1,0 +1,28 @@
+
+
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #0000ff;
+	font-style: normal;
+	letter-spacing: 2px;
+	white-space: nowrap;
+}
+
+a:link {
+	color: #ff00ff;
+	text-decoration: none;
+	font-weight: normal;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+
+a:active {
+	text-decoration: none;
+	color: #ff00ff;
+	font-weight: normal;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+

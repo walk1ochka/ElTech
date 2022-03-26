@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>5.8.2.10. Активные фильтры</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong> <strong> </strong> <strong>        <strong>5.8.2.10. Активные фильтры </strong>  </strong> </strong></p>
+      </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <p class="text">Требования к миниатюризации электронной аппаратуры и фильтрации сигналов на низких частотах (скажем, с частотой среза 10 Гц) привели к разработке активных фильтров, которые не содержат индуктивных элементов и могут быть реализованы в виде интегральных микросхем. </p>
+        <p>Активные <em>RC</em>-фильтры ( <em>ARC</em>-фильтры) состоят из постоянных резисторов <em>R </em> и конденсаторов <em>C </em> ( <em>RC</em>-звеньев) и активных элементов (операционных усилителей, транзисторов), работающих в линейном режиме. Передаточная функция <em>ARC</em>-фильтра по напряжению <em>H</em><span class="indexsmall"><em>u</em></span>(<em>p</em>) = <em class="indexbig">U</em><span class="indexsmaldigit">2</span>(<em>p</em>)/<em class="indexbig">U</em><span class="indexsmaldigit">1</span>(<em>p</em>) представляет собой отношение двух операторных полиномов, т. е. </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="57%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10/page5_8_2_10_clip_image002.gif" width="331" height="50" align="absmiddle"> </td>
+            <td width="43%" class="head2"> <div align="right">(5.28) </div></td>
+          </tr>
+        </table>
+        <p class="head1">- 
+
+ 
+        Реализация <em>ARC</em>-фильтров<strong></strong></p>
+        <br class="text"> Существует много способов реализации фильтра с заданной передаточной функцией <em class="index">n</em>-го порядка. Наиболее распространённым является способ, при котором передаточную функцию <em>H</em>(<em>p</em>) представляют в виде произведения сомножителей, т. е.</br>
+        <br class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10_1/Untitled-1.gif" width="184" height="19"> </br>
+        <br>При этом звенья, соответствующие каждому сомножителю <em class="index">H</em><em class="indexsmall">k</em>(<em>p</em>), соединяют последовательно друг с другом (по так называемой <strong class="head2">каскадной </strong> схеме). Обычно <em>ARC</em>-фильтры собирают <span class="head2"><strong>из звеньев второго порядк</strong></span><strong>а </strong> на основе или усилителей с конечным усилением, или преобразователей сопротивления (конверторов отрицательного сопротивления и гираторов), или операционных усилителей (ОУ) с бесконечным усилением. </br>
+        <p> На рис. 5.46, <em>а </em> дан пример реализации звена второго порядка <em>А</em><em>RC</em>-фильтра на основе ОУ с бесконечным усилением и с многопетлевой обратной связью (МОС). Звено в общем виде состоит из операционного усилителя ОУ и пяти двухполюсников. </p>
+        <p align="center"><img src="page5_8_2_10_1/Untitled-3.gif" width="583" height="244"></p>
+        <p align="left"> Так как входные сопротивления ОУ велики (0,1…30 МОм), а выходные равны нескольким десяткам Oм (теоретически ОУ обладает бесконечным входным и нулевым выходным сопротивлениями), то эти звенья практически не влияют друг на друга и не изменяют собственные передаточные функции <em>H</em><em class="indexsmall">k</em>(<em>p</em>). К тому же, сопротивление нагрузки, включаемой на выходе <em>ARC</em>-фильтра, обычно во много раз больше малого выходного сопротивления фильтра, поэтому можно считать, что фильтры работают в условиях, близких к холостому ходу. 
+        <p class="text"><a href="page5_8_2_10_2.htm">- 
+
+ 
+        Коэффициенты передачи звеньев <em>ARC</em>-фильтра. </a>
+        <br class="text"> <a href="page5_8_2_10_3.htm">- Проектирование <em>ARC</em>-фильтров.</a> 
+        <br class="text"><a href="page5_8_2_10_4.htm">-        Порядок расчёта активного ФНЧ.   </a>
+		<br class="text"><a href="page5_8_2_10_5.htm">-   Алгоритм расчёта АЧХ и ФЧХ АRС-фильтров на ЭВМ.   </a>
+           <br class="text">  <a href="page5_8_2_10_6.htm">-        Алгоритмы расчёта временных характеристик ARC-фильтров.   </a>
+        <p>&nbsp;</p>
+      </div>
+		
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_8_2_9.htm"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_9.htm"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

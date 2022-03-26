@@ -1,0 +1,295 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.5.2.4.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.5.2.4.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:01pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:0pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:0pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight:normal;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing:0px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: normal;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+
+      <div align="center"> 
+        <br><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b> 5.5.2.4. Характеристика управления МУ</b><br></span>
+         <div align='left'> <span style="position:relative;top:6pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:blue'><b>Расчёт МУ и выбор напряжения <em> U</em> источника синусоидального тока производят обычно таким образом, чтобы при отсутствии подмагничивания амплитуда магнитных потоков была наибольшей, но чтобы магнитопроводы не были насыщены в течение всего периода изменения магнитных потоков. В предположении идеальной прямоугольной петли гистерезиса материала магнитопроводов получают следующее соотношение между средним значением <em>I</em><span class="indexsmall"><b>ср</b></span> тока нагрузки и током управления <em>I</em><span class="indexsmall"><b>у</b></span>: </b><br></span>
+         <div align='left'> <span style="position:relative;top:5pt;margin-left:43pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><em>I</em><span class="indexsmall"><b>ср</b></span> =  2<em>I</em><span class="indexsmall"><b>y</b></span><em>w</em><span class="indexsmall"><b>y</b></span><i>/</i><em>w</em><span class="indexsmall"><b>p</b></span>,</b><br></span>
+         <div align='left'> <span style="position:relative;top:3pt;margin-left:0pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:#d00093;'><b>  т.е. среднее значение тока нагрузки прямо пропорционально току управления и удвоенному отношению витков управляющей и  рабочей обмоток <i>k</i><span class="indexsmall"><b>i</b></span> = 2<em>w</em><span class="indexsmall"><b>y</b></span><i>/</i><em>w</em><span class="indexsmall"><b>p</b></span>, называемому коэффициентом усиления МУ по току. </b><br><br></span>
+         <img src="images/image546.gif" width="197" height="180" align="left"><div align='left'> <span style="position:relative;top:0pt;margin-left:23pt"><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b>Характеристика управления&nbsp;<em>I</em><span class="indexsmall"><b>ср</b></span>(<em>I</em><span class="indexsmall"><b>y</b></span>) идеализированного МУ представлена на рис. 5.46. Изменение направления тока <em>I</em><span class="indexsmall"><b>у</b></span> не оказывает влияния на величину тока <em>I</em><span class="indexsmall"><b>ср</b></span> нагрузки, поэтому характеристика <em>I</em><span class="indexsmall"><b>ср</b></span>(<em>I</em><span class="indexsmall"><b>y</b></span>) симметрична относительно оси ординат. Вследствие того, что кривая намагничивания ферромагнитных материалов отличается от идеализированной, а также из-за потоков рассеяния у реальных МУ при <em>I</em><span class="indexsmall"><b>у</b></span> = 0 в нагрузке протекает небольшой ток холостого хода <em> I</em><span class="indexsmalldigit"><b>0</b></span>. Ток <em>I</em><span class="indexsmall"><b>ср</b></span> достигает значения <em>I</em><span class="indexsmall"><b>ср.max</b></span> при токе управления <em>I</em><span class="indexsmall"><b>у.max</b></span>, при котором магнитопроводы полностью насыщены и дальнейшего усиления тока в цепи нагрузки не происходит. Следует отметить, что при 0 &lt; <em>I</em><span class="indexsmall"><b>у</b></span> &lt; <em> I</em><span class="indexsmall"><b>у.max</b></span> форма кривой тока <em> i</em>(<em>t</em>) существенно несинусоидальна и зависит от способа соединения рабочих обмоток, а также от величины сопротивления цепи обмоток управления. </b></span></span>
+   
+<br><br><br><br><br>
+    <tr> 
+     <div align='left'> <td height="20"><span style="position:relative;top:10pt;margin-left:0pt"><a href="../charper5/page5523.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> </td>
+      <td>
+      <div align="right"><span style="position:relative;top:-18pt;margin-left:0pt"><a href="../charper5/page553.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>      </td>
+    </tr>
+</body>
+</html>

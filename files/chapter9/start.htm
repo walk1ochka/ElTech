@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Тема 9</title>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T9.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T9.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+var pos=100;
+var speed=75;            
+var msg="<span style='position:relative;top:8pt;font-size:16pt; font-family:Arial; color:darkblue;line-height:20pt;'><b>В этой теме рассмотрены устройство и принцип функционирования генераторов и двигателей постоянного тока, их основные характеристики; изложены способы пуска двигателей постоянного тока, а также способы регулирования их частоты вращения - реостатный, полюсный и якорный.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Arial;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad="Type()">
+<br>
+<div align='center'><span style="position:relative;top:10pt;font-size:14pt;font-family:Arial;color:darkblue;"><b>Тема 9 </b></br>
+<div align='center'><span style="position:relative;top:16pt;font-size:18pt"><font style="color:#994433;"><b>МАШИНЫ ПОСТОЯННОГО ТОКА</b></br>
+<table width="65%" height="75%" border="0" align="center"><tr><td valign="top">
+<br><div id="layerA" class=text align="absmiddle"></table>
+</td></tr>
+<table width="15%" height="5%" border=0 align="bottom"><span class=text></table>
+<tr><td>
+<div align='center'><span style='position:relative;top:-70pt;margin-left:0pt'><a href="page91.html" align=""><span style='position:relative;font-size:14pt;font-family:Arial;color:blue;'><b>НАЧАТЬ</b></a></div></td></tr>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter11/10.1.2.1.wma LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter11/10.1.2.1.wma AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>Характеристики моментов сопротивления</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align='center'><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>10.1.2.1. Характеристики моментов сопротивления</b></span>
+
+<div align='left'><span style='position:relative;top:8pt;margin-left:23pt;font-size:12.0pt;font-family:Arial;line-height:15pt;color:#dc14cf;'><b>Привод работает с постоянной (установившейся) частотой вращения &#969;, если момент двигателя <i>М</i> равен приведённому моменту нагрузки <i>М</i><span class='indexsmalldigit'><b>с</b></span>. В противном случае в приводе имеет место ускорение или замедление вращения вала в зависимости от того, какие знаки динамического момента <i>М</i><span class='indexsmalldigit'><b>д</b></span> и угловой частоты &#969;. Учитывая то, что электродвигатель может вращаться в любую сторону и может быть заторможен, выбирают условные положительные направления моментов (рис. 10.2<i>а</i>).</b></span>
+
+<div align='left'><span style='position:relative;top:9pt;margin-left:23pt;font-size:12.0pt;font-family:Arial;line-height:14pt;'><b> При <i>М</i><span class='indexsmalldigit'><b>с</b></span> &lt; <i>М </i>имеем <i>d</i>&#969;/<i>dt</i> &gt; 0 и <i>М</i><span class='indexsmalldigit'><b>д</b></span> &gt; 0, при &#969; &lt; 0 привод ускоряется, а при &#969; &gt; 0 – замедляется. При <i>М</i><span class='indexsmalldigit'><b>с</b></span> &gt; <i>М </i>имеем <i>d</i>&#969;/<i>dt</i> &lt; 0 и <i>М</i><span class='indexsmalldigit'><b>д</b></span> &lt; 0, привод ускоряется при &#969; &gt; 0, в то время как при &#969; &lt; 0 – замедляется. </b></span>
+
+<div align='left'><span style='position:relative;top:11pt;margin-left:23pt;font-size:12.0pt;font-family:Arial;line-height:14pt;color:#3000d3;'><b> Различают моменты сопротивления <i>М</i><span class='indexsmalldigit'><b>с</b></span>, способствующие движению (опускание груза подъёмной машиной), моменты, не изменяющие своего направления при изменении направления вращения, например, момент при нагрузке на барабане подъёмной машины не зависит от направления вращения барабана, и моменты, препятствующие движению, направление действия которых
+всегда противоположно направлению момента <i>М</i>. Так, для быстрой остановки
+привода часто применяют механические тормоза, при использовании которых запасённая
+в приводе кинетическая энергия <i>W</i> посредством трения, возникающего между колодками тормоза и тормозным шкивом, превращается в тепло и рассеивается в окружающую среду. Момент <i>М</i><span class='indexsmalldigit'><b>с</b></span> механического тормоза является типичным моментом, препятствующим движению. </b></span>
+
+<div align='left'><span  style='position:relative;top:12pt;margin-left:23pt;font-size:12.0pt;font-family:Arial;line-height:14pt;color:black'><b> Если двигатель электропривода с моментом нагрузки <i>М</i><span class='indexsmalldigit'><b>с</b></span> отключить от сети, его момент <i>М</i> станет равным нулю. Уравнение движения примет вид</b><br></span>
+
+<div align='left'><span style='position:relative;top:2pt;margin-left:43pt;font-size:12.0pt;font-family:Arial;line-height:14pt;color:#dc14cf;'><b> <i>&#8211; М</i><span class='indexsmalldigit'><b>с</b></span><span style='font-size:12.0pt;font-family:Arial'> = <i>М</i><span class='indexsmalldigit'><b>д</b></span> =<span style='position:relative;top:10pt'> <img width=41 height=43 src="page10_1_2_1.files/image001.gif"><span style='position:relative;top:-15pt'>.</b></span>
+
+<div align='left'><span  style='position:relative;top:-5pt;margin-left:23pt;font-size:12.0pt;font-family:Arial;line-height:14pt;color:black;'><b> Привод начнёт замедляться и через некоторое время остановится. Для замедления привода, кроме механических тормозов, применяют
+также различные способы электрического торможения.</b></span>
+
+<div align='left'><span  style='position:relative;top:2pt;margin-left:63pt;font-size:12.0pt;font-family:Arial;line-height:14pt;'> <img width=336 height=193 src="page10_1_2_1.files/image002.gif"></span>
+
+<div align='left'><span  style='position:relative;top:0pt;margin-left:23pt;font-size:12.0pt;font-family:Arial;line-height:15pt;color:#8a143c;'><b> В общем случае момент нагрузки <i>М</i><span class='indexsmalldigit'><b>c</b></span> может зависеть от угловой частоты вращения &#969;, от пути <i>s</i>, от угла поворота вала &#945; и от времени <i>t</i>. По этим признакам производственные механизмы подразделяют на механизмы, у которых момент нагрузки <em>М</em><span class='indexsmalldigit'><b>c</b></span>:</b></span>
+
+<div align='left'><span  style='position:relative;top:0pt;margin-left:33pt;font-size:12.0pt;font-family:Arial;line-height:14pt;'><b>&#8226; практически постоянен (прямая <i>1</i>, рис. 10.2<i>б</i>). К ним относится большинство грузоподъёмных и транспортных механизмов
+(лифты, механизмы подъёмных кранов, транспортёры);</b></span>
+
+<div align='left'><span  style='position:relative;top:0pt;margin-left:33pt;font-size:12.0pt;font-family:Arial;color:#0000ff;'><b>&#8226; линейно зависит от угловой частоты, т.е. <i>М</i><span class='indexsmalldigit'><b>с</b></span> =<i> С</i>&#969; (прямая <i>2</i>, рис. 10.2<i>б</i>),
+например, привод генератора постоянного тока, работающего на постоянную нагрузку (<i>R</i> = const), или пропорционален квадрату частоты, т.е. <i> М</i><span class='indexsmalldigit'><b>с</b></span> =<i> С</i>&#969;<span class='indexbigdigit'><b>2</b></span> (кривая 3, рис, 10,2<i>б</i>). Это приводы идеальных центробежных насосов и вентиляторов;</b></span>
+
+<div align='left'><span  style='position:relative;top:2pt;margin-left:33pt;font-size:12.0pt;font-family:Arial;line-height:14pt;color:black'><b>&#8226;  является функцией пути <i>М</i><span class='indexsmalldigit'><b>с</b></span> = &#402;(<i>s</i>) или угла поворота вала <i>М</i><span class='indexsmalldigit'><b>с</b></span> = &#402;(&#945;). Таковыми являются ножницы для резки металлов, эксцентриковые прессы и т. д.; </b></span>
+
+<div align='left'><span  style='position:relative;top:3pt;margin-left:33pt;font-size:12.0pt;font-family:Arial;line-height:14pt;color:#d60093;'><b>&#8226; зависит от пути и от угловой частоты, т. е. <i>М</i><span class='indexsmalldigit'><b>с</b></span> = &#402;(<i>s</i>, &#969;), например, 
+электротранспортные средства, электрическая тяга; </b></span>
+
+<div align='left'><span  style='position:relative;top:0pt;margin-left:33pt;font-size:12.0pt;font-family:Arial;line-height:14pt;color:black'><b>&#8226; является функцией времени <i>М</i><span class='indexsmalldigit'><b>с</b></span> = &#402;(<i>t</i>), например, различные исполнительные механизмы и др.</b></span>
+
+<div align='left'><span  style='position:relative;top:0pt;margin-left:23pt;font-size:12.0pt;font-family:Arial;line-height:15pt;color:#0000ff;'><b> Для управления такими приводами разработаны системы автоматического управления в функции частоты, пути, угла поворота, времени и т.д.</b><br><br></span>
+<tr>
+<td height="20"><a href="upr10_1.html"><img src="../images/back.gif" width="60" height="20" border="0" align="left"></a> </td><td>
+        
+<a href="page10_1_2_2.html"><img src="../images/forward.gif" width="70" height="22" border="0" align="right"></a></div></td>    </tr></head></html>

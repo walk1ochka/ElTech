@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>2.10.3. Матричное уравнение контурных токов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="../style114.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        <div align="center">          
+          <p><strong>2.10.3. Матричное уравнение контурных токов</strong></p>
+        </div></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>
+            
+<td width="70%" colspan="2"><p class="text">&nbsp;</p>
+  <p class="text">Система уравнений, записанных по 2ЗК (алгебраическая сумма ЭДС в контуре равна алгебраической сумме напряжений на отдельных участках этого контура) для контурных токов и контурных ЭДС цепи без зависимых источников энергии и взаимно связанных ветвей, может быть представлена в виде произведения квадратной матрицы [ <em>R </em>] контурных и общих сопротивлений контуров на столбцовую матрицу контурных токов [ <em>I<span class="indexsmall">K</span> </em>] и матрицы контурных ЭДС [ <em>E</em><span class="indexsmall"><em>K </em></span>]: </p>  <table width="100%" border="0">
+    <tr>
+      <td width="213"><div align="center"><img src="1.gif" width="114" height="23">,</div></td>
+      <td width="878" class="head2"><div align="right">(2.23)</div></td>
+    </tr>
+  </table>  
+  <div align="left">
+    <table width="100%" border="0">
+      <tr>
+        <td width="56" height="186"><table width="33" height="156" border="0">
+          <tr>
+            <th class="text" scope="col">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row"><span class="text">где</span></th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+        </table></td>
+        <td width="187">          <h2><span class="text"><img src="w.gif" width="175" height="133" align="left"></span> </h2></td>
+        <td width="827"><h2 class="text">&nbsp;</h2>
+          <h2 class="text">- квадратная матрица сопротивлений размерности <em>n </em> x <em>n </em>; </h2>
+          <h2>&nbsp;</h2>
+          <h2 class="text">- столбцовые матрицы (векторы) соответственно контурных ЭДС и контурных токов размерности <em>n </em> x 1. </h2></td>
+      </tr>
+    </table>
+  </div>  <blockquote>
+    <p align="left" class="text">- квадратная матрица сопротивлений размерности <em>n </em> x <em>n </em>; </p>
+    </blockquote>  
+  <p class="text">- столбцовые матрицы (векторы) соответственно контурных ЭДС и контурных токов размерности <em>n </em> x 1. </p>
+  <p class="text">Решив матричное уравнение [ <em>R </em>][ <em>I</em><em class="indexsmall">K </em>] = [ <em>E</em><em class="indexsmall">K </em>] относительно матрицы [ <em>I</em><em class="indexsmall">K </em>], получим </p>
+  <table width="100%" border="0">
+    <tr>
+      <td width="219"><div align="center"><img src="g.gif" width="132" height="26">,</div></td>
+      <td width="874" class="head2"><div align="right">(2.24)</div></td>
+    </tr>
+  </table>  
+  <p class="text"> &nbsp;где <em> &nbsp;&nbsp;<img src="g1.gif" width="155" height="48" align="absmiddle">- </em> обратная матрица по отношению к матрице соп­ро­тивлений [ <em>R </em>]; </p>  
+  <blockquote>
+    <p class="text"><img src="g2.gif" width="66" height="26" align="absmiddle"> - транспонированная матрица алгебраических дополне­ний определителя <img src="page2104_clip_image013.gif" width="16" height="18" align="absmiddle">матрицы сопротивлений [ <em>R </em>]; </p>
+    <p class="text"><img src="g3.gif" width="192" height="26" align="absmiddle"> где <em><img src="4.gif" width="31" height="21" align="absmiddle"> </em> ( <em>j </em>- строка, <em>k </em>- столбец) – миноры матрицы сопротивлений; (-1) <em>j + k </em>- знаковый коэффициент. </p>
+    </blockquote>  <p class="text"><strong class="head2">Внимание! </strong> </p>
+    <blockquote>
+      <p class="text">1. Перед составлением матричного уравнения контурных токов целесообразно источники тока преобразовать в источники напряжения. </p>
+      <p class="text">2. В случае, если цепь содержит источники напряжения и источники тока, элементы матрицы [<em>E<span class="indexsmall">К</span></em>] записывают в виде: <em>E<span class="indexsmall">К</span> </em> = <em>E<span class="indexsmall">k </span></em> + <em>R<span class="indexsmall">k</span>J<span class="indexsmall">k</span></em>, где <em>E<span class="indexsmall">k</span> </em> - алгебраическая сумма ЭДС источников напряжения, включенных в ветви рас­сматриваемого контура. Слагаемые записывают со знаком плюс (минус), если направление обхода контура и направления ЭДС совпадают (не совпадают); <em>R<span class="indexsmall">k</span>J<span class="indexsmall">k</span> </em>- алгебраическая сумма произведений токов ИТ, подключенных параллельно ветвям, на соответствующие сопротивления ветвей. Слагаемое записывается со знаком плюс (минус), если направление тока <em>J<span class="indexsmall">k </span></em> и направление контурного тока совпадают (не совпадают). </p>
+    </blockquote>    
+    <p align="left" class="text">&nbsp;</p>  </td>
+        </tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="../page225.html"><img src="../../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="../page231.html"><img src="../../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

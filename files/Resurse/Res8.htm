@@ -1,0 +1,131 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/top/A8.wma LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/top/A8.wma AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=Generator content="Microsoft Word 11 (filtered)">
+<title>АНАЛИЗ РАЗВЕТЛЁННОЙ МАГНИТНОЙ ЦЕПИ </title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Arial Black";
+	panose-1:2 11 10 4 2 1 2 2 2 4;}
+@font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+h1
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	line-height:8.0pt;
+	page-break-after:avoid;
+	font-size:5.0pt;
+	font-family:"Arial";}
+h2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial";
+	font-weight:normal;}
+h3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:7.0pt;
+	font-family:Arial;}
+h4
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:Arial;
+	letter-spacing:-1.0pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	text-indent:35.45pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.a0, li.a0, div.a0
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:10.0pt;
+	font-family:Arial;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 2.0cm 2.0cm 2.0cm;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+
+</head>
+
+<body lang=RU>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:18.0pt'><b><span
+style='font-size:13pt;font-family:Arial;color:darkblue'>8. АНАЛИЗ РАЗВЕТЛЁННОЙ МАГНИТНОЙ ЦЕПИ</span></b>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:18.0pt'><b><span
+style='font-family:Arial;color:blue'>(программа Magn_C)</span></b>
+
+<div align='left'><span style='position:relative;top:2pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:#8a2bcf;'><b>Программа для вычисления магнитных потоков в
+воздушных зазорах разветвлённой магнитной цепи предназначена для использования
+в вузовском учебном процессе при изучении дисциплины «Электротехника и электроника».
+</span></b>
+
+<div align='left'><span style='position:relative;top:3pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:#d60093;'><b>При изучении разветвлённых магнитных цепей с постоянными магнитодвижущими силами <i>F<sub>k</sub></i> требуется определить магнитные
+потоки Ф<i><sub>k</sub></i> (или магнитные индукции <i>B<sub>k</sub></i>) в её воздушных зазорах. Разветвлённые магнитные цепи  &#8211; нелинейные и все расчёты устройств с ферромагнетиками ведут с определённой степенью точности при аппроксимации или линеаризации кривых намагничивания <i>В<sub>k</sub></i> = <i>f</i>(<i>H<sub>k</sub></i>) участков магнитопровода. В программе для моделирования обобщённой магнитной цепи использована аппроксимация кривых намагничивания четырёх марок стали гиперболическим синусом в виде <i>H</i> = &#945;sh(&#946;<i>B</i>) и прямой линией за коленом кривой намагничивания <i>H</i> = (<i>B</i> – <i>b</i>)/<i>m</i>, где &#945;, &#946;, <i>b</i>  и <i>m</i> – коэффициенты, подбираемые для каждой марки стали методом последовательного приближения.</span></b>
+
+<div align='left'><span style='position:relative;top:4pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:black;'><b>Моделирование магнитной цепи при постоянных
+магнитодвижущих силах (МДС) <i>F<sub>k</sub></i> выполнено в среде Borland C++ Builder 6.0 (рис. 3). Отладка программы проводилась на компьютерах типа IBM  с браузером MSIE6 и ОС Windows 7 и выше. </span></b>
+<div align='left'><span style='position:relative;top:5pt;margin-left:63pt;font-size:12pt;font-family:Arial;'><img width=660 height=550 src="../Resurse/Mg1.files/image001.png"></span>
+
+<div align='left'><span style='position:relative;top:3pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:#в00093;'><b>Известно, что в разветвлённой магнитной цепи
+формируется несколько магнитных потоков Ф<i><sub>k</sub></i>, которые складываются или вычитаются на некоторых её участках в зависимости от величины и направления токов <i>I<sub>k</sub></i>, точнее МДС <i>F<sub>k</sub></i> = <i>w<sub>k</sub>I<sub>k</sub></i> обмоток катушек, расположенных на стержнях магнитопровода. Неравномерность магнитных потоков в сечениях стержней магнитопровода в программе не учитывалась, а магнитные потоки рассеяния учитывались только при расчёте сечений воздушных зазоров. </span></b>
+
+<div align='left'><span style='position:relative;top:3pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:#d00093;'><b>Решение составленной системы нелинейных уравнений
+выполняется посредством численного метода Ньютона-Рафсона, в котором на каждом
+шаге итерационного процесса решается матрица, обратная матрице Якоби. </span></b>
+
+<div align='left'><span style='position:relative;top:4pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:black;'><b>Программа запускается непосредственно с компакт-диска, поддерживает как случайную генерацию вариантов задания, так и ввод параметров элементов магнитной цепи 'вручную'. После запуска программы необходимо ввести номер варианта задания для генерации случайным образом значений (из записанного в программе ряда чисел) параметров элементов схемы замещения магнитной цепи, которая при этом автоматически строится в выделенном окне рабочего поля программы</span></b>.
+
+<div align='left'><span style='position:relative;top:5pt;margin-left:23pt;font-size:12pt;font-family:Arial;color:#8a2bcf;'><b>Результаты работы с компьютерной моделью разветвлённой магнитной цепи свидетельствуют о том, что внедрение подобных программных продуктов в учебный процесс позволяет существенно интенсифицировать деятельность преподавателей и студентов, повысить
+мотивацию студентов к изучению электротехники, развить способность к 
+рефлективному восприятию и осмыслению материала.</span></b>
+</div></body></html>

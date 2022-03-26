@@ -1,0 +1,80 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter5/5.9.1.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter5/5.9.1.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>5.9.1. Интегрирующая цепь на основе RC-звена</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+ <SCRIPT language="JavaScript1.2" src="style5_8.js" type="text/javascript"></SCRIPT>
+<style type="text/css">
+.style1 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #000000; font-size: 12px;}
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong>5.9.1. Интегрирующая цепь на основе <em>RC</em>-звена </strong> </p>
+        </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="center" class="text">
+        <div align="left">
+        <p class="text">
+        <p>Пусть к последовательному <em>RС</em>-контуру с достаточно большим сопротивлением <em>R </em> в момент <em>t </em> = 0 подано напряжение <span class="index">U</span><span class="indexsmaldigit">1</span> (рис. 5.50).<img src="page5_9_1/Untitled-1.gif" width="138" height="97" align="left">   При условии, что напряжение 
+  
+ 
+            <img src="page5_9_1/page5_9_1_clip_image002_0002.gif" width="66" height="24" align="absmiddle">, ток цепи </p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="page5_9_1/page5_9_1_clip_image002.gif" width="145" height="23" align="absmiddle"> </p>
+        <p>почти не зависит от напряжения <img src="page5_9_1/page5_9_1_clip_image002_0000.gif" width="19" height="21" align="absmiddle">, и тогда (для случая <img src="page5_9_1/page5_9_1_clip_image004.gif" width="62" height="21" align="absmiddle">выходное напряжение<br>(<img src="page5_9_1/page5_9_1_clip_image006.gif" width="49" height="23" align="absmiddle">)</p>
+        <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_9_1/page5_9_1_clip_image002_0001.gif" width="199" height="54" align="absmiddle"> </p>
+        <p> можно заменить приближённым выражением </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="51%">              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_9_1/page5_9_1_clip_image002_0003.gif" width="164" height="50" align="absmiddle">.  </td>
+            <td width="49%" class="head2"> <div align="right">(5.42) </div></td>
+          </tr>
+        </table>
+        <p> Таким образом, выходной сигнал моделирует операцию интегрирования при <em>t </em>&lt;&lt; <em span class="symbol">t </em>. Для высокочастотных сигналов точность интегрирования будет выше, т. к. с ростом частоты более строго выполняется условие <em>u<span class="indexsmall">C</span> </em>&lt;&lt; <em>u<span class="indexsmall">R</span></em>, положенное в основу проведенных рассуждений. </p>
+        <p> При использовании <em>RC</em>-звена в качестве интегрирующей цепи необходимо, чтобы постоянная времени <img src="page5_9_1/page5_9_1_clip_image002_0004.gif" width="48" height="17" align="absmiddle">была достаточно велика, и, одновременно, получить требуемую величину <em>u</em><span class="indexsmalldigit">2</span> на выходе интегратора, которая обратно пропорциональна <span class="symbol">t</span> (см. (5.42)). </p>
+        <p> На практике выбирают <em span class="symbol">t</em>, по крайней мере, в 10…100 раз больше длительности <em>t</em><span class="indexsmaldigit">1</span> входного сигнала. Тогда при интегрировании импульсов прямоугольной, треугольной формы, а также некоторых других импульсов, можно (с погрешностью <img src="page5_9_1/page5_9_1_clip_image002_0005.gif" width="72" height="21" align="absmiddle">) принять </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="62%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_9_1/page5_9_1_clip_image002_0007.gif" width="213" height="21" align="absmiddle">. </td>
+            <td width="38%"> <div align="right" class="head2">(5.43) </div></td>
+          </tr>
+        </table>
+        </div>
+      </div></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_9.htm"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_11.htm"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

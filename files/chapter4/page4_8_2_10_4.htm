@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>5.8.2.10. Активные фильтры</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong> <strong> </strong> <strong>        <strong>5.8.2.10. Активные фильтры </strong>  </strong> </strong></p>
+      </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <p class="text">Требования к миниатюризации электронной аппаратуры и фильтрации сигналов на низких частотах (скажем, с частотой среза 10 Гц) привели к разработке активных фильтров, которые не содержат индуктивных элементов и могут быть реализованы в виде интегральных микросхем. </p>
+        <p>Активные <em>RC</em>-фильтры ( <em>ARC</em>-фильтры) состоят из постоянных резисторов <em>R </em> и конденсаторов <em>C </em> ( <em>RC</em>-звеньев) и активных элементов (операционных усилителей, транзисторов), работающих в линейном режиме. Передаточная функция <em>ARC</em>-фильтра по напряжению <em>H</em><span class="indexsmall"><em>u</em></span>(<em>p</em>) = <em class="index">U</em><span class="indexsmaldigit">2</span>(<em>p</em>)/<em class="index">U</em><span class="indexsmaldigit">1</span>(<em>p</em>) представляет собой отношение двух операторных полиномов, т. е. </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="57%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10/page5_8_2_10_clip_image002.gif" width="331" height="50" align="absmiddle"> </td>
+            <td width="43%" class="head2"> <div align="right">(5.28) </div></td>
+          </tr>
+        </table>
+        <br class="text"><a href="page5_8_2_10_1.htm">- 
+
+ 
+        Реализация <em>ARC</em>-фильтров<strong>.</strong></a>
+        <br class="text"><a href="page5_8_2_10_2.htm">-          Коэффициенты передачи звеньев <em>ARC</em>-фильтра.</a> 
+        <br class="text"> <a href="page5_8_2_10_3.htm">- Проектирование <em>ARC</em>-фильтров. </a>
+        <p class="head1">- 
+
+ 
+        Порядок расчёта активного ФНЧ. </p>
+        <p class="text"> Исходными данными для расчёта активного ФНЧ являются: <span class="symbol"><em>w</em></span><em class="indexsmall">с </em>- частота среза (в полосе пропускания допустимо небольшое затухание <span class="symbol"><em>a</em></span><em><span class="indexsmall">max</span> </em> [дБ]; <span class="symbol"><em>w</em></span><em class="indexsmaldigit">з </em>- частота, начиная с которой ФНЧ имеет относительно большое затухание <span class="symbol"><em>a</em></span><em class="indexsmall">min </em>[дБ]; метод аппроксимации идеальных АЧХ или ФЧХ фильтра (фильтр Баттерворта, Чебышева, инверсный Чебышева, эллиптический, Бесселя и др.); <em class="index">H</em><span class="indexsmaldigit">0</span> - коэффициент усиления при <em class="symbol">w </em> = 0. Если заданы <span class="symbol"><em>a</em></span><em class="indexsmall">max</em>, <span class="symbol"><em>a</em></span><em class="indexsmall">min</em>, <span class="symbol"><em>w</em></span><em class="indexsmall">с </em>и <span class="symbol"><em>w</em></span><em class="indexsmall">з</em>, то по формулам или номограммам, приводимым в справочниках, находят порядок <em>n </em> ФНЧ: чем меньше |<span class="symbol"><em>a</em></span><em><span class="indexsmall">max</span></em>| и больше |<span class="symbol"><em>a</em></span><em class="indexsmall">min</em>|, тем уже переходная область (<span class="symbol"><em>w</em></span><em class="indexsmall">з </em>- <span class="symbol"><em>w</em></span><em class="indexsmall">с</em>) и выше порядок фильтра. </p>
+        <p>Затем из таблиц выписывают коэффициенты: <em>с </em>0 полинома первого <img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002.gif" width="47" height="22" align="absmiddle">при нечетном <em>n</em>; <em>b</em><span class="indexsmall"><em>k</em></span><em> </em> и <em>с</em><em class="indexsmall">k </em> полиномов второго порядка вида <img src="page5_8_2_10_4/page5_8_2_10_4_clip_image004.gif" width="112" height="24" align="absmiddle">. Каждому полиному соответствует своё звено фильтра, для которого вычисляют параметры <em class="index">R</em><span class="indexsmall"><em>k</em></span><em> </em> и <em class="index">C</em><span class="indexsmall"><em>k</em></span><em> </em>по приведенным в справочнике формулам или из соотношений, получаемых путём почленного сопоставления выражений <em class="index">H</em><span class="indexsmall"><em>u</em></span>(<em class="index">р</em>) звена с полученной функцией <em class="index">H</em><span class="indexsmall"><em>u</em></span>(<em>р</em>) звена. Один из параметров звена (обычно <em class="index">С</em><span class="indexsmalldigit">3</span>) выбирают произвольно (в долях микрофарад) или близкое к значению <em class="index">C</em><span class="indexsmalldigit">3</span> <span class="symbol">»</span> 10/<em>f<em class="indexsmall">с </em> </em>[мкФ], <em></em>где <em> f</em><em class="indexsmall">с </em><em></em>в <em></em>Гц. </p>
+        <p class="text"> Сопоставляя формулы (5.31)…(5.33) соответственно с (5.34) или (5.35), (5,36) и (5.37), нетрудно вывести формулы для расчёта сопротивлений резисторов и ёмкостей конденсаторов звеньев первого и второго порядков. Например, для ФНЧ типов <em>В </em>, <em>T </em> и <em>BS </em>второго порядка из сопоставления выражений (5.34) и (5.31): </p>
+        <p class="head1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0000.gif" width="470" height="47" align="absmiddle"></p>
+        <p class="text"> получаем <span class="index">C</span><span class="indexsmaldigit">3</span> <span class="symbol">»</span> 10/<span class="index">f</span><span class="indexsmall">c</span> [мкф]<img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0001.gif" align="middle">
+        </p>
+        <p class="text"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0002.gif" width="234" height="50" align="absmiddle">          <em><img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0003.gif" width="213" height="25" align="absmiddle"></em> </p>
+        <p class="text"> Для звена первого порядка всех типов ФНЧ (см. рис. 5.46, <em>д</em>):</p>
+        <p class="text"> <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0004.gif" width="273" height="22" align="absmiddle"></em></p>
+        <p class="text"> или при 
+
+ 
+        <em><img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0005.gif" width="209" height="22" align="absmiddle"> </em>При этом инверсный вход ОУ соединяют с его выходом (см. рис. 5.46, д). </p>
+        <p class="text"> Для звена второго порядка ФВЧ типов <em>B </em> и <em>Т </em> (см. рис. 5.46, <em>в</em>):</p>
+        <p class="text"> <em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0006.gif" width="459" height="22" align="absmiddle"> </em>а для звена первого порядка:          <em><img src="page5_8_2_10_4/page5_8_2_10_4_clip_image002_0007.gif" width="259" height="22" align="absmiddle"></em> </p>
+        <p class="text"> Все звенья соединяют по каскадной схеме. </p>
+        <p class="text"><span class="head2"><strong>Примечания</strong></span><strong>. </strong> 1. Частотные характеристики фильтра не изменятся, если значения всех сопротивлений умножить, а значения ёмкостей поделить на общий множитель. </p>
+        <p>2. Корректировку частоты <em>f</em><span class="indexsmall"><em>с</em></span><em> </em>ФНЧ осуществляют с помощью резистора <em class="index">R</em><span class="indexsmaldigit">4</span>, а установку частоты <em>f<span class="indexsmall">m</span> </em> (при которой <br span class="index"><em>H</em><em class="indexsmall"></em></span><em class="indexsmall">u</em>(<em class="symbol">w</em>) = <span class="index"><em>H</em></span><em class="indexsmall">u</em><span class="indexsmall"><em>. max</em></span>) в случае подъема АЧХ (при <em>Q </em> &gt; 0,707, см. рис. 5.47, <em>а</em>), выполняют с помощью резистора <em class="index">R</em><span class="indexsmaldigit">1</span>. </p>
+		<br class="text"><a href="page5_8_2_10_5.htm">-   Алгоритм расчёта АЧХ и ФЧХ АRС-фильтров на ЭВМ.   </a>
+           <br class="text">  <a href="page5_8_2_10_6.htm">-        Алгоритмы расчёта временных характеристик ARC-фильтров.   </a>
+        <p class="text">&nbsp;  </p>
+      </div>
+		
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_8_2_9.htm"><img src="../images/back.gif" width="60" height="32" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_9.htm"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

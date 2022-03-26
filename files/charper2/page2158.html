@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>2.1.5.8. Комплексно-сопряженные числа</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter3/3.1.7.4.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter3/3.1.7.4.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+               
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align='center'><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>2.1.5.8. Комплексно-сопряженные числа</b></span><br>
+
+                
+   <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:23pt'><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="170" height="180" align='left'>
+                    <param name="movie" value="Images/Pic_2_12.swf">
+                    <param name="quality" value="high">
+                    <embed src="Images/Pic_2_12.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="150" height="150" vspace='50' align='left'></embed>
+                  </object></td></tr></span></div>
+<div align='left'><span style='position:relative;top:3pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15pt;color:blue;'><b>Если комплексная величина отличается от комплекса <i><u>С</u></i>  только знаком мнимой части, то она называется <i>сопряженным комплексом</i> <img src="Images/imageC_.gif" width="17" height="22"> (рис. 2.12) (зеркальное отображение вектора <i><u>С</u></i>  относительно оси действительных чисел Re). </b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:4pt;margin-left:23pt'><b>Итак, если <i><u>C</u></i> = <i>Ce</i><span class='indexbigdigit'><b><i>j</i>&#936;</b><span class="indexsmall"><b>c</b></span></span> = <i>C</i>(cos&#936;<span class="indexsmall"><b>c</b></span> + <i>j</i>sin&#936;<span class="indexsmall"><b>c</b></span>) = <i>a + jb</i>, то</b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:4pt;margin-left:43pt'><img src="Images/imageC_.gif" width="17" height="22" align="baseline"> = <i><b> Ce</i><span class='indexbigdigit'><b><i>&#8722;j</i>&#936;</b><span class="indexsmall"><b>c</b></span></span> = <i>C</i>(cos&#936;<span class="indexsmall"><b>c</b></span> &#8722;<i> j</i>sin&#936;<span class="indexsmall"><b>c</b></span>) = <i>a &#8722; jb.</i>.  <span style='position:relative;margin-left:140pt;font-size:12.0pt;font-family:Arial;'>(2.21)</b></span><br>
+                
+              <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:23pt;color:#9400d3;'><b>Произведение комплексно-сопряженных чисел</b></span><br>
+           
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:43pt'><b><i><u>C</u></i> &#183;<span style='position:relative;margin-top:3pt'><img  vspace="4" src="Images/imageC_.gif" width="16" height="21"> = <i>Ce</i><span class='indexbigdigit'><b><i>j</i>&#936;</b><span class="indexsmall"><b>c</b></span></span><b>&#183;</b><i>Ce</i><span class='indexbigdigit'><b>&#8722;<i>j</i>&#936;</b><span class="indexsmall"><b>c</b></span></span> = <i>C</i><span class='indexbigdigit'><b>2</b></span><i>e</i><span class='indexbigdigit'><b>0</b></span> = <i>C</i><span class='indexbigdigit'><b>2</b></span></span><span style='position:relative;margin-left:188pt;font-size:12.0pt;font-family:Arial;'>(2.22)</b><br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:2pt;margin-left:0pt;color:#9400d3;'><b>есть действительное число, равное квадрату <i>С</i><span class='indexbigdigit'><b>2</b></span> их модуля <i>С =</i> |<u><i>C</i></u>|.</b></span><br>
+	
+            <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:4pt;margin-left:23pt'><b>Это свойство используют, например, при делении комплексных чисел в алгебраической форме: умножая числитель и знаменатель на сопряжённый комплекс знаменателя, получают ответ в алгебраической форме:</b><br>
+            <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:4pt;margin-left:43pt'><b><img width="385" height="51" src="Images/image228.gif"><br>
+ <span style='position:relative;top:0pt;margin-left:180pt;font-size:12.0pt;font-family:Arial;'><img src="Images/image229.gif" width="395" height="52"><span style='position:relative;top:-18pt;margin-left:62pt;font-size:12.0pt;font-family:Arial;'>(2.23)</span></b><br>
+               <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:4pt;margin-left:23pt'><b>Такую форму умножения и деления комплексных чисел часто применяют при написании программ для ЭВМ.</b><br><br><br><br><br><br>
+        <tr>  <td height="20"><a href="../charper2/page2157.html"><img src="../images/back.gif" width="60" height="20" border="0" align="left"></a> 
+    </td>
+      <td>
+        
+<div align="right"><a href="../charper2/page2159.html"><img src="../images/forward.gif" width="70" height="22" border="0" align="right"></a></div>
+</td>    </tr>
+</body></html>

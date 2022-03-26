@@ -1,0 +1,74 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter2/2.12.4.6.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter2/2.12.4.6.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1.4. Состав электрической цепи </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style114.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="25" colspan="2" class="head1">
+        <div align="center"> 2.12.4.6. Уравнения состояния сложных цепей </div></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>
+            
+<td width="70%" colspan="2"><div align="justify">
+  <div align="justify">
+    <p><span class="text">При соcтавлении уравнений состояния сложной динамической цепи используют компактную </span><span class="head2">векторно-матричную запись</span>.<span class="text"> Для этого вводят вектор независимых переменных состояния - токов (потокосцеплений) индуктивных и напряжений (зарядов) ёмкостных элементов, т. е.<br>
+    </span><div id="TipLayer" style="visibility:hidden; position:absolute; z-index:1000; top:-100; color: #FFFFFF;"></div>
+    <div align="justify" class="text">      &#160 &#160<img src="2.12/2.12.4/2.12.4.6/2_12_4_6_1.jpg" width="80" height="46" align="absmiddle"> или <img src="2.12/2.12.4/2.12.4.6/2_12_4_6_2.jpg" width="64" height="44" align="absmiddle">.<br>
+	    Внешние независимые воздействия характеризуются вектором [<em>V</em>(<em>t</em>)], определяемым подвекторами источников тока [<em>J</em>(<em>t</em>)] и источников напряжения [<em>Е</em>(<em>t</em>)], т.е.<br>
+&#160 &#160 &#160 &#160 &#160 <img src="2.12/2.12.4/2.12.4.6/2_12_4_6_3.jpg" width="105" height="48" align="absmiddle">.</div>
+  </div>
+  <div align="justify" class="text">    Для многополюсного устройства отклик цепи снимается с <em>n</em> выводов и представляется вектором [<em>Y</em>(<em>t</em>)] (при снятии отклика с одного выхода отклик цепи представляется функцией времени<em> y</em>(<em>t</em>)).<br>
+    Тогда, для большого числа нелинейных динамических цепей, уравнения состояния сводятся к двум векторным соотношениям:<br>
+&#160 &#160 &#160 &#160 &#160<img src="2.12/2.12.4/2.12.4.6/1.gif" width="480" height="41"><br>
+      причём время <em>t</em> входит явно в векторы функций [<em>f</em>] и [<em>g</em>] только в параметрических цепях.<br>
+      Если переменных состояния <em>n</em> (их число в общем случае равно числу реактивных элементов в цепи), то система (1) распадается на <em>n</em> одномерных дифференциальных уравнений первого порядка </div>
+  <div align="justify" class="text">&#160 &#160 &#160 &#160 &#160<img src="2.12/2.12.4/2.12.4.6/2_12_4_6_5.jpg" width="302" height="20"><br>
+  где [<em>А</em>] - квадратная матрица (размером <em>n</em>&#160x&#160<em>n</em>), элементы которой определяются коэффициентами дифференциального уравнения цепи; [<em>В</em>] - матрица (размером<em> n</em> x <em>m</em>), элементы которой зависят от параметров цепи и её структуры; [<em>F</em>(<em>t</em>)] = [<em>B</em>][<em>V</em>(<em>t</em>)] - столбцовая матрица, описывающая внешние воздействия; ее элементы зависят от независимых воздействий, структуры и параметров элементов цепи.<br>
+    Из приведенных уравнений видно, что отыскание отклика [<em>Y</em>(<em>t</em>)] цепи на воздействия [<em>V</em>(<em>t</em>)] распадается на два этапа:<br>
+    1. Интегрирование (1) с целью определения [<em>х</em>(<em>t</em>)];<br>
+    2. Вычисление по найденному [<em>х</em>(<em>t</em>)] и известному [<em>V</em>(<em>t</em>)] отклика [<em>Y</em>(<em>t</em>)].<br>
+    Решение систем (1)…(3) выполняют численными методами на ЭВМ. </div>
+  <p>
+</div>
+  </td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="upr228.html"><img src="../images/back.gif" width="60" height="32" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr229.html"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

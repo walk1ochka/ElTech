@@ -1,0 +1,36 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>Закон Ома для резисторной ветви цепи постоянного тока</title>
+</head>
+<link href="mainpage.css" rel="stylesheet" type="text/css">
+<CENTER>
+<body bgcolor="#ffffff" text="#000000" link="#0044bb" vlink="#0044bb" alink="#0044bb">
+<table border="1" width="100%" cellspacing="0" cellpadding="2">
+<td nowrap bgcolor="#f0f0f0">
+<B>
+<font color="#FF6600">
+<CENTER>
+Закон Ома
+
+</B>
+</FONT>
+</td>
+</table>
+
+
+<center>
+<TABLE  CELLSPACING=30% >
+<TR>
+<TD>
+<FONT Size="4" Color="0000A0">
+<CENTER>
+Условия соглосования нагрузки (сопротивления приемника) с источником сигнала для получения максимальной мощности в нагрузке.
+<BR><BR>а)<I>X</I><FONT SIZE=4 ><I><i class="indexsmall">и </i></I></FONT><I>= - X</I><FONT SIZE=4 ><I><i class="indexsmall">н</i></I></FONT>
+<BR>б)R<i class="indexsmall">н</i> = R<i class="indexsmall">и</i>.    
+</CENTER>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+</body>
+</html>

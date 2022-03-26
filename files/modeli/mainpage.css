@@ -1,0 +1,109 @@
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:visited {
+	text-decoration: none;
+	color: #0000ff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#a7b2b6;
+  scrollbar-base-color:#71828a;
+  scrollbar-shadow-color:#3f4447;
+  scrollbar-face-color:#71828a;
+  scrollbar-highlight-color:#a7b2b6;
+  scrollbar-dark-shadow-color:#FFFFFF;
+  scrollbar-3d-light-color:#71828a;
+}
+.head1 {
+	font-size: 14px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000000;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: bold;
+}
+.text {
+
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+}
+.index {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: lowercase;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: sub;
+}
+.indexbig {
+	font-size: 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: uppercase;
+}
+.symbol {
+
+	font-size: 14px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.head3 {
+
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: bold;
+}
+.table {
+}

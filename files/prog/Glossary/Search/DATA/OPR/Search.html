@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+
+<script>
+<!-- START HIDE
+var SString     = ''; 
+
+
+function Bepr()
+{
+if(SString.toLowerCase()=='ток' || SString.toLowerCase()=='электрический+ток' ) window.location="Электрический ток.html"; 
+  else document.write("Вот облом то нихера не нашел!");  
+}
+ 
+//
+// STOP HIDE -->
+</script>
+</HEAD>
+
+<BODY>
+
+
+<form name="firstForm">
+<input type=text value="" name="textString">          
+<input type=button value="Искать" name="Find" onClick="SString=firstForm.textString.value;Bepr()">          
+</form>
+
+
+
+
+
+</BODY>
+</HTML>

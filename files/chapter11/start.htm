@@ -1,0 +1,71 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T11.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T11.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+
+var pos=0;
+var speed=75;            
+var msg="В этой теме дана классификация микромашин и рассмотрены особенности их использования в качестве исполнительных двигателей, тахогенераторов и усилителей. Они отличаются от обычных машин тем, что в большинстве случаев имеют меньшее число обмоток возбуждения для возможности питания от однофазной сети переменного тока, или не имеют их вовсе, так как в них в качестве индукторов используются постоянные магниты. Области применения микромашин: в бытовой технике (холодильники, кондиционеры, пылесосы и др.), в швейных машинах, в медицинской технике, а также в устройствах автоматики и вычислительной техники - дисководы, принтеры и т. д.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div align='center' style='position:absolute;top:0px;left:0px;font-family:Courier New;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+
+<title>Тема 11</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad=Type()>
+<br>
+<center><span class=head1>Тема 11</span></center>
+<center><span class=head1>МИКРОМАШИНЫ</span></center>
+<table width="75%" height="80%" border="0" align="center"><tr><td valign="top">
+<br><br><br><div id="layerA" class=text align="absmiddle"></div>
+</table>
+<table width="100%" height="5%" border=0 align="bottom"><span class=text>
+<tr><td>
+<br><center><div valign="bottom"><a href="page11.html" align="">Начать</a></span></div></center>
+</td></tr>
+</table>
+
+
+
+</span>
+</body>
+</html>

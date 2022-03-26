@@ -1,0 +1,68 @@
+<html5>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T4.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T4.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+var pos=100;
+var speed=75;            
+var msg="<span style='position:relative;top:56pt;margin-left:23pt;font-size:14pt; font-family:Arial; color:darkblue;line-height:18pt;'><b>В этой теме изложены классический и операторный методы анализа и расчёта переходных процессов в линейных электрических цепях, временные и частотные характеристики типовых звеньев систем автоматики. Предложено выполнить ряд интерактивных заданий и провести исследования на моделях цепей в виртуальной лаборатории.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:12pt;left:0px;font-family:Arial;font-size:18pt;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="fon" onLoad="Type()">
+
+<span style="position:relative;top:60pt;font-size:14pt;font-family:Arial;color:darkblue;"><center><b>Тема 3</b></span></p>
+<p><center><span style="position:relative;top:60pt;font-size:18pt;font-family:Arial;color:#994433"><b>ПЕРЕХОДНЫЕ ПРОЦЕССЫ <br><span style="font-size:18pt;font-family:Arial;color:#994433">В ЛИНЕЙНЫХ ЭЛЕКТРИЧЕСКИХ ЦЕПЯХ</b></span></span></span></p>
+
+<div align='center'><font style="color:#994433;"><br></span>
+<table width="95%" height="80%" border="0" align="center"><tr><td valign="top">
+<div id="layerA" class=text align="absmiddle"></b></td></tr>
+
+<center><div align="center"><a href="Glava_3/Chapter_1/3_1.htm"><span style='position:relative;top:250pt;font-size:16pt;font-family:Arial;color:#f70c93;'><b>НАЧАТЬ</a></b>
+
+</table>
+
+</body></html>
+
+
+
+
+
+

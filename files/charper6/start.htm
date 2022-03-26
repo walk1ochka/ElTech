@@ -1,0 +1,66 @@
+<!-- DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd" -->
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T7.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T7.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+
+var pos=75;
+var speed=60;            
+var msg="<span style='position:relative; font-size:14pt; font-family:Arial; color:darkblue;line-height:20pt;'><b>В этой теме рассмотрены основы теории, устройство и принцип действия однофазного трансформатора, намагничивание магнитопровода, векторные диаграммы и схемы замещения электрического состояния, холостой ход и короткое замыкание, потери и КПД. Отмечены особенности работы трёхфазных трансформаторов, автотрансформаторов и измерительных трансформаторов.";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Courier New;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script></script></p></span></body></html>
+<title>Тема 6</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad="Type()">
+<br>
+<center><span style="position:relative;top:0pt;font-size:18pt;font-family:Arial;color:darkblue;"><b>Тема 6 </span></b>
+<center><span style="position:relative;top:11pt;font-family:Arial;font-size:18pt"><font style="color:#994433;"><b>ТРАНСФОРМАТОРЫ</b></span></center>
+
+<table width="75%" height="80%" border="0" align="center"><tr><td valign="top">
+<br><br><div id="layerA" class=text align="absmiddle"></div>
+</table>
+</span>
+<tr><td>
+<center><a href="page61.html" align=""><span style="position:relative;top:-60pt;margin-left:0pt"><span style='position:relative;font-size:14pt;font-family:Arial;color:blue;'><b>НАЧАТЬ</b></a></span></div></center>
+</td></tr>
+
+</body>
+</html>

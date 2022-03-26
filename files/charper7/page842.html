@@ -1,0 +1,101 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter8/8.4.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter8/8.4.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>8.4.2. Электромагнитный момент двигателя</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style842.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+
+      <td height="20" colspan="2" class="head1">
+        
+<div align="center">8.4.2. Электромагнитный момент двигателя</div>
+</td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>      
+<td width="70%" colspan="2" valign="top" align="center">
+<div align="left"> 
+<span class="text">Электромагнитный момент, развиваемый ротором, определяется основным магнитным потоком АД и током ротора:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f1.gif" align="center">,<br>
+где:
+<UL>
+<LI><span class="index">C</span><span class="indexsmall">м</span> - коэффициент, определяемый конструктивными особенностями АД;
+<LI><span class="index">&#968;</span><span class="indexsmalldigit">2</span> - угол сдвига фаз между ЭДС <span class="index">E</span><span class="indexsmalldigit">2</span> и током <span class="index">I</span><span class="indexsmalldigit">2</span> ротора.
+</UL>
+Однако для практического использования эта формула мало пригодна.<br>
+<br>Из курса механики известна зависимость между вращающим моментом на валу двигателя и полезной мощностью:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f2.gif" align="center"><br>
+где <img src="page842/f3.gif" align="center"> - угловая частота вращения ротора.<br>
+<br>Пренебрегая потерями в стали <img src="page842/f4.gif" align="center"> ротора (<a href="#" onMouseOver="stm(Text[0],Style[0])" onMouseOut="htm()">см. рис. 8.9</a>), запишем<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f5.gif" align="center">.<br>
+Учитывая, что <img src="page842/f6.gif" align="center"> и <img src="page842/f7.gif" align="center">, определим потери в меди ротора, т. е.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f8.gif" align="center">.<br>
+Умножив и разделив на <span class="index">&#969;</span><span class="indexsmalldigit">1</span>, получим<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f9.gif" align="center">,<br>
+Откуда<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f10.gif" align="center">.<br>
+Обращаясь к схеме замещения (<a href="#" onMouseOver="stm(Text[1],Style[1])" onMouseOut="htm()">см. рис. 8.7</a>) и пренебрегая поперечной ветвью намагничивания, получим:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f11.gif" align="center">; <img src="page842/f12.gif" align="center">
+<table align=left border="0" cellspacing="0"><tr><td align=left>&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f13.gif" align="center">,</td><td align=right width="100%"><span class="head2">(8.9)</span></td></tr></table>
+<br>т. е. <span class="head2">момент вращения АД пропорционален квадрату фазного напряжения сети и является функцией скольжения</span> <span class="index">S </span>(<a href="#" onMouseOver="stm(Text[2],Style[2])" onMouseOut="htm()">рис.&nbsp;8.10</a>).<br>
+<br>Пусковой момент (<span class="index">S = </span>1)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f14.gif" align="center"><br>
+Отношение пускового момента к номинальному моменту АД: <span class="index">&#946; = М<span class="indexsmall">п</span>/М<span class="indexsmall">н</span> = </span>0,9...1,3.<br>
+<br>А отношение пускового тока к номинальному <span class="index">&#945; = I<span class="indexsmall">п</span>/I<span class="indexsmall">н</span> = </span>4...7.<br>
+<br><span class=head2>Критическое скольжение</span>, при котором <span class="index">М = М<span class="indexsmall">mах</span></span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f15.gif" align="center">, т. к. <img src="page842/f16.gif" align="center">.<br>
+При этом<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f17.gif" align="center">.<br>
+Отношение максимального момента к номинальному моменту АД.<br>
+<span class="index">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#955; = M<span class="indexsmall">max</span></span>/<span class="index">M<span class="indexsmall">н</span> = </span>1,9...2,5.
+<br>Для построения графика <span class="index">M = &#402;</span>(<span class=index>S</span>) удобна формула Клосса:
+<table border=0 cellspacing=0>
+<tr>
+	<td align=left>&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f18.gif" align="center"></td>
+	<td width="100%" align=right><span class="head2"> (8.10)</span></td>
+</tr>
+</table>
+Используя каталожные данные АД (<span class="index">P<span class="indexsmalldigit">2<i>н</i></span>; n<span class="indexsmalldigit">2<i>н</i></span>; U<span class="indexsmall">н</span>; &#951;<span class="indexsmall">н</span>; </span>cos<span class=index>&#966;<span class="indexsmall">н</span>; &#945;; &#955;</span>), определяют:
+<table border=0 cellspacing=0><tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<img src="page842/f19.gif" align="center"></td><td align=right width="100%"><span class="head2"> (8.11)</span></td></tr></table>
+</div>
+</td>
+
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page841.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="page843.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>
+</td>
+    </tr>
+
+  </table>
+</body>
+</html>

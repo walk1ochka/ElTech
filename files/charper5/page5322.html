@@ -1,0 +1,308 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.3.2.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.3.2.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:01pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:0pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:0pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000066;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: bold;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing:0px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: bold;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align:25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+      <div align="center"> 
+        <span style='font-size:14pt;font-family:Arial;color:darkblue;'><b> 5.3.2.2. Расчёт неразветвленной магнитной цепи. Обратная задача</b><br></span>
+ <div align="left"><span style='position:relative;top:5pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:#d00093;'><b>Заданы геометрические размеры магнитопровода: <em> l</em><span class="indexsmall"><b>м</b></span>, &#948;, <i>S</i><span class="indexsmalldigit"><b>1</b></span> &#8776; <i>S</i><span class="indexsmalldigit"><b>&#948;</b></span> и кривые намагничивания ферромагнетиков отдельных участков цепи (см. рис. 5.15<em>а</em> и рис. 5.15<em>б</em>), а также МДС <em> F </em> обмотки. Нужно определить магнитный поток Ф в зазоре. Запишем закон полного тока: </b><br></span>
+       <div align="left"><span style='position:relative;top:3pt;margin-left:43pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><em>H</em><span class="indexsmalldigit"><b>1</b></span><i>l</i><span class="indexsmalldigit"><b>м</b></span> + <i>H</i><span class="indexsmalldigit"><b>&#948;</b></span>&#948; = <i>F </i> = <i>R</i><span class="indexsmalldigit"><b>мэ</b></span>Ф = <i>wI</i>.</b><br>
+        <div align="left"><span style='position:relative;top:3pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b>Откуда искомый магнитный поток </b>
+        <div align="left"><span style='position:relative;top:3pt;margin-left:43pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><img src="Page5322/page6322_clip_image002_0000.gif" width="330" height="65" align="middle"><span style='position:relative;top:-0.4cm'>,</span>
+           <span style='position:relative;top:-5pt;margin-left:123pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'>(5.14)</span></b><br>
+          <div align="left"><span style='position:relative;top:3pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt;color:blue;'><b>Полученное нелинейное относительно магнитного потока Ф уравнение обычно решают на ЭВМ, выражая зависимость &#181;(Ф) в аналитической или табличной форме. Приближенное решение можно получит посредством графо-аналитических методов.</b><br></span>
+        <div align="left"><span style='position:relative;top:3pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><span style='color:red;'>Метод последовательного приближения</span> В первом приближении примем магнитное сопротивление цепи <em>R</em><span class="indexsmalldigit"><b>мэ</b></span>, равное магнитному сопротивлению воздушного зазора, т.е. </b><br></span>
+       <br><img src="images/image516.gif" width="212" height="166" align="left"><div align="left">
+<span style='position:relative;top:-12pt;margin-left:43pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><i>R</i><span class="indexsmalldigit"><b>мэ</b></span> &#8776;<i> R</i><span class="indexsmalldigit"><b>&#948;м</b></span> = &#948;<i> / </i>(&#181;<span class="indexsmalldigit"><b>0</b></span><i>S</i><span class="indexsmalldigit"><b>&#948;</b></span>) = 8&#183;10<span class='indexbig'><b>5</b></span>&#948;<i> / S</i><span class="indexsmalldigit"><b>&#948;</b></span>. </b><br>
+        <div align="left"><span style='position:relative;top:3pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b>При этом условии возбуждаемый известной МДС <em> F</em> магнитный поток Ф<span class="indexsmalldigit"><b>0</b></span> в магнитопроводе заведомо больше действительного, т. е. Ф<span class="indexsmalldigit"><b>0</b></span> <i>= F / R</i>&#948;<span class="indexsmalldigit"><b>м</b></span> &gt; Ф.</b><br></span>
+        <div align="left"><span style='position:relative;top:1pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b>Примем Ф<span class="indexsmalldigit"><b>1</b></span> = 0,7Ф<span class="indexsmalldigit"><b>0</b></span>&#160; и определим по методике прямой задачи величину <em> F</em><span class="indexsmalldigit"><b>1</b></span>, затем примем Ф<span class="indexsmalldigit"><b>2</b></span> = 0,8Ф<span class="indexsmalldigit"><b>0</b></span> и определим <em>F</em><span class="indexsmalldigit"><b>2</b></span>. Если <em> F</em><span class="indexsmalldigit"><b>2</b></span> &lt; <i>F</i>, то примем Ф<span class="indexsmalldigit"><b>3</b></span> &gt; Ф<span class="indexsmalldigit"><b>2</b></span>, например, Ф<span class="indexsmalldigit"><b>3</b></span> &#8776; 0,9Ф<span class="indexsmalldigit"><b>0</b></span> и определим <em> F</em><span class="indexsmalldigit"><b>3</b></span>, и т. д. (до 5…6 значений потока Ф). Строим вебер-амперную характеристику Ф(<em>F</em>) цепи (рис. 5.16) и, проведя вертикальную линию с точки <em> F</em> (заданной МДС) до пересечения с кривой Ф = &#402;(<i>F</i>), а затем горизонтальную линию с этой точки до оси ординат, находим на оси ординат искомый магнитный поток Ф.</b><br>
+       <div align="left"><span style='position:relative;top:1pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><span style='color:red;'>Графический метод</span>. Вычерчиваем схему замещения исследуемой цепи (см. рис. 5.17<em>а</em>) с выделением участка с линейным магнитным сопротивлением  <i>R</i><span class="indexsmalldigit"><b>&#948;м</b></span> и участка с нелинейным сопротивлением <i>R</i><span class="indexsmalldigit"><b>1м</b></span> (рис. 5.19<em>а</em>).&#160;МДС схемы замещения</b></span>
+        <div align="left"><span style='position:relative;top:3pt;margin-left:43pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><b><i>F</i> = Ф<i>R</i><span class="indexsmalldigit"><b>&#948;м</b></span> + Ф<i>R</i><span class="indexsmalldigit"><b>1м</b></span> = <i>U</i><span class="indexsmalldigit"><b>&#948;м</b></span> + <i>U</i><span class="indexsmalldigit"><b>1м</b></span>,</b><br>
+        <div align="left"><span style='position:relative;top:0pt;margin-left:0pt'><span style='font-size:12pt;font-family:Arial;line-height:15pt;letter-spacing:-0.5pt'>откуда <img src="Page5322/page6322_clip_image002_0001.gif" width="170" height="48" align="middle">&#8211; линейная зависимость Ф = &#402;(<i>U</i><span class="indexsmalldigit"><b>&#948;м</b></span>); <img src="Page5322/page6322_clip_image002_0002.gif" width="166" height="48" align="middle">&#8211; нелинейная зависимость Ф = &#402;(<i>U</i><span class="indexsmalldigit"><b>1м</b></span>).</b></span>
+       <br><br><img src="images/image519.gif" width="464" height="160" align="left"></b>
+        <div align="left"><span style='position:relative;top:-10pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:14pt;letter-spacing:0.1pt'><b>Строим на одном рисунке (в выбранном масштабе) три графика (рис. 5.19<em>б</em>): Ф(<em>U</em><span class="indexsmalldigit"><b>&#948;м</b></span>) для воздушного зазора &#8211; прямую линию, угол наклона к оси абсцисс которой пропорционален сопротивлению <em>R</em><span class="indexsmalldigit"><b>&#948;м</b></span>; Ф(<i>U</i><span class="indexsmalldigit"><b>1м</b></span>) для магнитной цепи без воздушного зазора &#8211; кривую, подобную графику <i> B</i>(<i>H</i>) материала, так как поток Ф = <i>BS</i><span class="indexsmalldigit"><b>м</b></span> пропорционален индукции <em>В</em>, а магнитное напряжение  <i>U</i><span class="indexsmalldigit"><b>м</b></span> <i>= Hl</i><span class="indexsmalldigit"><b>м</b></span> – напряжённости <em> H</em>, и график Ф(<em>U</em><span class="indexsmalldigit"><b>м</b></span>), откладывая от оси ординат по горизонталям отрезки, равные суммарной длине отрезков кривой Ф(<em>U</em><span class="indexsmalldigit"><b>1м</b></span>) и прямой Ф(<em>U</em><span class="indexsmalldigit"><b>&#948;м</b></span>).</b>
+        <div align="left"><span style='position:relative;top:0pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:14pt'><b>Затем из точки <em> F</em> = <i>U</i><span class="indexsmall"><b>м</b></span> восстанавливаем перпендикуляр до пересечения с пунктирной кривой Ф(<em>U</em><span class="indexsmall"><b>м</b></span>) и на оси ординат находим искомый магнитный поток Ф.</b>
+        <div align="left"><span style='position:relative;top:7pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:14pt;color:blue;'><b>На практике поступают проще. Анализ выражения магнитного потока Ф = (<i>F &#8211; U</i><span class="indexsmalldigit"><b>1м</b></span>)<i>/R</i><span class="indexsmalldigit"><b>&#948;м</b></span> показывает, что<i> U</i><span class="indexsmalldigit"><b>1м</b></span><em> = F </em> при Ф = 0 и  <em>U</em><span class="indexsmalldigit"><b>1м</b></span> =  0 при Ф = <i>F / R</i><span class="indexsmalldigit"><b>&#948;м</b></span> = Ф<span class="indexsmalldigit"><b>0</b></span> (рис. 5.19<em>в</em>). Прямая, соединяющая две точки Ф<span class="indexsmalldigit"><b>0</b></span> и <em> F</em>, пересекает кривую Ф(<em>U</em><span class="indexsmalldigit"><b>1м</b></span>) в точке <em>а</em>, горизонталь через которую дает на оси ординат искомый магнитный поток Ф, а вертикаль позволяет определить на оси абсцисс магнитные напряжения <em> U</em><span class="indexsmalldigit"><b>1м</b></span> и <em>U</em><span class="indexsmalldigit"><b>&#948;м</b></span>.</b>
+      <span style='position:relative;top:5pt;'>&#160;</p>
+    <tr> 
+      <td><div align=''left"><a href="../charper5/upr51.html"><img src="../images/back.gif" width="60" height="20" border="0" align='left'></a> </td>
+      <td>
+      <div align="right"><a href="../charper5/upr52.html"><img src="../images/forward.gif" width="70" height="22" border="0" align='right'></a></div>      </td>
+    </tr>
+</body>
+</html>

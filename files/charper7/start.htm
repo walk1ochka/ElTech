@@ -1,0 +1,68 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T8.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T8.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<script language="javascript">
+
+var pos=100;
+var speed=75;            
+var msg="<span style='position:relative; top:0.8cm;font-size:14pt; font-family:Arial; color:darkblue;line-height:18pt;'><b>В этой теме рассматривается устройствао и принцип действия асинхронных двигателей с короткозамкнутым и фазным роторами. Анализируется работа асинхронных двигателей в различных условиях с использование формул частоты вращения поля, скольжения, частоты тока ротора, вращающего момента. Приведены способы  и особенности пуска, регулирования частоты вращения вала двигателей. После усвоения материала важно ответить на вопросы для самоконтроля, проработать решенные задачи и выполнить лабораторную работу LR19";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Arial;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 7</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad="Type()">
+<br>
+<center><span style="position:relative;top:25pt;font-size:14pt;font-family:Arial;color:darkblue;"><b>Тема 7 </b><br>
+<center><span style="position:relative;top:15pt;font-size:18pt;font-family:Arial;color:#994433"><b>АСИНХРОННЫЕ МАШИНЫ</b></br></center>
+
+<table width="75%" height="80%" border="0" align="center">
+<tr><td valign="top">
+<div id="layerA" class=text align="absmiddle"></div>
+</td></tr></table>
+ <span style='position:relative;top:-32pt;font-size:14pt;font-family:Arial;color:blue;'>
+<span style='position:relative;top:-60pt;'> 
+<center><a href="page71.html" align=""><b>НАЧАТЬ</b></a></div>
+
+
+
+</body>
+</html>

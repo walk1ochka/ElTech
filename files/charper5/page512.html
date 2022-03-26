@@ -1,0 +1,301 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.1.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.1.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:01pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:0pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:0pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 15px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 15px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #000066;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: bold;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing:0px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight: bold;
+}
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align:25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<body>
+
+    <div align="center"><span style='font-size:14pt;font-family:Arial;color:darkblue;'><b>5.1.2. Основнные магнитные величины. Магнитная индукция</b></span></head></div>
+ 
+<div align='left'> <span style="position:relative;top:6pt;margin-left:23pt;color:black">
+<span style='font-size:12pt;font-family:Arial;line-height:15pt;color:#d00093;'><b>Напомним, что магнитное поле &#8211; вид материи, характеризующийся воздействием на движущиеся электрически заряженные частицы с силой, пропорциональной заряду этой частицы и её скорости. Магнитное поле в пустоте, воздухе и других немагнитных средах определяется во всех точках векторами магнитной индукция <img src="Page512/page612_clip_image002_00033.gif" width="15" height="22" align="absmiddle">  и напряжённости магнитного поля<img src="Page512/page615_clip_image002_0001.gif" width="18" height="22" align="absmiddle">, а в ферромагнитных материалах &#8211; векторами индукции <img src="page512/page612_clip_image002_00033.gif" width="15" height="21" align="absmiddle">, напряженности <img src="page512/page615_clip_image002_0001.gif" width="18" height="21" align="absmiddle"> и намагниченности<img src="page512/page612_clip_image002_00055.gif" width="22" height="27" align="absmiddle"></span></b>
+       <p align="left"><span style="position:relative;top:-8pt">
+        <span style='margin-left:22pt'><span style='font-size:12pt;font-family:Arial;color:blue;'><span style='color:red;'><b>Магнитная индукция</span> <img src="page512/page612_clip_image002_00033.gif" width="15" height="21" align="absmiddle"> &#8211;  векторная величина, определяющая силу, действующую на движущуюся заряженную частицу со стороны магнитного поля в данной его точке. Магнитная индукция численно равна отношению силы <img src="Page512/page612_clip_image002_0005.gif" width="20" height="25" align="absmiddle">,  действующей на заряженную частицу, к произведению заряда <i> q </i>и составляющей скорости   <img src="page512/page612_clip_image002_0003.gif" width="15" height="19" align="absmiddle"> частицы, перпендикулярной к вектору силы, т.е.  <img src="page512/page612_clip_image002_0001.gif" width="75" height="28" align="absmiddle"><br></span>
+
+        <p align="left"><span style="position:relative;top:-13pt">
+  <span style='margin-left:22pt'><span style='font-size:12pt;font-family:Arial;color:red;'> Силу, действующую на элемент длины<img src="page512/page612_clip_image002_0006.gif" width="24" height="22" align="absmiddle"> прямолинейного проводника с током, определяют по закону Ампера<br><span style="margin-left:42pt"> <img src="page512/page612_clip_image002_0002.gif" width="78" height="28" align="absmiddle"> <br></span></span></b>
+ <span style="margin-left:22pt;font-size:12pt;font-family:Arial;"><b>Откуда значение магнитной индукции</span></b>
+       <br><span style="margin-left:42pt"> <img src="page512/page612_clip_image002_0000.gif" width="79" height="30" align="absmiddle"></span> <span style="position:relative;left:400pt">(6.1)</span><br>
+                
+<span align="left"><span style='margin-left:22pt'><span style='font-size:12pt;font-family:Arial;color:blue;'><b>Единица магнитной индукции
+<div align='left'><span style="position:relative;top:4pt;margin-left:43pt"><img src="page512/page612_clip_image002.gif" width="391" height="48"></span>
+<div align='left'><span style="position:relative;top:-18pt;left:0pt;"><span style='font-size:12pt;font-family:Arial'><br><br><b>т.е. магнитная индукция 1 Тл равна силе, действующей на 1 м длины проводника с током в 1 А.<br></b></span></span></span>
+<span style="position:relative;top:-14pt;margin-left:22pt;font-size:12pt"><b>Проводник располагают в магнитном поле перпендикулярно направлению вектора магнитной индукции. </b></span>
+<br><br><br>
+    <tr> 
+      <td height="20"><a href="page511.html"><img src="../images/back.gif" width="60" height="20" border="0"></span></a> </td>
+      <td>
+      <div align="right"><span style="position:relative;top:-14pt"><a href="page5121.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div></td>
+    </tr>
+</body>
+</html>

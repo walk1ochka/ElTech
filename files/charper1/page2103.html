@@ -1,0 +1,128 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter2/2.10.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter2/2.10.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>2.10.3. Матричное уравнение контурных токов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style114.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        <div align="center">          
+          <p><strong>2.10.3. Матричное уравнение контурных токов</strong></p>
+        </div></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><table width="100%"  border="0">
+          <tr>
+            
+            <td width="70%" colspan="2"><span class="text">Система уравнений, записанных по 2ЗК (алгебраическая сумма ЭДС в контуре равна алгебраической сумме напряжений на отдельных участках этого контура) для контурных токов и контурных ЭДС цепи без зависимых источников энергии и взаимно связанных ветвей, может быть представлена в виде произведения квадратной матрицы [<em>R</em>] контурных и общих сопротивлений контуров на столбцовую матрицу контурных токов [<em>I</em></span><span class="indexsmall"><em>K</em></span><span class="text">] и матрицы контурных ЭДС [<em>E</em></span><span class="indexsmall"><em>K</em></span><span class="text">]:</span>              <table width="100%" border="0">
+    <tr>
+      <td width="213"><div align="center"><img src="p_2.10/2103_1.gif" width="91" height="21"><span class="text">,</span></div></td>
+      <td width="878" class="head2"><div align="right">(2.23)</div></td>
+    </tr>
+  </table>  
+  <div align="left">
+    <table width="100%" border="0">
+      <tr>
+        <td width="56" height="186"><table width="33" height="156" border="0">
+          <tr>
+            <th class="text" scope="col">где</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+          <tr>
+            <th scope="row">&nbsp;</th>
+          </tr>
+        </table></td>
+        <td width="187">          <img src="p_2.10/page2103_111.gif" width="183" height="158"> </td>
+        <td width="827"><h2 class="text">&nbsp;</h2>
+          <h2 class="text">- квадратная матрица сопротивлений размерности <em>n </em> x <em>n </em>; </h2>
+          <h2 class="text">- столбцовые матрицы (векторы) соответственно контурных ЭДС и контурных токов размерности <em>n </em> x 1. </h2></td>
+      </tr>
+    </table>
+  </div>  
+  <div align="justify">
+    <table width="100%"  border="0">
+        <tr>          </tr>
+        <tr>          </tr>
+        <tr>
+          <td><span class="text">Решив матричное уравнение [<em>R</em>][<em>I</em><em class="indexsmall">K</em>] = [<em>E</em><em class="indexsmall">K</em>] относительно матрицы [<em>I</em><em class="indexsmall">K</em>], получим</span></td>
+        </tr>
+      </table>  
+    <table width="100%" border="0">
+        <tr>
+          <td width="599"><div align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="p_2.10/2103_3.gif" width="109" height="24" align="absmiddle"></div></td>
+          <td width="131" class="head2"><div align="right">(2.24)</div></td>
+        </tr>
+    </table>
+    <table width="100%"  border="0">
+        <tr>
+          <td><div align="justify"><span class="text">где <em> &nbsp;&nbsp; <img src="p_2.10/2103_4.gif" width="123" height="44" align="absmiddle"> - </em> обратная матрица по отношению к матрице сопротивлений [<em>R</em>];</span></div></td>
+        </tr>
+        <tr>
+          <td><div align="justify"><span class="text">[<em>АДС</em>]<em class="indexbig">T </em> - транспонированная матрица алгебраических дополне­ний определителя <img src="p_2.10/2103_5.gif" width="24" height="23" align="absmiddle"> матрицы сопротивлений [<em>R</em>];</span></div></td>
+        </tr>
+        <tr>
+          <td height="28"><div align="justify"><span class="text">[<em>АДС</em>] = [(-1)<span class="indexbig"><em> j + k</em></span><em> M<span class="indexsmall">jk</span></em>], где <em> </em> <em>M<span class="indexsmall">jk</span></em> ( <em>j </em>- строка, <em>k </em>- столбец) – миноры матрицы сопротивлений; (-1) <em>j + k </em>- знаковый коэффициент. </span></div></td>
+        </tr>
+        <tr>
+          <td><p align="justify" class="text"><strong class="head2">Внимание!</strong></p>
+            </td>
+        </tr>
+        <tr>
+          <td><div align="justify"><span class="text">1. Перед составлением матричного уравнения контурных токов целесообразно источники тока преобразовать в источники напряжения. </span></div></td>
+        </tr>
+        <tr>
+          <td><div align="justify"><span class="text">2. В случае, если цепь содержит источники напряжения и источники тока, элементы матрицы [<em>E<span class="indexsmall">К</span></em>] записывают в виде: <em>E<span class="indexsmall">К</span> </em> = <em>E<span class="indexsmall">k </span></em> + <em>R<span class="indexsmall">k</span>J<span class="indexsmall">k</span></em>, где <em>E<span class="indexsmall">k</span> </em> - алгебраическая сумма ЭДС источников напряжения, включенных в ветви рас­сматриваемого контура. Слагаемые записывают со знаком плюс (минус), если направление обхода контура и направления ЭДС совпадают (не совпадают); <em>R<span class="indexsmall">k</span>J<span class="indexsmall">k</span> </em>- алгебраическая сумма произведений токов ИТ, подключенных параллельно ветвям, на соответствующие сопротивления ветвей. Слагаемое записывается со знаком плюс (минус), если направление тока <em>J<span class="indexsmall">k </span></em> и направление контурного тока совпадают (не совпадают). </span></div></td>
+        </tr>
+      </table>
+  </div></td></tr>
+          <tr>
+            <td colspan="2">&nbsp;</td>
+          </tr>
+      </table></td>
+    </tr>
+    <tr>
+      
+<td height="20"><a href="zadanie221.html"><img src="../images/back.gif" width="60" height="32" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr219.html"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

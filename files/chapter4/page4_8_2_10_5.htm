@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>5.8.2.10. Активные фильтры</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">
+<!--
+.style1 {color: #000066}
+-->
+</style>
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+        
+        <p>          <strong> <strong> </strong> <strong>        <strong>5.8.2.10. Активные фильтры </strong>  </strong> </strong></p>
+      </p></td>
+    </tr>
+    <tr align="center">
+      <td colspan="2" valign="top"><div align="left" class="text">
+        <p class="text">Требования к миниатюризации электронной аппаратуры и фильтрации сигналов на низких частотах (скажем, с частотой среза 10 Гц) привели к разработке активных фильтров, которые не содержат индуктивных элементов и могут быть реализованы в виде интегральных микросхем. </p>
+        <p>Активные <em>RC</em>-фильтры ( <em>ARC</em>-фильтры) состоят из постоянных резисторов <em>R </em> и конденсаторов <em>C </em> ( <em>RC</em>-звеньев) и активных элементов (операционных усилителей, транзисторов), работающих в линейном режиме. Передаточная функция <em>ARC</em>-фильтра по напряжению <em>H</em><span class="indexsmall"><em>u</em></span>(<em>p</em>) = <em class="index">U</em><span class="indexsmaldigit">2</span>(<em>p</em>)/<em class="index">U</em><span class="indexsmaldigit">1</span>(<em>p</em>) представляет собой отношение двух операторных полиномов, т. е. </p>
+        <table width="100%"  border="0" cellspacing="2">
+          <tr>
+            <td width="57%"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="page5_8_2_10/page5_8_2_10_clip_image002.gif" width="331" height="50" align="absmiddle"> </td>
+            <td width="43%" class="head2"> <div align="right">(5.28) </div></td>
+          </tr>
+        </table>
+        <p><br class="text">
+          <a href="page5_8_2_10_1.htm">- 
+
+ 
+        Реализация <em>ARC</em>-фильтров<strong>.</strong></a>
+          <br class="text">
+          <a href="page5_8_2_10_2.htm">-          Коэффициенты передачи звеньев <em>ARC</em>-фильтра.</a> 
+          <br class="text"> 
+          <a href="page5_8_2_10_3.htm">- Проектирование <em>ARC</em>-фильтров. </a>
+          <br class="head1">
+          <a href="page5_8_2_10_4.htm">-     Порядок расчёта активного ФНЧ.</a> 
+          <br class="text">
+          <br span class="style1">
+          <span class="style1"><strong>-   Алгоритм расчёта АЧХ и ФЧХ АRС-фильтров на ЭВМ</strong><a href="page5_8_2_10_4.htm">.   </a></span>
+
+
+          </span><br> 
+          <br>   
+ После подстановки комплексных проводимостей <em><u>Y</u><span class="index">k</span> </em>= 1/<em>R<span class="indexsmall">k</span> </em> + <em>j<span class="symbol">w</span>C<span class="indexsmall">k</span> </em> = <span class="text"><em>g</em></span><span class="indexsmall"><em>k</em></span>  + <em>j<span class="symbol">w</span>C<span class="indexsmall">k</span> </em>двухполюсников в выражение (5.29) коэффициента передачи по напряжению обобщенной схемы звена второго порядка <em>ARC </em>-фильтра (см. рис. 5.46
+
+ 
+ <em>а </em>), имеем. </p>
+        <p>   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;        <img width="558" height="47" src="page5_8_2_10_5/page5_8_2_10_5_clip_image002_0000.gif">  <br> где  g<span class="indexsmalldigit">1-4</span> = g<span class="indexsmalldigit">1</span> + g<span class="indexsmalldigit">2</span> + g<span class="indexsmalldigit">3</span> + g<span class="indexsmalldigit">4 </span>и <em>С</em><span class="indexsmalldigit">1-4</span> = <em>С</em>1 + <em>С</em><span class="indexsmalldigit">2</span> + <em>С</em><span class="indexsmalldigit">3</span> + <em>С</em><span class="indexsmalldigit">4</span>.
+		</p>
+        <p>Выделив вещественную и мнимую части и преобразовав в показательную форму, получим АЧХ и ФЧХ звена: <br> 
+          <br> 
+             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img width="557" height="54" src="page5_8_2_10_5/page5_8_2_10_5_clip_image002_0001.gif"> <br class="text"> 
+        <br> 
+     		 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;         <img width="456" height="95" src="page5_8_2_10_5/page5_8_2_10_5_clip_image002_0002.gif"> 
+		
+		<br>
+		
+		           а взяв 20<span class="index">lg</span>[<em>H</em>(<span class="symbol">w</span>)] от АЧХ и <span class="index">lg</span><span class="symbol">w</span> - логарифмические частотные характеристики (ЛАЧХ и ЛФЧХ) звена. 
+
+		</p>
+        <p> Умножив АЧХ звеньев и сложив их ФЧХ, получим АЧХ и ФЧХ фильтра. <br>
+	      </p>
+        <p><a href="page5_8_2_10_6.htm">-        Алгоритмы расчёта временных характеристик ARC-фильтров.   </a>  
+		        
+		</p>
+        <p class="text">&nbsp;  </p>
+      </div>
+		
+    </tr>
+    <tr>
+      
+<td height="20"><a href="page5_8_2_9.htm"><img src="../images/back.gif" width="60" height="32" border="0"></a> 
+</td>
+      <td>
+        
+<div align="right"><a href="upr5_9.htm"><img src="../images/forward.gif" width="70" height="32" border="0"></a></div>
+</td>
+    </tr>
+  </table>
+</body>
+</html>

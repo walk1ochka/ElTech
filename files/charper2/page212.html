@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>2.1.2.  Представление синусоидальных функций в виде временных или векторных диаграмм</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+  var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter2/3.1.1b.wma LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter2/3.1.1b.wma AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align='center'><span style='font-size:14pt;font-family:Arial;darkblue;'><b>2.1.2. Представление синусоидальных функций в виде временных или векторных диаграмм</b></span><br>
+   <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:8pt;margin-left:23pt'><b> Графическое представление синусоидальных величин <span style='color:red'>в виде временной диаграммы</span> (рис. 3.1<i>а</i>) достаточно наглядно, но из-за сложности построения синусоид и операций с ними применяется сравнительно редко. При построении временной диаграммы за аргумент синусоидальной функции, например, напряжения  <i>u</i>(<i>t</i>) принимают время <i>t</i> (чему соответствуют период <i>T</i> и начальное время <i>t</i><span class='indexsmalldigit'><b>0</b></span> = &#936;<span class="indexsmall"><b>u</b></span> 
+/ &#969;) или угол &#969;<i>t</i> (чему соответствуют период &#969;<i>T</i> 
+ = 2&#960; и начальная фаза &#936;<span class="indexsmall"><b>u</b></span> в радианах) (см. рис. 3.1<i>а</i>). Однако для большей наглядности угол &#936;<span class="indexsmall"><b>u</b></span> часто выражают в градусах. Тогда аргумент &#969;<i>t</i> также переводят в градусы (напомним, что 1 рад &#8776; 57,3&#176;). В этом случае период составляет 360&#176;.</b><br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:0pt;margin-left:43pt'><b> <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="675" height="200">
+                  <param name="movie" value="Images/Pic_2_1.swf">
+                  <param name="quality" value="high">
+                  <embed src="Images/Pic_2_1.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="677" height="201"></embed> </object>
+   </b></span><br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:8pt;margin-left:23pt;color:#9400d3;'><b> Представление синусоидальных функций <span style='color:red'>при помощи векторов (векторных  диаграмм)</span> позволяет наглядно показать количественные и фазовые соотношения между электрическими величинами в цепях синусоидального тока и широко используется при анализе физических процессов и выводе основных соотношений. </b></span></span><br>
+ <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:8pt;margin-left:23pt;color:red;'><b> <i>Векторная диаграмма</i> (ВД) &#8722; это совокупность векторов ЭДС, напряжения и тока, изображающих  в плоскости синусоидально изменяющиеся с одной и той же частотой электрические величины.</b></span><br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:8pt;margin-left:23pt'><b>В прямоугольной системе координат (оси <i>x, y</i>) векторы обозначают соответствующими буквами, подчеркнутыми снизу: векторы амплитуды ЭДС <i><u>E</u></i><span class="indexsmall"><b>m</b></span>, напряжения <i><u>U</u></i><span class="indexsmall"><b>m</b></span>, тока <i><u>I</u></i><span class="indexsmall"><b>m</b></span> и т. д. (рис. 3.1<i>б</i>). Длина, например, вектора амплитуды тока <i><u>I</u></i><span> должна быть равна (в соответствующем масштабе) амплитуде тока <i>I</i><span class="indexsmall"><b>m</b></span>, а угол наклона к оси абсцисс &#8722; его начальной фазе &#936;<span class="indexsmall"><b>i</i></b></span>. В этом случае проекция вектора тока <i><u>I</u></i><span class="indexsmall"><b>m</b></span>sin&#936;<span class="indexsmall"><b>i</b></span> на ось ординат равна мгновенному значению тока в момент времени <i>t</i> = 0, т.е. <i>I</i><span class="indexsmall"><b>m</b></span> sin&#936;<span class="indexsmall"><b>i</b></span> (см. рис. 3.1<i>б</i>). </b></span><br>
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:1pt;margin-left:23pt'><b> Если гармонические колебания напряжения и тока ветви или на входе цепи имеют одну и ту же частоту &#969;, то соответствующие этим колебаниям векторы <i><u>U</u></i><span class="indexsmall"><b>m</b></span> и <i><u>I</u></i><span class="indexsmall"><b>m</b></span> вращаются с одинаковой частотой &#969; вокруг начала координат против направления вращения часовой стрелки. За время <i>t</i> векторы <i><u>U</u></i><span class="indexsmall"><b>m</b></span> и <i><u>I</u></i><span class="indexsmall"><b>m</b></span> повернуться на угол &#969;<i>t</i> относительно начального положения, так что их углы наклона к оси абсцисс станут равными &#969;<i>t</i> + &#936;<span class="indexsmall"><b>u</b></span> и &#969;<i>t</i> + &#936;<span class="indexsmall"><b>i</b></span>, а проекции векторов <i><u>U</u></i><span class="indexsmall"><b>m</b></span> и <i><u>I</u></i><span class="indexsmall"><b>m</b></span> на ось ординат равны <i>u</i>(<i>t</i>)<i> = U</i><span class="indexsmall"><b>m</b></span>sin(&#969;<i>t</i> + &#936;<span class="indexsmall"><b>u</b></span>) и <i>i</i>(<i>t</i>)<i> = I</i><span class="indexsmall"><b>m</b></span>sin(&#969;<i>t</i> + &#936;<span class="indexsmall"><b>i</b></span>). <span style='position:relative;top:1pt;color:red;'>Однако, угол сдвига фаз &#966; = &#936;<span class="indexsmall"><b>u</b></span> &#8722; &#936;<span class="indexsmall"><b>i</b></span> между ними (см. рис. 3.1<i>б</i>) остаётся неизменным</span>, <span style='position:relative;top:1pt;'>поэтому при построении векторной диаграммы векторы обычно изображают не вращающимися, а неподвижными для момента времени <i>t</i> = 0 &#969;<i>t</i> = 0), так как взаимное расположение векторов в плоскости зависит не от фаз (начальных фаз), а от угла сдвига фаз &#966;.</b></span><br>
+
+<div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:2pt;margin-left:23pt;color:blue;'><b> Таким образом, векторы отображают синусоидальные функции, а операции (сложение, вычитание и т. д.) с векторами отображают соответствующие операции с синусоидальными функциями. Отметим, что неподвижные векторы определяют два параметра синусоидальных функций: амплитуды и начальные фазы. Третий параметр &#8722; угловая частота &#969; должен быть известен.</b></span><br>
+  <div align='left'><span style='font-size:12pt;font-family:Arial;line-height:15pt'><span style='position:relative;top:3pt;margin-left:23pt'><b>  <a href="../charper2/page211b.html"><b></a></span></b> 
+   <br><br>
+    <td height="20"><a href="../charper2/page211b.html"><img src="../images/back.gif"  width="60" height="20" border="0" align="left"></a> 
+    </td>
+      <td>
+        
+<div align="right"><a href="../charper2/page213.html"><img src="../images/forward.gif"   width="70" height="22" border="0" align="right"></a></div>
+</td></tr>
+</body></html>

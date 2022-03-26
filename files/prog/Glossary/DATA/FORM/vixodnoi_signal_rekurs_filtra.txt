@@ -1,0 +1,38 @@
+<html>
+<head><META http-equiv=Content-Type content="text/html; charset=windows-1251">
+<title>
+Выходной сигнал нерекурсивного фильтра.
+</title>
+</head>
+
+<body bgcolor="#ffffff" text="#000000" link="#0044bb" vlink="#0044bb" alink="#0044bb">
+<table border="1" width="100%" cellspacing="0" cellpadding="2">
+<td nowrap bgcolor="#f0f0f0">
+<B>
+<font color="#FF6600">
+
+Выходной сигнал нерекурсивного фильтра.
+</B>
+</FONT>
+</td>
+</table>
+
+
+
+<TABLE  CELLSPACING=30% >
+<TR>
+<TD>
+<FONT Size="4" Color="0000A0">
+<CENTER>
+Выходной сигнал рекурсивного фильтра.
+<BR><img align="absmiddle" src="tema1280.gif"><img align="absmiddle" src="tema1281.gif"> (16.23)
+<br>где N-1 - число суммируемых входных;
+<br>M-1 - предшествующих выходных отсчетов.
+
+</CENTER>
+</FONT>
+</TD>
+</TR>
+</TABLE>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Temy/T10.wma LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Temy/T10.wma AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<script language="javascript">
+
+var pos=96;
+var speed=100;          
+var msg="<span style='position:relative;top:30pt;font-size:14pt; font-family:Arial; color:darkblue;line-height:20pt;'><b>В этой теме рассмотрены основы кинематики электроприводов, методы определения времени разгона электродвигателя при разных типах нагрузок, выбор типа и мощности электродвигателя для привода с  продолжительным, кратковременным или с повторно-кратковременным режимом работы";
+function Type(){
+pos++;
+ if (msg.substring(pos-1,pos) == " ")
+ {
+  pos++
+ }
+text=msg.substring(0,pos);
+ if (document.layers)
+ {
+  document.layers.layerA.document.open();
+  document.layers.layerA.document.write("<div style='position:absolute;top:0px;left:0px;font-family:Arial;font-size:18px;color:#00ff00'>" + text + "</div>");
+  document.layers.layerA.document.close();
+ }
+else if (document.all)
+document.all.layerA.innerHTML=text;
+ if (pos < msg.length)
+ {
+  tmer=setTimeout('Type();',speed);
+ }
+}
+//-->
+</script>
+<title>Тема 10</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../styles/fon.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="fon" onLoad=Type()>
+<br>
+<div align='center'><span style="position:relative;top:25pt;font-size:14pt;font-family:Arial;color:darkblue;"><b>Тема 10 </b><br>
+<div align='center'><span style="position:relative;top:25pt;font-size:18pt;font-family:Arial;color:#994433;"><b>ОСНОВЫ ЭЛЕКТРОПРИВОДА</b>
+<table width="75%" height="60%" border="0" align="center"><tr><td valign="top">
+<div id="layerA" class=text align="absmiddle"></div>
+</table>
+<tr><td>
+<div align='center'><a href="page10_1.html" align=""><span style='position:relative;top:-40pt;font-size:14pt;font-family:Arial;color:blue;'><b>НАЧАТЬ</a></b></div></td></tr>
+</head></html>

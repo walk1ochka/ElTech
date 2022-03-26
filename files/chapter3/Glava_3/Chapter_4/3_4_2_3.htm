@@ -1,0 +1,243 @@
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../../../Sound/Chapter4/4.4.6.3.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../../../Sound/Chapter4/4.4.6.3.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+<title>4.4.6.3. Законы Ома и Кирхгофа в операторной форме</title>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<script language="JavaScript1.2" src="../../../styles/main.js"type="text/javascript"></script>
+<link href="../../../mainpage.css" rel="stylesheet" type="text/css">
+<link href="../style_4.css" rel="stylesheet" type="text/css">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Arial;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23pt;
+	font-size: 12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent: 23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:0pt;
+	text-align:justify;
+	text-indent:23.0pt;
+	font-size: 12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	text-indent:1.0pt;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0pt;
+	margin-right:0pt;
+	margin-bottom:0.0pt;
+	margin-left:0pt;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	font-weight: normal;
+	line-height: 15pt;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	line-height: 15pt;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000066;
+}
+.head2 {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight: normal;
+}
+.text {
+	font-size: 12pt;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 15pt;
+	
+}
+.index {
+	font-size: 12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	
+                font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	
+                font-size:12pt;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigdigit {
+	
+              font-size: 12px;
+	font-family: Arial;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: 25%;
+	position: static;
+}
+-->
+</style>
+</head><body>
+<div align="center">
+        <span style='font-size:14pt; font-family:Arial;color:darkblue;'><b>3.4.2.3. Законы Ома и Кирхгофа в операторной форме </b> <br></span>
+     
+         <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:5pt;margin-left:23pt;color:red;"><b>Выбор той или иной операторной схемы замещения пассивных элементов <em></em><em>L </em>и <em>C </em>с начальным запасом энергии зависит от метода её расчёта. </b><br></span>
+               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><img src="gifs/image011.gif" width="330" height="150" hspace="10" vspace="10" align="left" quality=high pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash"></embed></object></span>
+                        <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:23pt"><b>Например, в операторной схеме замещения цепи с ненулевыми начальными условиями (рис. 3.31<i>б</i>) дополнительные источники энергии включены последовательно соответственно с индуктивным и ёмкостным элементами без запасов энергии. Согласно второму закону Кирхгофа имеем <br></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:0pt;margin-left:43pt"><img src="gifs/f_76.gif" align="middle" height="40"><br></b>
+                   
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:23pt"><b>Откуда операторный ток цепи</b><br>
+   <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:43pt"><img src="gifs/f_77.gif" align="middle" height="40"><span style="margin-left:80pt"><b>(3.19)</b><br></span>                                
+               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:22pt'><span style="position:relative;top:0pt;margin-left:23pt;letter-spacing:0.1pt;color:blue;"><b>Полученная формула (3.19) выражает закон Ома в операторной форме, где изображение источника <i>E</i>(<i>p</i>) = <i>E</i>/<i>p</i><br></b></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:5pt;margin-left:43pt"><b> при <i>e</i>(<i>t</i>) = <i>E</i>&#183;1(<i>t</i>);<span style="position:relative;top:-7pt"><img src="gifs/f_8081.gif" width="370" height="47" align="texttop"></span></b><br></span>
+<div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:-1pt;margin-left:23pt;color:red;"><b>Операторное сопротивление последовательной <em>RLC</em>-цепи (ветви):</b><br></span>
+                  <div align="left"><span style="margin-left:43pt"><img src="gifs/f_82.gif" height="52"><span style="position:relative;top:-18pt;margin-left:330pt"><b>(3.20)</b><br>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:11pt;margin-left:23pt;color:#994433;"><b>П р и м е ч а н и е.  В рассматриваемом примере (см. рис. 3.31<i>б</i>) источник напряжения <em>e</em>(<em>t</em>) включен в цепь при <em>t </em> &lt; </em> 0. Однако в операторной схеме замещения цепи (рис. 3.31<i>б</i>) предполагается включение источника <em>e</em>(<em>t</em>) в момент времени <em>t</em> = 0<span class="indexsmall"><b>+</b></span>; при этом дополнительный источник<em> Li</em><span class="indexsmall"><b>L</b></span>(0<span class="indexsmall"><b>&#8722;</b></span>) мгновенно установит ток <em>i</em><span class="indexsmall"><b>L</b></span>(0<span class="indexsmall"><b>&#8722;</b></span>) в индуктивной катушке, после чего будет закорочен, а начальный заряд конденсатора учитывается скачкообразным источником напряжения с ЭДС <em>E</em><span class="indexsmall"><b>C</b></span>(<em>p</em>) = <em>u</em><span class="indexsmall"><b>C</b></span>(0<span class="indexsmall"><b>&#8722;</b></span>)/<em>p</em>. Направление ЭДС <em>E</em><span class="indexsmall"><b>C</b></span>(<em>p</em>) противоположно направлению тока <em>I</em>(<em>p</em>). </b><br></span>
+                               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:14pt;margin-left:23pt;color:red;"><b>В частном случае при нулевых начальных условиях, т.е. при <em>i</em><span class="indexsmall"><b>L</b></span>(0<span class="indexsmall"><b>&#8722;</b></span>) = 0 и <em>u</em><span class="indexsmall"><b>C</b></span>(0<span class="indexsmall"><b>&#8722;</b></span>)/<em>p</em> = 0, закон Ома в операторной форме имеет вид </b><br></span>
+               <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:13pt;margin-left:43pt"><b><em>I</em>(<em>p</em>) <em>= </em><em>E</em>(<em>p</em>) / <em>Z</em>(<em>p</em>). </span><span style='position:relative;top:9pt;margin-left:352pt;font-size:12pt; font-family:Arial'>(3.21)</b><br></span>
+                  <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:13pt;margin-left:23pt;color:blue;"><b>По виду законы Кирхгофа в операторной форме отличаются от законов Кирхгофа для функций-оригиналов лишь заменой оператора <em>t </em> на оператор <em>p </em> и строчных букв обозначений оригиналов на прописные буквы обозначений изображений функций. Запишем, например, уравнения 1ЗК для первого узла <em>У</em>1 и 2ЗК для первого контура <em>K</em>1 контура цепи: </b><br></span>
+                 <div align="left"><span style='font-size:12pt; font-family:Arial;line-height:15pt'><span style="position:relative;top:3pt;margin-left:100pt"><b>&#8226; для оригиналов:<span style="position:relative;top:0pt;margin-left:90pt"> &#8226; в операторной форме:</b> <br>
+                  <span style="position:relative;top:-10pt;margin-left:23pt"><b>1ЗК:<span style="margin-left:50pt"><span style="position:relative;top:16pt"><img src="gifs/f_28.gif" height="38"></span><span style="position:relative;top:16pt"><span style="margin-left:133pt"><img src="gifs/f_29.gif" height="36"><span style="position:relative;top:3pt"><span style="margin-left:120pt"></b> <br>
+                <span style="position:relative;top:-10pt;margin-left:23pt"><b>2ЗК:</b> 
+                    <span style="margin-left:50pt"><span style="position:relative;top:14pt"><img src="gifs/f_30.gif" height="36"></span>
+                   <span style="position:relative;top:14pt"> <span style="margin-left:100pt"><img src="gifs/f_31.gif" height="36"></span>
+                    <span style="margin-left:83pt"></b></span>
+       <tr>
+    <td height="20"><br><br><a href="../Chapter_4/tabl_3_3.htm"><img src="../../../images/back.gif" width="60" height="20" border="0" align='left'></a> </td>
+    <td>
+      <div align="right"><a href="upr_3_7.htm"><img src="../../../images/forward.gif" width="70" height="22" border="0" align='right'></a></div></td>
+  </tr>
+</body></html>

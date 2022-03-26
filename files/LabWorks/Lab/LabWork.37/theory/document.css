@@ -1,0 +1,83 @@
+
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h5
+	{mso-style-next:Обычный;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:13.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 233.85pt right 467.75pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-indent:35.7pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.1, li.1, div.1
+	{mso-style-name:Стиль1;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:19.2pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.FR1, li.FR1, div.FR1
+	{mso-style-name:FR1;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0pt;
+	margin-bottom:.0001pt;
+	text-indent:25.0pt;
+	line-height:116%;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	layout-grid-mode:line;}
+ /* Page Definitions */
+ @page
+	{mso-mirror-margins:yes;
+	mso-footnote-separator:url("doc.files/header.htm") fs;
+	mso-footnote-continuation-separator:url("doc.files/header.htm") fcs;
+	mso-endnote-separator:url("doc.files/header.htm") es;
+	mso-endnote-continuation-separator:url("doc.files/header.htm") ecs;
+	mso-facing-pages:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-page-numbers:370;
+	mso-even-header:url("doc.files/header.htm") eh1;
+	mso-header:url("doc.files/header.htm") h1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}

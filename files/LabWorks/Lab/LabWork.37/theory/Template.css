@@ -1,0 +1,73 @@
+body { 
+  margin: 0px; 
+  border: 1px solid #6593CF; 
+  padding: 0px;
+}
+
+body.panel { 
+  background-color: #BFDBFF; 
+}
+
+
+body, .moItem { 
+  font-family: Tahoma, Verdana; 
+  font-size: 8pt; 
+}
+
+
+.tab_0 {
+  border-bottom: 2px solid #6593CF;
+}
+
+.tab_l {
+  border-top: 1px dashed #6593CF;
+  border-left: 1px dashed #6593CF;
+  border-bottom: 2px solid #6593CF;
+  text-align: center;
+}
+
+.tab_r {
+  border-top: 1px dashed #6593CF;
+  border-right: 1px dashed #6593CF;
+  border-bottom: 2px solid #6593CF;
+  text-align: center;
+}
+
+.tab_s1 {
+  font-size: 1px;
+  border-top: 2px solid #6593CF;
+  border-left: 2px solid #6593CF;
+  border-right: 2px solid #6593CF;
+}
+
+.tab_s2 {
+  border-left: 2px solid #6593CF;
+  border-right: 2px solid #6593CF;
+  font-weight: bold;
+  text-align: center;
+}
+
+a:link, a:visited {
+  color: navy;
+}
+
+a:hover {
+  color: blue;
+}
+
+.content {
+  padding: 10;
+  background-color: #FFFFFF; 
+}
+
+.border, .content {
+  border: 1px solid #6593CF;
+}
+
+hr {
+  border-bottom: 1px solid #6593CF; 
+}
+
+.pagetitle {
+  color: Black;
+}

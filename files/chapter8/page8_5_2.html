@@ -1,0 +1,304 @@
+<html>
+<head>
+<title>8.5.2. Пуск в ход синхронных двигателей</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+<SCRIPT language="JavaScript1.2" src="../styles/main.js"type="text/javascript"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+  if((MSIE>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter10/10.5.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter10/10.5.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT></head>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:22pt;
+	font-size:14.0pt;
+	font-family:"Arial";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:30.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:24.0pt;
+	font-size:12.0pt;
+	font-family:Arial;}
+p.1, li.1, div.1
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:0cm;
+	font-size:12.0pt;
+	font-family:"Arial";
+	letter-spacing:-.1pt;}
+p.2, li.2, div.2
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	text-indent:1.0cm;
+	font-size:12.0pt;
+	font-family: "Arial";
+	letter-spacing:-.1pt;}
+p.a, li.a, div.a
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0.0pt;
+	margin-left:0cm;
+	line-height:12.0pt;
+	font-size:12.0pt;
+	font-family: Arial;}
+a:link {
+	color: #005FA9;
+	text-decoration: none;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+a:visited {
+	text-decoration: none;
+	color: #005FA9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+a:hover {
+	text-decoration: none;
+	color: #990000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 14px;
+}
+a:active {
+	text-decoration: none;
+	color: #005FA9;
+	font-weight: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 16px;
+}
+body {
+	background-color: #FFFFFF;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	font-weight: normal;
+	font-style: normal;
+	filter: RevealTrans(Duration=5, Transition=5);
+	scrollbar-arrow-color:#000000;
+  scrollbar-base-color:#000000;
+  scrollbar-shadow-color:#000000;
+  scrollbar-face-color:#d3d3d3;
+  scrollbar-highlight-color:#d3d3d3;
+  scrollbar-dark-shadow-color:#ff0000;
+  scrollbar-3d-light-color:#ffff00;
+}
+.head1 {
+	font-size: 14px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	color: #000066;
+}
+.head2 {
+
+
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	color: #990000;
+	font-weight:normal;
+}
+.text {
+	font-size: 12px;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #000000;
+	line-height: 16px;
+	
+}
+.index {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+}
+.indexsmall {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbig {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.symbol {
+	font-size: 14px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: italic;
+	letter-spacing: .1px;
+	white-space: nowrap;
+}
+.head3 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-weight:normal;
+.table {
+}
+
+.stepen {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                 vertical-align: 25%;
+}
+.indexbigEST {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+.indexsmalldigit {
+
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexsbigdigit {
+	font-size: 12px;
+	font-family: Arial, Times, serif;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align:25%;
+	position: static;
+}
+.indexsmallSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	text-transform: none;
+	font-style: italic;
+	font-variant: normal;
+	text-decoration: none;
+	vertical-align: -20%;
+	position: static;
+}
+.indexbigSymbol {
+	font-size: 12px;
+	font-family: Symbol;
+	font-weight: normal;
+	color: #000000;
+	font-style: normal;
+	text-transform: none;
+                  vertical-align: 25%;
+}
+ /* Page Definitions */
+ @page Section1
+	{size:21.0cm 842.0pt;
+	margin:70.9pt 70.9pt 70.9pt 70.9pt;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+  <SCRIPT language="JavaScript1.2" src="style115.js" type="text/javascript"></SCRIPT>
+  <table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top">
+      <td height="20" colspan="2" class="head1">
+       <br><div align="center"><span style='font-size:14pt;font-family:Ariall;color:darkblue;'><b>8.5.2. Пуск в ход синхронных двигателей</b><br></span>
+   <div align="left"><span style='position:relative;top:6pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15ptl;color:#5a2be2;'><b> Для мощных СД предпринимают ряд мер по ограничению пусковых токов обмоток якоря и ЭДС в обмотке возбуждения. Обычно процесс пуска мощных СД автоматизирован и осуществляется по следующей схеме (рис. 8.13):</b><br></span.
+        <div align="left"><span style='position:relative;top:8pt;margin-left:43pt;font-size:12pt;font-family:Arial;line-height:15pt'><img src="page8_5_2/image001.gif" vspace="12" hspace='16'  align="left"> <br></span>
+              <div align="left"><span style='position:relative;top:-3pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15ptl;color:#d60093;'> <b>&#8226; при разомкнутой цепи якоря обмотка возбуждения <i>ОВ</i> отключается от источника постоянного напряжения и замыкается посредством переключателя <i>Q</i><span class="indexsmalldigit"><b>2</b></span> на резистор <i>R</i>, сопротивление которого в 10…15 раз превышает сопротивление <i>ОВ</i>. Если обмотка возбуждения разомкнута, то в начале пуска в ней будет наводиться большая ЭДС, опасная для изоляции обмотки ротора и обслуживающего персонала; <br></b></span>
+              <div align="left"><span style='position:relative;top:8pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15ptl;color:black;'> <b>&#8226; после подключения обмотки якоря к трехфазной сети под действием асинхронного электромагнитного момента ротор разгоняется до подсинхронной частоты вращения <i>n</i><span class="indexsmalldigit"><b>2</b></span>&nbsp;&#8776;&nbsp;0.95<i>n</i><span class="indexsmalldigit"><b>1</b> </span></b><br></span>
+              <div align="left"><span style='position:relative;top:13pt;margin-left:23pt;font-size:12pt;font-family:Arial;line-height:15pt'> <b>&#8226; обмотка возбуждения отключается от резистора <i>R</i>, подключается (посредством переключателя <i>Q</i><span class="indexsmalldigit"><b>2</b></span>) к источнику постоянного напряжения ИН и двигатель втягивается в синхронизм (частота ротора <i>n</i><span class="indexsmalldigit"><b>2</b></span> =&nbsp;<i>n</i><span class="indexsmalldigit"><b>1</b></span> =&nbsp;<i>n</i><span class="indexsmalldigit"><b>0</b></span>). </b><br></span>
+            <div align="left"><span style='position:relative;top:22pt;margin-left:23pt'><span style='font-size:12pt;font-family:Arial;line-height:15ptl;color:#dc143c;'> <b>При идеальном холостом ходе (<i>М</i><span class="indexsmalldigit"><b>c</b></span> = 0) ось результирующего магнитного поля <u>Ф</u><span class="indexsmalldigit"><b>р</b></span> = <u>Ф</u><span class="indexsmalldigit"><b>я</b></span> + <u>Ф</u><span class="indexsmalldigit"><b>в</b></span> будет совпадать с осью ротора (угол между векторами <u>Ф</u><span class="indexsmalldigit"><b>я</b></span> и <u>Ф</u><span class="indexsmalldigit"><b>в</b></span> равен нулю, т.е. угол &#920;&nbsp;=&nbsp;0 (см.&nbsp;рис.&nbsp;8.12<i>б</i>). </b><br></span>
+            <div align="left"><span style='position:relative;top:15pt;margin-left:23pt';font-size:12pt;font-family:Arial;line-height:15ptl;color:#8a2be2;'> <b>Если к валу двигателя приложить момент сопротивления (<i>М</i><span class="indexsmalldigit"><b>c</b></span> > 0), то ось ротора и вектора магнитного потока Ф<span class="indexsmalldigit"><b>в</b></span> сместятся относительно оси вектора магнитного потока Ф<span class="indexsmalldigit"><b>я</b></span> на угол &#920; в сторону отставания (см. рис.&nbsp;8.12<i>в</i>). </b></span>
+</span>                      
+    <tr><td height="20"><div align="left"><span style='position:relative;top:-30pt;margin-left:0pt'><a href="page8_5_1.html"><img src="../images/back.gif" width="60" height="20" border="0"></a> 
+   </td>   <td>        
+<div align="right"><span style='position:relative;top:-30pt;margin-left:0pt'><a href="page8_5_3.html"><img src="../images/forward.gif" width="70" height="22" border="0"></a></div>
+</td>    </tr> </body></html>

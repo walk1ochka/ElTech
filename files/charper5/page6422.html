@@ -1,0 +1,63 @@
+<html>
+<head>
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+var MSIE=navigator.userAgent.indexOf("MSIE"); 
+var NETS=navigator.userAgent.indexOf("Netscape"); 
+var OPER=navigator.userAgent.indexOf("Opera"); 
+  if((MSIE>-1) || (OPER>-1)) 
+   { 
+     document.write("<BGSOUND SRC=../Sound/Chapter6/6.4.2.2.mp3 LOOP=FALSE>");
+   } 
+  else 
+   { 
+    document.write("<EMBED SRC=../Sound/Chapter6/6.4.2.2.mp3 AUTOSTART=TRUE ");
+    document.write("HIDDEN=true VOLUME=100 LOOP=FALSE>"); 
+   } 
+// End --> 
+</SCRIPT>
+
+<title>1.1. Основные понятия и определения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="../mainpage.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<DIV id="TipLayer" style="visibility:hidden;position:absolute;z-index:1000;top:-100"></DIV>
+<table width="100%" height="100%" border="0" cellspacing="0">
+    <tr align="center" valign="top"> 
+      <td height="20" colspan="2" class="head1"> 
+      <div align="center"> 
+        <p align="center"><strong>6.4.2.2. Магнитные потери в стали</strong></p>
+        <p align="justify"><span class="text">Магнитный поток <em class="index">Ф</em>(<em class="index">t</em>) наводит ЭДС индукции не только в обмотке, но и в ферромагнитном сердечнике, а т. к. последний обычно электропроводен, то в нём возникают токи (рис. 6.34, <em>а</em>), называемые <strong class="head2">вихревыми</strong> или <strong class="head2">токами Фуко</strong>, и соответственно потери мощности 
+  
+
+          <img src="images/page6422_clip_image002.gif" width="99" height="32" align="middle">, где  </span><span class="symbol"><em>s</em></span><span class="indexsmall"><em>вх</em></span><span class="text"><em> - </em>коэффициент в Вт/кг, приводимый в справочниках; <em class="index"> B</em></span><span class="indexsmall"><em>m</em></span><span class="text"> - максимальная магнитная индукция в Тл, <em class="index"> G </em>- масса стали в кг. Вихревые токи бесполезно нагревают стальной сердечник (если не принять мер) до высоких температур. </span></p>
+        <p align="justify" class="text"> Чтобы уменьшить потери от вихревых токов, стальные сердечники устройств, работающие при переменном токе частотой 50 Гц, изготавливают из пластин толщиной 0,35…0,5 мм, изолированных друг от друга (в результате чего эти токи замыкаются в каждой пластине (рис. 6.34, <em>б</em>)), а также для его изготовления используют специальные (<strong class="head2">электротехнические</strong>) стали с высоким электрическим сопротивлением. Изоляция пластин осуществляется с помощью лаков, реже – бумаги.</p>
+        <p align="center" class="text"><img src="images/6_34.gif" width="486" height="147" align="left"></p>
+        <p align="justify" class="text">В измерительных устройствах и при более высоких частотах применяется более тонкая листовая электротехническая сталь, а также магнитодиэлектрики и ферриты. </p>
+        <p align="justify" class="text">Кроме этого при перемагничивании сердечника имеют место потери мощности<em><span class="index"> </span></em> <em> <span class="index">P</span><span class="indexsmall">г</span> <span class="index">=</span>        <em><img src="images/page6422_clip_image002_0000.gif" width="60" height="25" align="middle"></em> </em> на гистерезис. Для уменьшения потерь <em> <span class="index">P</span><span class="indexsmall">г</span></em> от явления гистерезиса в электромагнитных устройствах переменного тока используют сталь с узкой петлёй гистерезиса.</p>
+        <p align="justify" class="text">Суммарные активные потери в сердечнике называют <strong class="head2">магнитными потерями в стали</strong> и определяют по формуле </p>
+        <table width="100%"  border="0">
+          <tr>
+            <th scope="col"><div align="left"><span class="text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em><img src="images/page6422_clip_image002_0001.gif" width="235" height="30" align="absmiddle"></em>.</span></div></th>
+            <th scope="col"><div align="right"><span class="text"><span class="head2">(6.19)</span></span></div></th>
+          </tr>
+        </table>
+        <p align="justify" class="text">Для многих материалов в качестве справочной характеристики приводят удельные потери (Вт/кг) на частотах 50, 400 Гц при значениях индукции 1 Тл и 1,5 Тл с указанием толщины ленты или листа. Например, <em class="index">р</em><span class="indexsmalldigit">1.0;50</span> = 1,4 Вт/кг для стали марки 1512 и толщиной листа 0,5 мм. Удельные потери составляют от 0,6 до 4 Вт/кг в зависимости от марки стали и толщины листа при индукциях менее 1,5 Тл и достигают 8…13 Вт/кг для горячекатаных сталей при индукции <em class="index">В</em> = 1,5…1,7 Тл.</p>
+        <p align="justify" class="text">Таким образом, реальная катушка со сталью потребляет активную мощность (энергию) из сети: незначительная её часть 
+
+
+        <EM><SPAN class=symbol>D</SPAN><SPAN class=index>P</SPAN><SPAN 
+class=indexsmall>ст</SPAN></EM> <span class="index">=</span> <span class="index">RI</span><span class="indexsmalldigit">0</span><span class="indexsBIGdigit">2</span>  расходуется на нагрев обмотки, а основная часть <em> <span class="symbol">D</span><span class="index">P</span><span class="indexsmall">ст</span></em> идет на нагрев ферромагнитного сердечника катушки, вызываемого вихревыми токами и явлением гистерезиса.
+      </div></td>
+  </tr>
+    
+    <tr> 
+      <td height="20"><a href="../charper6/page6421.html"><img src="../images/back.gif" width="55" height="25" border="0"></a> </td>
+      <td>
+      <div align="right"><a href="../charper6/page6431.html"><img src="../images/forward.gif" width="62" height="25" border="0"></a></div>      </td>
+    </tr>
+</table> 
+</body>
+</html>
